@@ -11,6 +11,7 @@ module alu_tb;
 
     // Test Variables
     integer i;
+    localparam NB_RANDOM_TESTS = 1000;
 
     alu alu_inst (
         .a(a),
@@ -25,7 +26,7 @@ module alu_tb;
 
         // Test Basic Addition
         // Run 1000 tests
-        for(i=0; i<1000; i=i+1)
+        for(i=0; i<NB_RANDOM_TESTS; i=i+1)
         begin
             a = $random;
             b = $random;
@@ -51,7 +52,7 @@ module alu_tb;
         
         // Test Basic Subtraction
         // Run 1000 tests
-        for(i=0; i<1000; i=i+1)
+        for(i=0; i<NB_RANDOM_TESTS; i=i+1)
         begin
             a = $random;
             b = $random;
@@ -70,6 +71,54 @@ module alu_tb;
             $display("ALU_SUB: FAIL");
         end
         $display("ALU_SUB: PASS");
+
+        // Test ALU_XOR
+        op_code = ALU_XOR;
+
+        // Test Basic XOR
+        // Run 1000 tests
+        for(i=0; i<NB_RANDOM_TESTS; i=i+1) begin
+            a = $random;
+            b = $random;
+            #10;
+            if (result != (a ^ b)) begin
+                $display("ALU_XOR: FAIL");
+                $display("ALU_XOR: %d ^ %d = %d", a, b, result);
+            end
+        end
+        $display("ALU_XOR: PASS");
+
+        // Test ALU_OR
+        op_code = ALU_OR;
+
+        // Test Basic OR
+        // Run 1000 tests
+        for(i=0; i<NB_RANDOM_TESTS; i=i+1) begin
+            a = $random;
+            b = $random;
+            #10;
+            if (result != (a | b)) begin
+                $display("ALU_OR: FAIL");
+                $display("ALU_OR: %d | %d = %d", a, b, result);
+            end
+        end
+        $display("ALU_OR: PASS");
+
+        // Test ALU_AND
+        op_code = ALU_AND;
+
+        // Test Basic AND
+        // Run 1000 tests
+        for(i=0; i<NB_RANDOM_TESTS; i=i+1) begin
+            a = $random;
+            b = $random;
+            #10;
+            if (result != (a & b)) begin
+                $display("ALU_AND: FAIL");
+                $display("ALU_AND: %d & %d = %d", a, b, result);
+            end
+        end
+        $display("ALU_AND: PASS");
 
         $stop;
     end
