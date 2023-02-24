@@ -1,0 +1,108 @@
+# Compile of alu.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu.v failed with 1 errors.
+# Compile of alu.v was successful.
+vsim -vopt work.alu
+# vsim -vopt work.alu 
+# Start time: 20:37:29 on Feb 23,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.alu(fast)
+add wave *
+force -freeze sim:/alu/a 32'd2 0
+force -freeze sim:/alu/b 32'd1 0
+force -freeze sim:/alu/op_code 4'd1 0
+run 10
+force -freeze sim:/alu/op_code 4'h2 0
+run 10
+force -freeze sim:/alu/op_code -4'h1 0
+force -freeze sim:/alu/op_code 4'hf 0
+force -freeze sim:/alu/op_code 4'd1 0
+force -freeze sim:/alu/b -32'd1 0
+run 10
+# Compile of alu.v failed with 1 errors.
+# Compile of alu.v failed with 12 errors.
+# Compile of alu.v was successful.
+run 10
+# Compile of alu.v was successful.
+force -freeze sim:/alu/op_code 4'h9 0
+run
+# Compile of alu.v was successful.
+run 100
+# Compile of alu.v was successful with warnings.
+run 100
+# Compile of alu.v was successful.
+run 100
+# Compile of alu.v was successful.
+run 100
+# Compile of alu.v was successful.
+run 100
+force -freeze sim:/alu/op_code 4'd100 0
+force -freeze sim:/alu/op_code 4'd9 0
+force -freeze sim:/alu/b 100 0
+run
+force -freeze sim:/alu/b 32'd100 0
+run
+force -freeze sim:/alu/op_code 4'h0FFFFFFF 0
+force -freeze sim:/alu/op_code 4'h9 0
+force -freeze sim:/alu/b 32'h0FFFFFFF 0
+run
+force -freeze sim:/alu/b 32'h1FFFFFFF 0
+run
+force -freeze sim:/alu/b 32'hFFFFFFFF 0
+run
+force -freeze sim:/alu/op_code 4'h8 0
+run
+force -freeze sim:/alu/a 32'h00FFFFFF 0
+force -freeze sim:/alu/b -32'hFFFFFFFF 0
+run
+force -freeze sim:/alu/b 99999999999 0
+run
+# Compile of alu.v failed with 2 errors.
+# Compile of alu.v failed with 2 errors.
+# Compile of alu.v failed with 1 errors.
+# Compile of alu.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu.v was successful.
+force -freeze sim:/alu/op_code 4'h1 0
+force -freeze sim:/alu/a 2 0
+force -freeze sim:/alu/b -1 0
+run
+# Compile of alu.v was successful.
+run
+# Compile of alu.v was successful.
+# ** Error: Acsrfs.
+# 
+#        Unable to replace existing ini file (C:/Users/jules/Documents/RISC-V/RISV.mpf).  File can not be renamed.
+run
+force -freeze sim:/alu/op_code 4'h9 0
+run
+# Compile of alu.v was successful.
+force -freeze sim:/alu/b 32'hFFFFFFFF 0
+run
+# Compile of alu.v was successful.
+run
+force -freeze sim:/alu/b 32'hFFFFFFFF 0
+run
+wave clean
+# unknown or ambiguous subcommand "clean": must be activecursor, addcursor, clipboard, collapse, configcursor, create, cursor, cursorconfig, cursortime, deletecursor, edit, editwrite, expand, export, exportvcd, group, guiObjGetUPFInfo, guiObjHasUPFInfo, import, interrupt, map, modify, overlay, pah, positioncursor, refresh, seecursor, seetime, sort, ungroup, write, zoom, zoomcursor, zoomfull, zoomin, zoomlast, zoomout, or zoomrange
+wave clear
+# unknown or ambiguous subcommand "clear": must be activecursor, addcursor, clipboard, collapse, configcursor, create, cursor, cursorconfig, cursortime, deletecursor, edit, editwrite, expand, export, exportvcd, group, guiObjGetUPFInfo, guiObjHasUPFInfo, import, interrupt, map, modify, overlay, pah, positioncursor, refresh, seecursor, seetime, sort, ungroup, write, zoom, zoomcursor, zoomfull, zoomin, zoomlast, zoomout, or zoomrange
+clear
+# invalid command name "clear"
+clean
+# Causality operation skipped due to absence of debug database file
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.alu(fast)
+# Compile of alu.v failed with 3 errors.
+# Compile of alu.v was successful.
+run
+force -freeze sim:/alu/a 32'd2 0
+force -freeze sim:/alu/b -32'd1 0
+force -freeze sim:/alu/op_code 4'd9 0
+run
+# Compile of alu.v was successful.
+run
+# End time: 23:18:52 on Feb 23,2023, Elapsed time: 2:41:23
+# Errors: 0, Warnings: 4

@@ -1,0 +1,71 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/intelFPGA_pro/22.4
+T_opt
+!s110 1677188659
+V0Qm>GkdNIcWSUBNOA?D3j0
+04 3 4 work alu fast 0
+=2-709cd15a7431-63f7de33-1dc-10b8
+R0
+!s124 OEM10U1 
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2022.1;75
+R1
+valu
+!s110 1677189904
+!i10b 1
+!s100 ZE=E^nzT55P6UV`kWQkFm1
+IVGb7hX_E:2Zn<DRVlan@H1
+Z3 dC:/Users/jules/Documents/RISC-V
+w1677189900
+8C:/Users/jules/Documents/RISC-V/verilog/alu.v
+FC:/Users/jules/Documents/RISC-V/verilog/alu.v
+Z4 FC:/Users/jules/Documents/RISC-V/verilog/parameters.vh
+!i122 22
+L0 1 41
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2022.1;75
+r1
+!s85 0
+31
+!s108 1677189903.000000
+!s107 C:/Users/jules/Documents/RISC-V/verilog/parameters.vh|C:/Users/jules/Documents/RISC-V/verilog/alu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V/verilog/alu.v|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vparameters
+!s110 1677178495
+!i10b 1
+!s100 JQ^In:KJcIF[Q=;OKIV8_0
+IT=1?a0k^@fR2cceS4TSJH3
+R3
+w1677178400
+8C:/Users/jules/Documents/RISC-V/verilog/parameters.vh
+R4
+!i122 2
+L0 2 14
+R5
+R6
+r1
+!s85 0
+31
+!s108 1677178495.000000
+!s107 C:/Users/jules/Documents/RISC-V/verilog/parameters.vh|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V/verilog/parameters.vh|
+!i113 0
+R7
+R2
