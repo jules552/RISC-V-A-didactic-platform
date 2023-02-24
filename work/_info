@@ -4,6 +4,15 @@ z2
 Z0 !s99 nomlopt
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f MIXED_VERSIONS
 13
 !s112 1.1
@@ -15,51 +24,97 @@ Z1 dC:/intelFPGA_pro/22.4
 T_opt
 !s110 1677188659
 V0Qm>GkdNIcWSUBNOA?D3j0
-04 3 4 work alu fast 0
+Z2 04 3 4 work alu fast 0
 =2-709cd15a7431-63f7de33-1dc-10b8
 R0
-!s124 OEM10U1 
+Z3 !s124 OEM10U1 
 o-quiet -auto_acc_if_foreign -work work
-Z2 tCvgOpt 0
+Z4 tCvgOpt 0
 n@_opt
-OL;O;2022.1;75
+Z5 OL;O;2022.1;75
 R1
+T_opt1
+!s110 1677243703
+V5c2B_3@gCh^ol1kUHZ=`60
+R2
+=1-000ae431a4f1-63f8b537-c44c2-3bf1
+R0
+R3
+Z6 o-quiet -auto_acc_if_foreign -work work +acc
+R4
+n@_opt1
+R5
+R1
+T_opt2
+!s110 1677246799
+VgbMojz?>j:DzW9gE`NAgH0
+04 6 4 work alu_tb fast 0
+=3-000ae431a4f1-63f8c14e-eff95-68f5
+R0
+!s124 OEM10U2 
+R6
+R4
+n@_opt2
+R5
 valu
-!s110 1677189904
+!s110 1677246781
 !i10b 1
 !s100 ZE=E^nzT55P6UV`kWQkFm1
-IVGb7hX_E:2Zn<DRVlan@H1
-Z3 dC:/Users/jules/Documents/RISC-V
-w1677189900
-8C:/Users/jules/Documents/RISC-V/verilog/alu.v
-FC:/Users/jules/Documents/RISC-V/verilog/alu.v
-Z4 FC:/Users/jules/Documents/RISC-V/verilog/parameters.vh
-!i122 22
+If^zHekTa[BhnOWhklLdMV3
+Z7 d/home/jules/Documents/RISC-V
+w1677244092
+8/home/jules/Documents/RISC-V/verilog/alu.v
+F/home/jules/Documents/RISC-V/verilog/alu.v
+F/home/jules/Documents/RISC-V/verilog/parameters.vh
+!i122 48
 L0 1 41
-Z5 VDg1SIo80bB@j0V0VzS_@n1
-Z6 OL;L;2022.1;75
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2022.1;75
 r1
 !s85 0
 31
-!s108 1677189903.000000
-!s107 C:/Users/jules/Documents/RISC-V/verilog/parameters.vh|C:/Users/jules/Documents/RISC-V/verilog/alu.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V/verilog/alu.v|
+!s108 1677246781.000000
+!s107 /home/jules/Documents/RISC-V/verilog/parameters.vh|/home/jules/Documents/RISC-V/verilog/alu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/verilog/alu.v|
 !i113 0
-Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R2
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+valu_tb
+!s110 1677246782
+!i10b 1
+!s100 74f^hO0bc9ac]=8MdUo?U1
+I_QEa__A9Q^:Ln93OeZQV[2
+R7
+w1677246766
+8/home/jules/Documents/RISC-V/tb/alu_tb.v
+F/home/jules/Documents/RISC-V/tb/alu_tb.v
+F/home/jules/Documents/RISC-V/tb/../verilog/parameters.vh
+!i122 49
+L0 1 92
+R8
+R9
+r1
+!s85 0
+31
+!s108 1677246782.000000
+!s107 /home/jules/Documents/RISC-V/tb/../verilog/parameters.vh|/home/jules/Documents/RISC-V/tb/alu_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/tb/alu_tb.v|
+!i113 0
+R10
+R4
 vparameters
 !s110 1677178495
 !i10b 1
 !s100 JQ^In:KJcIF[Q=;OKIV8_0
 IT=1?a0k^@fR2cceS4TSJH3
-R3
+dC:/Users/jules/Documents/RISC-V
 w1677178400
 8C:/Users/jules/Documents/RISC-V/verilog/parameters.vh
-R4
+FC:/Users/jules/Documents/RISC-V/verilog/parameters.vh
 !i122 2
 L0 2 14
-R5
-R6
+R8
+R9
 r1
 !s85 0
 31
@@ -67,5 +122,5 @@ r1
 !s107 C:/Users/jules/Documents/RISC-V/verilog/parameters.vh|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V/verilog/parameters.vh|
 !i113 0
-R7
-R2
+R10
+R4
