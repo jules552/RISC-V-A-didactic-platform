@@ -85,5 +85,4 @@ localparam FUNCT7_SRA = 7'b0100000;
 
 localparam FUNCT7_SRLI = 7'b0000000;
 localparam FUNCT7_SRAI = 7'b0100000;
-
 `endif
