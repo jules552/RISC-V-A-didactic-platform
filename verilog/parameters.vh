@@ -21,6 +21,15 @@ localparam BR_BGEU = 'b0101;
 localparam BR_JALR = 'b0110;
 localparam BR_JAL = 'b0111;
 
+localparam MEM_LB = 'b0000;
+localparam MEM_LH = 'b0001;
+localparam MEM_LW = 'b0010;
+localparam MEM_LBU = 'b0011;
+localparam MEM_LHU = 'b0100;
+localparam MEM_SB = 'b0101;
+localparam MEM_SH = 'b0110;
+localparam MEM_SW = 'b0111;
+
 localparam OPCODE_LOAD = 7'b0000011;
 localparam OPCODE_STORE = 7'b0100011;
 localparam OPCODE_BRANCH = 7'b1100011;

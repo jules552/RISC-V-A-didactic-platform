@@ -167,11 +167,6 @@ module controler (
                         data_origin_o = 2'b01;
                         data_dest_o = 2'b10;
                     end
-                    FUNCT3_LD : begin
-                        mem_op_o = MEM_LD;
-                        data_origin_o = 2'b01;
-                        data_dest_o = 2'b10;
-                    end
                     FUNCT3_LBU : begin
                         mem_op_o = MEM_LBU;
                         data_origin_o = 2'b01;
