@@ -85,4 +85,14 @@ localparam FUNCT7_SRA = 7'b0100000;
 
 localparam FUNCT7_SRLI = 7'b0000000;
 localparam FUNCT7_SRAI = 7'b0100000;
+
+// ORIGIN DATA
+localparam RS2_RS1 = 2'b00;
+localparam IMM_RS1 = 2'b01;
+localparam IMM_PC = 2'b10;
+
+// DESTINATION DATA
+localparam ALU = 2'b00;
+localparam PC = 2'b01;
+localparam MEM = 2'b10;
 `endif
