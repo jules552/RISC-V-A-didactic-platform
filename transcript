@@ -74,3 +74,54 @@
 # Compile of pc.v was successful.
 # Compile of register_file.v was successful.
 # 6 compiles, 0 failed with no errors.
+# Compile of alu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# 5 compiles, 1 failed with no errors.
+# Compile of alu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of controller.v failed with 4 errors.
+# 6 compiles, 1 failed with 4 errors.
+# Compile of alu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of controller.v failed with 3 errors.
+# 6 compiles, 1 failed with 3 errors.
+# Compile of alu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of controller.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of alu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of controller.v was successful.
+# Compile of lsu.v failed with 10 errors.
+# 7 compiles, 1 failed with 10 errors.
+# Compile of alu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of controller.v was successful.
+# Compile of lsu.v failed with 1 errors.
+# 7 compiles, 1 failed with 1 error.
+# Compile of alu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of controller.v was successful.
+# Compile of lsu.v was successful.
+# 7 compiles, 0 failed with no errors.

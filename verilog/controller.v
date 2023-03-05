@@ -3,7 +3,7 @@ module controler (
 
     output reg br_sig_o,
     output reg [2:0] br_op_o,
-    output reg [3:0] mem_op_o,
+    output reg [3:0] lsu_op_o,
     output reg [3:0] alu_op_o,
 
     output reg [1:0] data_origin_o,
@@ -40,10 +40,10 @@ module controler (
     assign rs1 = instruction_i[19:15];
     assign rs2 = instruction_i[24:20];
     assign rd = instruction_i[11:7];
-    assign imm = {20'b0, instruction_i[31:20]};
-    assign imm_s = {20'b0, instruction_i[31:25], instruction_i[11:7]};
-    assign imm_b = {20'b0, instruction_i[31], instruction_i[7], instruction_i[30:25], instruction_i[11:8], 1'b0};
-    assign imm_j = {12'b0, instruction_i[31], instruction_i[19:12], instruction_i[20], instruction_i[30:21]};
+    assign imm = {{20{instruction_i[31]}}, instruction_i[31:20]};
+    assign imm_s = {{20{instruction_i[31]}}, instruction_i[31:25], instruction_i[11:7]};
+    assign imm_b = {{20{instruction_i[31]}}, instruction_i[31], instruction_i[7], instruction_i[30:25], instruction_i[11:8], 1'b0};
+    assign imm_j = {{12{instruction_i[31]}}, instruction_i[31], instruction_i[19:12], instruction_i[20], instruction_i[30:21]};
     assign imm_u = {instruction_i[31:12], 12'b0};
     assign shamt = instruction_i[24:20];
 
@@ -53,7 +53,7 @@ module controler (
         br_op_o = 0;
         br_sig_o = 1'b0;
 
-        mem_op_o = 0;
+        lsu_op_o = 0;
 
         alu_op_o = 0;
 
@@ -180,19 +180,19 @@ module controler (
 
                 case (funct3)
                     FUNCT3_LB : begin
-                        mem_op_o = MEM_LB;
+                        lsu_op_o = LSU_LB;
                     end
                     FUNCT3_LH : begin
-                        mem_op_o = MEM_LH;
+                        lsu_op_o = LSU_LH;
                     end
                     FUNCT3_LW : begin
-                        mem_op_o = MEM_LW;
+                        lsu_op_o = LSU_LW;
                     end
                     FUNCT3_LBU : begin
-                        mem_op_o = MEM_LBU;
+                        lsu_op_o = LSU_LBU;
                     end
                     FUNCT3_LHU : begin
-                        mem_op_o = MEM_LHU;
+                        lsu_op_o = LSU_LHU;
                     end
                     default : $display("Invalid funct3: %b", funct3);
                 endcase
@@ -208,13 +208,13 @@ module controler (
 
                 case (funct3)
                     FUNCT3_SB : begin
-                        mem_op_o = MEM_SB;
+                        lsu_op_o = LSU_SB;
                     end
                     FUNCT3_SH : begin
-                        mem_op_o = MEM_SH;
+                        lsu_op_o = LSU_SH;
                     end
                     FUNCT3_SW : begin
-                        mem_op_o = MEM_SW;
+                        lsu_op_o = LSU_SW;
                     end
                     default : $display("Invalid funct3: %b", funct3);
                 endcase

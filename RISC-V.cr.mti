@@ -12,6 +12,20 @@ Questa Intel Starter FPGA Edition-64 vlog 2022.1 Compiler 2022.01 Jan 29 2022
 Top level modules:
 	alu
 
+} {} {}} C:/Users/jules/Documents/RISC-V/verilog/pc.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V/verilog/pc.v
+Questa Intel Starter FPGA Edition-64 vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} C:/Users/jules/Documents/RISC-V/verilog/lsu.v {0 vlog\ -work\ work\ -vopt\ -stats=none\ C:/Users/jules/Documents/RISC-V/verilog/lsu.v\nQuesta\ Intel\ Starter\ FPGA\ Edition-64\ vlog\ 2022.1\ Compiler\ 2022.01\ Jan\ 29\ 2022\n--\ Compiling\ module\ lsu\n**\ Error:\ C:/Users/jules/Documents/RISC-V/verilog/lsu.v(20):\ (vlog-2730)\ Undefined\ variable:\ 'LSU_LB'.\n**\ Error:\ (vlog-13069)\ C:/Users/jules/Documents/RISC-V/verilog/lsu.v(20):\ near\ \",\":\ syntax\ error,\ unexpected\ ',',\ expecting\ '\}'.\n**\ Error:\ C:/Users/jules/Documents/RISC-V/verilog/lsu.v(21):\ (vlog-2730)\ Undefined\ variable:\ 'LSU_LH'.\n**\ Error:\ (vlog-13069)\ C:/Users/jules/Documents/RISC-V/verilog/lsu.v(21):\ near\ \",\":\ syntax\ error,\ unexpected\ ',',\ expecting\ '\}'.\n**\ Error:\ C:/Users/jules/Documents/RISC-V/verilog/lsu.v(22):\ (vlog-2730)\ Undefined\ variable:\ 'LSU_LW'.\n**\ Error:\ C:/Users/jules/Documents/RISC-V/verilog/lsu.v(23):\ (vlog-2730)\ Undefined\ variable:\ 'LSU_LBU'.\n**\ Error:\ C:/Users/jules/Documents/RISC-V/verilog/lsu.v(24):\ (vlog-2730)\ Undefined\ variable:\ 'LSU_LHU'.\n**\ Error:\ C:/Users/jules/Documents/RISC-V/verilog/lsu.v(25):\ (vlog-2730)\ Undefined\ variable:\ 'LSU_SB'.\n**\ Error:\ C:/Users/jules/Documents/RISC-V/verilog/lsu.v(26):\ (vlog-2730)\ Undefined\ variable:\ 'LSU_SH'.\n**\ Error:\ C:/Users/jules/Documents/RISC-V/verilog/lsu.v(27):\ (vlog-2730)\ Undefined\ variable:\ 'LSU_SW'.\n\n {4.0 14.0} {}} C:/Users/jules/Documents/RISC-V/verilog/register_file.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V/verilog/register_file.v
+Questa Intel Starter FPGA Edition-64 vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module register_file
+
+Top level modules:
+	register_file
+
 } {} {}} /home/jules/Documents/RISC-V/verilog/alu.v {1 {vlog -work work -vopt -stats=none /home/jules/Documents/RISC-V/verilog/alu.v
 Questa Intel Starter FPGA Edition-64 vlog 2022.1 Compiler 2022.01 Jan 29 2022
 -- Compiling module alu
