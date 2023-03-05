@@ -2,8 +2,16 @@ module mux3x32 (
     input [31:0] a,
     input [31:0] b,
     input [31:0] c,
-    input [2:0] sel,
+    input [1:0] sel,
     output [31:0] out
 );
-    assign out = sel == 3'b000 ? a : sel == 3'b001 ? b : c;
+    
+    always @ (a,b,c,sel) begin
+        case (sel)
+            2'b00 : out = a;
+            2'b01 : out = b;
+            2'b10 : out = c;
+            default: out = 0;
+        endcase
+    end
 endmodule
