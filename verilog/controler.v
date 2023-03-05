@@ -298,6 +298,7 @@ module controler (
 
             OPCODE_SYSTEM : begin
                 // EBREAK and ECALL
+                // CSR instructions
                 // Not needed for the project
             end
 

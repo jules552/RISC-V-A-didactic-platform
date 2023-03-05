@@ -1,28 +1,29 @@
-C:/Users/jules/Documents/RISC-V/verilog/mux3x32.v {0 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V/verilog/mux3x32.v
+C:/Users/jules/Documents/RISC-V/verilog/mux3x32.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V/verilog/mux3x32.v
 Questa Intel Starter FPGA Edition-64 vlog 2022.1 Compiler 2022.01 Jan 29 2022
 -- Compiling module mux3x32
-** Error: C:/Users/jules/Documents/RISC-V/verilog/mux3x32.v(11): (vlog-2110) Illegal reference to net "out".
-** Error: C:/Users/jules/Documents/RISC-V/verilog/mux3x32.v(12): (vlog-2110) Illegal reference to net "out".
-** Error: C:/Users/jules/Documents/RISC-V/verilog/mux3x32.v(13): (vlog-2110) Illegal reference to net "out".
-** Error: C:/Users/jules/Documents/RISC-V/verilog/mux3x32.v(14): (vlog-2110) Illegal reference to net "out".
 
-} {4.0 8.0} {}} C:/Users/jules/Documents/RISC-V/verilog/alu.v {0 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V/verilog/alu.v
-Questa Intel Starter FPGA Edition-64 vlog 2022.1 Compiler 2022.01 Jan 29 2022
--- Compiling module alu
-** Error: C:/Users/jules/Documents/RISC-V/verilog/alu.v(27): (vlog-2110) Illegal reference to net "zero".
+Top level modules:
+	mux3x32
 
-} {4.0 5.0} {}} /home/jules/Documents/RISC-V/verilog/alu.v {1 {vlog -work work -vopt -stats=none /home/jules/Documents/RISC-V/verilog/alu.v
+} {} {}} C:/Users/jules/Documents/RISC-V/verilog/alu.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V/verilog/alu.v
 Questa Intel Starter FPGA Edition-64 vlog 2022.1 Compiler 2022.01 Jan 29 2022
 -- Compiling module alu
 
 Top level modules:
 	alu
 
-} {} {}} C:/Users/jules/Documents/RISC-V/verilog/mux2x32.v {0 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V/verilog/mux2x32.v
+} {} {}} /home/jules/Documents/RISC-V/verilog/alu.v {1 {vlog -work work -vopt -stats=none /home/jules/Documents/RISC-V/verilog/alu.v
+Questa Intel Starter FPGA Edition-64 vlog 2022.1 Compiler 2022.01 Jan 29 2022
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/Users/jules/Documents/RISC-V/verilog/mux2x32.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V/verilog/mux2x32.v
 Questa Intel Starter FPGA Edition-64 vlog 2022.1 Compiler 2022.01 Jan 29 2022
 -- Compiling module mux2x32
-** Error: C:/Users/jules/Documents/RISC-V/verilog/mux2x32.v(9): (vlog-2110) Illegal reference to net "out".
-** Error: C:/Users/jules/Documents/RISC-V/verilog/mux2x32.v(10): (vlog-2110) Illegal reference to net "out".
-** Error: C:/Users/jules/Documents/RISC-V/verilog/mux2x32.v(11): (vlog-2110) Illegal reference to net "out".
 
-} {4.0 7.0} {}}
+Top level modules:
+	mux2x32
+
+} {} {}}
