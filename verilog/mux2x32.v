@@ -1,8 +1,8 @@
 module mux2x32 (
-    input [31:0] a,
-    input [31:0] b,
-    input sel,
-    output [31:0] out
+    input reg [31:0] a,
+    input reg [31:0] b,
+    input reg sel,
+    output reg [31:0] out
 );
     always @ (a,b,sel) begin
         case (sel)

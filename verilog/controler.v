@@ -1,21 +1,21 @@
 module controler (
-    input [31:0] instruction_i,
+    input reg [31:0] instruction_i,
 
-    output br_sig_o,
-    output [2:0] br_op_o,
-    output [3:0] mem_op_o,
-    output [3:0] alu_op_o,
+    output reg br_sig_o,
+    output reg [2:0] br_op_o,
+    output reg [3:0] mem_op_o,
+    output reg [3:0] alu_op_o,
 
-    output [1:0] data_origin_o,
-    output [1:0] data_dest_o,
+    output reg [1:0] data_origin_o,
+    output reg [1:0] data_dest_o,
 
-    output [31:0] imm_o,
-    output [4:0] reg_addr1_o,
-    output [4:0] reg_addr2_o,
-    output [4:0] reg_wr_addr_o,
-    output reg_wr_sig_o,
+    output reg [31:0] imm_o,
+    output reg [4:0] reg_addr1_o,
+    output reg [4:0] reg_addr2_o,
+    output reg [4:0] reg_wr_addr_o,
+    output reg reg_wr_sig_o,
 
-    output mem_wr_sig_o;
+    output reg mem_wr_sig_o
 );
 
     `include "parameters.vh"
@@ -41,14 +41,14 @@ module controler (
     assign rs2 = instruction_i[24:20];
     assign rd = instruction_i[11:7];
     assign imm = {20'b0, instruction_i[31:20]};
-    assign imm_s = {20'b0, instruction_i[31:25], instruction_i[11:7]}
+    assign imm_s = {20'b0, instruction_i[31:25], instruction_i[11:7]};
     assign imm_b = {20'b0, instruction_i[31], instruction_i[7], instruction_i[30:25], instruction_i[11:8], 1'b0};
     assign imm_j = {12'b0, instruction_i[31], instruction_i[19:12], instruction_i[20], instruction_i[30:21]};
     assign imm_u = {instruction_i[31:12], 12'b0};
     assign shamt = instruction_i[24:20];
 
 
-    always @ (instruction_i) begin
+    always @ (*) begin
         // Default values, all signals are 0
         br_op_o = 0;
         br_sig_o = 1'b0;
@@ -169,7 +169,7 @@ module controler (
             end
 
             OPCODE_LOAD : begin
-                ALU_op_o = ALU_ADD;
+                alu_op_o = ALU_ADD;
                 data_origin_o = IMM_RS1;
                 data_dest_o = MEM;
                 reg_addr1_o = rs1;
@@ -199,13 +199,12 @@ module controler (
             end
 
             OPCODE_STORE : begin
-                ALU_op_o = ALU_ADD;
+                alu_op_o = ALU_ADD;
                 data_origin_o = IMM_RS1;
                 data_dest_o = MEM;
                 reg_addr1_o = rs1;
                 imm_o = imm_s;
-                reg_wr_sig_o = 1'b1;
-                mem_wr_o
+                mem_wr_sig_o = 1'b1;
 
                 case (funct3)
                     FUNCT3_SB : begin
@@ -222,7 +221,7 @@ module controler (
             end
 
             OPCODE_BRANCH : begin
-                ALU_op_o = ALU_SUB;
+                alu_op_o = ALU_SUB;
                 data_origin_o = RS2_RS1;
                 reg_addr1_o = rs1;
                 reg_addr2_o = rs2;
@@ -283,7 +282,7 @@ module controler (
                 data_origin_o = IMM_RS1;
                 data_dest_o = ALU;
                 imm_o = imm_u;
-                reg_addr1_o = {5{1'b0}}
+                reg_addr1_o = {5{1'b0}};
                 reg_wr_addr_o = rd;
                 reg_wr_sig_o = 1'b1;
             end

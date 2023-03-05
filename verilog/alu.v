@@ -1,8 +1,8 @@
 module alu (
     input reg [31:0] a,b,
-    input [3:0] op_code,
-    output reg [31:0] result
-    output zero;
+    input reg [3:0] op_code,
+    output reg [31:0] result,
+    output reg zero
 );
 
     `include "parameters.vh"
