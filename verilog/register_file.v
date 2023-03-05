@@ -16,16 +16,16 @@ module register_file (
     assign rs2 = registers[rs2_addr];
 
     // Writes need to be synchronous to the clock
-    always @ (posedge clk or negedge reset) begin
+    always @ (posedge clk or negedge reset_n) begin : write_registers
         integer i;
         if (!reset_n) begin
             for (i = 0; i < 32; i = i + 1) begin
-                registers[i] <= 0;
+                registers[i] = 0;
             end
         end 
         else if (wr_enable) begin
             if (wr_addr != 0) begin
-                registers[wr_addr] <= wr_data;
+                registers[wr_addr] = wr_data;
             end
         end
     end
