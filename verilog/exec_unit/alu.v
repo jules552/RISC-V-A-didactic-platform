@@ -4,7 +4,7 @@ module alu (
     output reg [31:0] result
 );
 
-    `include "parameters.vh"
+    `include "../parameters.vh"
 
     always @ (*) begin
         case (op_code)

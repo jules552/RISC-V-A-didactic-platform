@@ -8,7 +8,7 @@ module br (
     output reg [31:0] pc_plus4
 );
 
-    `include "parameters.vh"
+    `include "../parameters.vh"
 
     always @ (*) begin
 

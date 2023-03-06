@@ -7,7 +7,7 @@ module lsu (
     output reg [31:0] mem_addr,
     output reg [31:0] mem_wr_data
 );
-    `include "parameters.vh"
+    `include "../parameters.vh"
 
     always @ (*) begin
 
