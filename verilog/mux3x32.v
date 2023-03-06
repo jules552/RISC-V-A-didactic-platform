@@ -6,7 +6,7 @@ module mux3x32 (
     output reg [31:0] out
 );
     
-    always @ (a,b,c,sel) begin
+    always @ (*) begin
         case (sel)
             2'b00 : out = a;
             2'b01 : out = b;

@@ -1,13 +1,12 @@
 module alu (
     input reg [31:0] a,b,
     input reg [3:0] op_code,
-    output reg [31:0] result,
-    output reg zero
+    output reg [31:0] result
 );
 
     `include "parameters.vh"
 
-    always @ (a,b, op_code) begin
+    always @ (*) begin
         case (op_code)
             ALU_ADD : result = $unsigned(a) + $unsigned(b);
             ALU_SUB : result = $unsigned(a) - $unsigned(b);
@@ -23,8 +22,6 @@ module alu (
             default:
                 result = 0;
         endcase
-
-        zero = result == 0;
     end
 
     

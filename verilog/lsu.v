@@ -9,7 +9,7 @@ module lsu (
 );
     `include "parameters.vh"
 
-    always @ (op_code, addr, wr_data, mem_rd_data) begin
+    always @ (*) begin
 
         //Default values
         mem_addr = addr;

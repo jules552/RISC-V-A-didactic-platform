@@ -4,7 +4,7 @@ module mux2x32 (
     input reg sel,
     output reg [31:0] out
 );
-    always @ (a,b,sel) begin
+    always @ (*) begin
         case (sel)
             1'b0 : out = a;
             1'b1 : out = b;

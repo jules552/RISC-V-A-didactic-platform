@@ -125,3 +125,21 @@
 # Compile of controller.v was successful.
 # Compile of lsu.v was successful.
 # 7 compiles, 0 failed with no errors.
+# Compile of alu.v failed with 1 errors.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of controller.v was successful.
+# Compile of lsu.v was successful.
+# Compile of br.v was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of alu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of controller.v was successful.
+# Compile of lsu.v was successful.
+# Compile of br.v was successful.
+# 8 compiles, 0 failed with no errors.
