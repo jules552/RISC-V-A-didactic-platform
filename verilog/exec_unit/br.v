@@ -1,7 +1,7 @@
 module br (
     input reg [31:0] pc,
     input reg [31:0] imm,
-    input reg branch_sig,
+    input reg br_sig,
     input reg [31:0] alu_out,
     input reg [2:0] br_op,
     output reg [31:0] new_pc,
@@ -14,7 +14,7 @@ module br (
 
         pc_plus4 = pc + 4;
 
-        if (branch_sig) begin
+        if (br_sig) begin
             case (br_op)
                 BR_BEQ : new_pc = alu_out == 0 ? pc + imm : pc + 4;
                 BR_BNE : new_pc = alu_out != 0 ? pc + imm : pc + 4;

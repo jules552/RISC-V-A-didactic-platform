@@ -25,8 +25,15 @@ module cpu (
 
     wire mem_wr_sig;
 
-    wire rs1;
-    wire rs2;
+    wire [31:0] rs1;
+    wire [31:0] rs2;
+
+    wire [31:0] pc_rs1;
+    wire [31:0] imm_rs2;
+    wire [31:0] pc;
+    wire [31:0] pc_plus4;
+
+    wire [31:0] alu;
 
     control_unit control_unit_inst (
         .instruction_i(instuction),
@@ -54,6 +61,42 @@ module cpu (
         .wr_enable(reg_wr_sig),
         .rs1(rs1),
         .rs2(rs2)
+    );
+
+    mux2x32 mux_pc_rs1 (
+        .a(pc),
+        .b(rs1),
+        .sel(data_origin[0]),
+        .out(pc_rs1)
+    );
+
+    mux2x32 mux_imm_rs2 (
+        .a(pc),
+        .b(imm),
+        .sel(data_origin[1]),
+        .out(imm_rs2)
+    );
+
+    alu alu_inst (
+        .a(pc_rs1),
+        .b(imm_rs2),
+        .alu_op(alu_op),
+        .out(alu)
+    );
+
+    br br_inst (
+        .pc(pc),
+        .imm(imm),
+        .br_sig(br_sig),
+        .alu_out(alu),
+        .br_op(br_op)
+        .new_pc(pc),
+        .pc_plus4(pc_plus4)
+    );
+
+    lsu lsu_inst (
+        .lsu_op(lsu_op),
+        .addr(???)
     );
 
 

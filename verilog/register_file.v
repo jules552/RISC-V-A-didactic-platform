@@ -19,9 +19,7 @@ module register_file (
     always @ (posedge clk or negedge reset_n) begin : write_registers
         integer i;
         if (!reset_n) begin
-            for (i = 0; i < 32; i = i + 1) begin
-                registers[i] = 0;
-            end
+            registers[0] = 0;
         end 
         else if (wr_enable) begin
             if (wr_addr != 0) begin

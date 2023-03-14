@@ -1,5 +1,5 @@
 module lsu (
-    input reg [2:0] op_code,
+    input reg [2:0] lsu_op,
     input reg [31:0] addr,
     input reg [31:0] wr_data,
     input reg [31:0] mem_rd_data,
@@ -15,7 +15,7 @@ module lsu (
         mem_addr = addr;
         mem_wr_data = wr_data;
 
-        case (op_code)
+        case (lsu_op)
             LSU_LB : rd_data = {{24{mem_rd_data[7]}}, mem_rd_data[7:0]};
             LSU_LH : rd_data = {{16{mem_rd_data[15]}}, mem_rd_data[15:0]};
             LSU_LW : rd_data = mem_rd_data;

@@ -102,17 +102,17 @@ module controler (
                     // because the shamt (shift amount) is only the 5 LSBs
                     FUNCT3_SLLI : begin
                         alu_op_o = ALU_SSL;
-                        imm_o = imm_o & 32'h1F;
+                        imm_o = imm & 32'h1F;
                     end
                     FUNCT3_SRLI_SRAI : begin
                         case (funct7) 
                             FUNCT7_SRLI : begin
                                 alu_op_o = ALU_SRL;
-                                imm_o = imm_o & 32'h1F;
+                                imm_o = imm & 32'h1F;
                             end
                             FUNCT7_SRAI : begin
                                 alu_op_o = ALU_SRA;
-                                imm_o = imm_o & 32'h1F; 
+                                imm_o = imm & 32'h1F; 
                             end
                             default : $display("Invalid funct7: %b", funct7);
                         endcase

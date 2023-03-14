@@ -1,6 +1,6 @@
 module alu (
     input reg [31:0] a,b,
-    input reg [3:0] op_code,
+    input reg [3:0] alu_op,
     output reg [31:0] result
 );
 
