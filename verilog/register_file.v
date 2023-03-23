@@ -23,7 +23,7 @@ module register_file (
         end 
         else if (wr_enable) begin
             if (wr_addr != 0) begin
-                registers[wr_addr] = wr_data;
+                registers[wr_addr] <= wr_data;
             end
         end
     end

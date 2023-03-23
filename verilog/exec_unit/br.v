@@ -11,7 +11,6 @@ module br (
     `include "../parameters.vh"
 
     always @ (*) begin
-
         pc_plus4 = pc + 4;
 
         if (br_sig) begin

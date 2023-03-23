@@ -4,13 +4,13 @@ module cpu_tb;
 
     // Clock
     reg clk;
-    reg reset_n;
     initial clk = 0;
+    reg reset_n;
+    initial reset_n = 0;
     always #20 clk = ~clk;
 
     // Signals
-    reg [31:0] addr;
-    initial addr = 0;
+    wire [31:0] new_pc;
     wire [31:0] instruction; 
 
     wire mem_wr_sig;
@@ -18,13 +18,12 @@ module cpu_tb;
     wire [31:0] mem_addr;
     wire [31:0] mem_rd_data;
 
-    wire [31:0] new_pc;
-
 
     //ROM
     rom rom_init (
         .clk(clk),
-        .addr(addr),
+        .reset_n(reset_n),
+        .addr(new_pc),
         .instruction(instruction)
     );
 
@@ -51,11 +50,10 @@ module cpu_tb;
     );
 
 initial begin
-    reset_n = 0;
-    #20 
+    #20
     reset_n = 1;
 
-    #1000
+    #10000
     $stop;
 end
 
