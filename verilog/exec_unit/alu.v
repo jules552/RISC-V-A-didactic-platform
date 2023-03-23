@@ -7,7 +7,7 @@ module alu (
     `include "../parameters.vh"
 
     always @ (*) begin
-        case (op_code)
+        case (alu_op)
             ALU_ADD : result = $unsigned(a) + $unsigned(b);
             ALU_SUB : result = $unsigned(a) - $unsigned(b);
             ALU_XOR : result = a ^ b;

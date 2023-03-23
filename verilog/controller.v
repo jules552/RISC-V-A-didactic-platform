@@ -3,7 +3,7 @@ module controler (
 
     output reg br_sig_o,
     output reg [2:0] br_op_o,
-    output reg [3:0] lsu_op_o,
+    output reg [2:0] lsu_op_o,
     output reg [3:0] alu_op_o,
 
     output reg [1:0] data_origin_o,

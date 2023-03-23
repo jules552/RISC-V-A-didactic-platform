@@ -1,18 +1,18 @@
 module cpu (
-    input clk,
-    input reset_n,
-    input [31:0] instuction,
-    input [31:0] mem_rd_data,
-    output [31:0] pc,
-    output [31:0] mem_addr,
-    output [31:0] mem_wr_data,
-    output wr_sig,
+    input wire clk,
+    input wire reset_n,
+    input wire [31:0] instruction,
+    input wire [31:0] mem_rd_data,
+    output wire [31:0] new_pc,
+    output wire [31:0] mem_addr,
+    output wire [31:0] mem_wr_data,
+    output wire mem_wr_sig
 );
 
     wire br_sig;
-    wire br_op;
-    wire lsu_op;
-    wire alu_op;
+    wire [2:0] br_op;
+    wire [2:0] lsu_op;
+    wire [3:0] alu_op;
 
     wire [1:0] data_origin;
     wire [1:0] data_dest;
@@ -24,8 +24,6 @@ module cpu (
     wire [4:0] reg_wr_addr;
     wire reg_wr_sig;
 
-    wire mem_wr_sig;
-
     wire [31:0] rs1;
     wire [31:0] rs2;
 
@@ -36,13 +34,11 @@ module cpu (
 
     wire [31:0] alu;
 
-    wire [31:0] new_pc;
-
     wire [31:0] rd_data;
 
-    control_unit control_unit_inst (
-        .instruction_i(instuction),
-        .br_sig_o(br_sig)
+    controler controler_inst (
+        .instruction_i(instruction),
+        .br_sig_o(br_sig),
         .br_op_o(br_op),
         .lsu_op_o(lsu_op),
         .alu_op_o(alu_op),
@@ -86,7 +82,7 @@ module cpu (
         .a(pc_rs1),
         .b(imm_rs2),
         .alu_op(alu_op),
-        .out(alu)
+        .result(alu)
     );
 
     br br_inst (
@@ -94,19 +90,19 @@ module cpu (
         .imm(imm),
         .br_sig(br_sig),
         .alu_out(alu),
-        .br_op(br_op)
+        .br_op(br_op),
         .new_pc(new_pc),
         .pc_plus4(pc_plus4)
     );
 
     lsu lsu_inst (
         .lsu_op(lsu_op),
-        .addr(alu)
+        .addr(alu),
         .wr_data(rs2),
         .mem_rd_data(mem_rd_data),
         .rd_data(rd_data),
         .mem_addr(mem_addr),
-        .mem_wr_data(mem_wr_data),
+        .mem_wr_data(mem_wr_data)
     );
 
     mux3x32 data_written_back (

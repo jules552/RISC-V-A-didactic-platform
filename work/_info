@@ -16,6 +16,12 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f MIXED_VERSIONS
 13
 !s112 1.1
@@ -25,28 +31,26 @@ R0
 cModel Technology
 Z1 dC:/intelFPGA_pro/22.4
 T_opt
-!s110 1677188659
-V0Qm>GkdNIcWSUBNOA?D3j0
-Z2 04 3 4 work alu fast 0
-=2-709cd15a7431-63f7de33-1dc-10b8
-R0
-Z3 !s124 OEM10U1 
+!s110 1679591787
+V[47NezkX8NNPBK>=53[b;0
+04 6 4 work cpu_tb fast 0
+=3-000ae431a4f1-641c896b-94095-132e7
+!s124 OEM10U13 
 o-quiet -auto_acc_if_foreign -work work
-Z4 tCvgOpt 0
+Z2 tCvgOpt 0
 n@_opt
-Z5 OL;O;2022.1;75
-R1
+OL;O;2021.2;73
 T_opt1
 !s110 1677243703
 V5c2B_3@gCh^ol1kUHZ=`60
-R2
+04 3 4 work alu fast 0
 =1-000ae431a4f1-63f8b537-c44c2-3bf1
 R0
-R3
-Z6 o-quiet -auto_acc_if_foreign -work work +acc
-R4
+!s124 OEM10U1 
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
+R2
 n@_opt1
-R5
+Z4 OL;O;2022.1;75
 R1
 T_opt2
 !s110 1677262576
@@ -55,48 +59,48 @@ VO3XV`SikD@Ak6lO4_=BaE3
 =7-000ae431a4f1-63f8fef0-c818-68f5
 R0
 !s124 OEM10U2 
-R6
-R4
+R3
+R2
 n@_opt2
-R5
+R4
 R1
 valu
-Z7 !s110 1678061933
+Z5 !s110 1679591783
 !i10b 1
-!s100 zf>N=dDV0Kh00:^ckIJTl3
-IMJDnG5X7N^YYk>lGkf=B52
-Z8 dC:/Users/jules/Documents/RISC-V
-w1678061929
-8C:/Users/jules/Documents/RISC-V/verilog/alu.v
-FC:/Users/jules/Documents/RISC-V/verilog/alu.v
-Z9 FC:/Users/jules/Documents/RISC-V/verilog/parameters.vh
-!i122 126
+!s100 haT8QPI]P0hkEIb^dD2Wa1
+IWdAL@J5<=3az_bTQ]moOz1
+Z6 d/home/jules/Documents/RISC-V
+w1679585219
+8/home/jules/Documents/RISC-V/verilog/exec_unit/alu.v
+F/home/jules/Documents/RISC-V/verilog/exec_unit/alu.v
+Z7 F/home/jules/Documents/RISC-V/verilog/exec_unit/../parameters.vh
+!i122 416
 L0 1 127
-Z10 VDg1SIo80bB@j0V0VzS_@n1
-Z11 OL;L;2022.1;75
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2021.2;73
 r1
 !s85 0
 31
-Z12 !s108 1678061933.000000
-!s107 C:/Users/jules/Documents/RISC-V/verilog/parameters.vh|C:/Users/jules/Documents/RISC-V/verilog/alu.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V/verilog/alu.v|
+Z10 !s108 1679591783.000000
+!s107 /home/jules/Documents/RISC-V/verilog/exec_unit/../parameters.vh|/home/jules/Documents/RISC-V/verilog/exec_unit/alu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/verilog/exec_unit/alu.v|
 !i113 0
-Z13 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R4
+Z11 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
 valu_tb
 !s110 1677262560
 !i10b 1
 !s100 U`]BhMG>Uo[m;aGAQW_G[1
 I6GjBOLT6z@3gaN34@a<I@0
-d/home/jules/Documents/RISC-V
+R6
 w1677262555
 8/home/jules/Documents/RISC-V/tb/alu_tb.v
 F/home/jules/Documents/RISC-V/tb/alu_tb.v
-F/home/jules/Documents/RISC-V/tb/../verilog/parameters.vh
+Z12 F/home/jules/Documents/RISC-V/tb/../verilog/parameters.vh
 !i122 58
 L0 1 141
-R10
-R11
+R8
+Z13 OL;L;2022.1;75
 r1
 !s85 0
 31
@@ -104,134 +108,179 @@ r1
 !s107 /home/jules/Documents/RISC-V/tb/../verilog/parameters.vh|/home/jules/Documents/RISC-V/tb/alu_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/tb/alu_tb.v|
 !i113 0
-R13
-R4
+R11
+R2
 vbr
-R7
+R5
 !i10b 1
-!s100 Kk6HEKLkJ5UMlDUgk:<7=3
-IlfO8g^4O75?8g3eX]a2783
-R8
-w1678061888
-8C:/Users/jules/Documents/RISC-V/verilog/br.v
-FC:/Users/jules/Documents/RISC-V/verilog/br.v
-R9
-!i122 133
+!s100 CR`d[BObO`2;m5Vg5Wzi51
+IIiVjMlXA1kjfC7ENbjgYc2
+R6
+Z14 w1679571786
+8/home/jules/Documents/RISC-V/verilog/exec_unit/br.v
+F/home/jules/Documents/RISC-V/verilog/exec_unit/br.v
+R7
+!i122 417
 L0 1 133
-R10
-R11
+R8
+R9
 r1
 !s85 0
 31
-R12
-!s107 C:/Users/jules/Documents/RISC-V/verilog/parameters.vh|C:/Users/jules/Documents/RISC-V/verilog/br.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V/verilog/br.v|
+R10
+!s107 /home/jules/Documents/RISC-V/verilog/exec_unit/../parameters.vh|/home/jules/Documents/RISC-V/verilog/exec_unit/br.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/verilog/exec_unit/br.v|
 !i113 0
-R13
-R4
+R11
+R2
 vcontroler
-R7
+R5
 !i10b 1
-!s100 jm1MnoSEjVo]CPcP`^1OH2
-I[8b_a;@Xc]8X[Th0nZXR23
-R8
-w1678059368
-8C:/Users/jules/Documents/RISC-V/verilog/controller.v
-FC:/Users/jules/Documents/RISC-V/verilog/controller.v
-R9
-!i122 131
+!s100 kRS;FbdYDY2a6e@_@J[j=1
+Izj3H[V6K8HcFmH`1bg[Wg2
+R6
+w1679587864
+8/home/jules/Documents/RISC-V/verilog/controller.v
+F/home/jules/Documents/RISC-V/verilog/controller.v
+F/home/jules/Documents/RISC-V/verilog/parameters.vh
+!i122 415
 L0 1 409
-R10
-R11
-r1
-!s85 0
-31
-R12
-!s107 C:/Users/jules/Documents/RISC-V/verilog/parameters.vh|C:/Users/jules/Documents/RISC-V/verilog/controller.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V/verilog/controller.v|
-!i113 0
-R13
-R4
-vlsu
-R7
-!i10b 1
-!s100 ZUOWc]_O[`a_A9Mo;mODm3
-I9VmzT7d4188SchAlmjNG[0
 R8
-w1678060217
-8C:/Users/jules/Documents/RISC-V/verilog/lsu.v
-FC:/Users/jules/Documents/RISC-V/verilog/lsu.v
 R9
-!i122 132
-L0 1 130
-R10
-R11
 r1
 !s85 0
 31
-R12
-!s107 C:/Users/jules/Documents/RISC-V/verilog/parameters.vh|C:/Users/jules/Documents/RISC-V/verilog/lsu.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V/verilog/lsu.v|
+R10
+!s107 /home/jules/Documents/RISC-V/verilog/parameters.vh|/home/jules/Documents/RISC-V/verilog/controller.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/verilog/controller.v|
 !i113 0
-R13
-R4
-vmux2x32
+R11
+R2
+vcpu
+Z15 !s110 1679591784
+!i10b 1
+!s100 5gGf7XEcUcCgIni3iJP712
+I^D=3UIRKa8:8gfj4lS^[10
+R6
+w1679587951
+8/home/jules/Documents/RISC-V/verilog/cpu.v
+F/home/jules/Documents/RISC-V/verilog/cpu.v
+!i122 423
+L0 1 123
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 /home/jules/Documents/RISC-V/verilog/cpu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/verilog/cpu.v|
+!i113 0
+R11
+R2
+vcpu_tb
+R15
+!i10b 1
+!s100 VJQ@NI89LRjML6JSWkJDk1
+IHlZG_dWV1aSW;iW[aNI`30
+R6
+w1679591776
+8/home/jules/Documents/RISC-V/tb/cpu_tb.v
+F/home/jules/Documents/RISC-V/tb/cpu_tb.v
+R12
+!i122 426
+L0 1 156
+R8
+R9
+r1
+!s85 0
+31
+Z16 !s108 1679591784.000000
+!s107 /home/jules/Documents/RISC-V/tb/../verilog/parameters.vh|/home/jules/Documents/RISC-V/tb/cpu_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/tb/cpu_tb.v|
+!i113 0
+R11
+R2
+vlsu
+R5
+!i10b 1
+!s100 ;J7DHa];noTUX@4c5[_jb2
+Iebgo931hK6g9o]@mTHSKn2
+R6
+R14
+8/home/jules/Documents/RISC-V/verilog/exec_unit/lsu.v
+F/home/jules/Documents/RISC-V/verilog/exec_unit/lsu.v
 R7
+!i122 418
+L0 1 130
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 /home/jules/Documents/RISC-V/verilog/exec_unit/../parameters.vh|/home/jules/Documents/RISC-V/verilog/exec_unit/lsu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/verilog/exec_unit/lsu.v|
+!i113 0
+R11
+R2
+vmux2x32
+R5
 !i10b 1
 !s100 a2d3LQKno8S4bQY4^[fc53
-IV<BcW=Nj7EdgXSMaJKa:70
-R8
-w1678060221
-8C:/Users/jules/Documents/RISC-V/verilog/mux2x32.v
-FC:/Users/jules/Documents/RISC-V/verilog/mux2x32.v
-!i122 127
+ISP^94eVEPKf3E;z<GHJRh0
+R6
+R14
+8/home/jules/Documents/RISC-V/verilog/exec_unit/mux2x32.v
+F/home/jules/Documents/RISC-V/verilog/exec_unit/mux2x32.v
+!i122 419
 L0 1 14
-R10
-R11
+R8
+R9
 r1
 !s85 0
 31
-R12
-!s107 C:/Users/jules/Documents/RISC-V/verilog/mux2x32.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V/verilog/mux2x32.v|
+R10
+!s107 /home/jules/Documents/RISC-V/verilog/exec_unit/mux2x32.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/verilog/exec_unit/mux2x32.v|
 !i113 0
-R13
-R4
+R11
+R2
 vmux3x32
-R7
+R5
 !i10b 1
 !s100 jA0@?CzXcJ8TolV?0L[:`1
-IV7Q_KNQV@Y7VZCjcmMBnR3
+I;3zIcb2SUc@NB8PakWB@I1
+R6
+R14
+8/home/jules/Documents/RISC-V/verilog/exec_unit/mux3x32.v
+F/home/jules/Documents/RISC-V/verilog/exec_unit/mux3x32.v
+!i122 420
+Z17 L0 1 17
 R8
-w1678060225
-8C:/Users/jules/Documents/RISC-V/verilog/mux3x32.v
-FC:/Users/jules/Documents/RISC-V/verilog/mux3x32.v
-!i122 128
-L0 1 17
-R10
-R11
+R9
 r1
 !s85 0
 31
-R12
-!s107 C:/Users/jules/Documents/RISC-V/verilog/mux3x32.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V/verilog/mux3x32.v|
+R10
+!s107 /home/jules/Documents/RISC-V/verilog/exec_unit/mux3x32.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/verilog/exec_unit/mux3x32.v|
 !i113 0
-R13
-R4
+R11
+R2
 vparameters
 !s110 1677178495
 !i10b 1
 !s100 JQ^In:KJcIF[Q=;OKIV8_0
 IT=1?a0k^@fR2cceS4TSJH3
-R8
+dC:/Users/jules/Documents/RISC-V
 w1677178400
 8C:/Users/jules/Documents/RISC-V/verilog/parameters.vh
-R9
+FC:/Users/jules/Documents/RISC-V/verilog/parameters.vh
 !i122 2
 L0 2 14
-R10
-R11
+R8
+R13
 r1
 !s85 0
 31
@@ -239,49 +288,93 @@ r1
 !s107 C:/Users/jules/Documents/RISC-V/verilog/parameters.vh|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V/verilog/parameters.vh|
 !i113 0
-R13
-R4
+R11
+R2
 vpc
-R7
+R15
 !i10b 1
 !s100 8;K4nOCO<RRC9E?AZc2R?0
-IgUJ=XAm:H<Q`>8c4AH6m`0
-R8
-w1678057075
-8C:/Users/jules/Documents/RISC-V/verilog/pc.v
-FC:/Users/jules/Documents/RISC-V/verilog/pc.v
-!i122 129
+INJdmUhN;K[o:XB0QV1DPf1
+R6
+R14
+8/home/jules/Documents/RISC-V/verilog/pc.v
+F/home/jules/Documents/RISC-V/verilog/pc.v
+!i122 424
 L0 1 19
-R10
-R11
-r1
-!s85 0
-31
-R12
-!s107 C:/Users/jules/Documents/RISC-V/verilog/pc.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V/verilog/pc.v|
-!i113 0
-R13
-R4
-vregister_file
-R7
-!i10b 1
-!s100 26[^fh8LTmMUB95hd<H1Y1
-IWabWD_P4Qf_@2fKaQb?Hb1
 R8
-w1678057056
-8C:/Users/jules/Documents/RISC-V/verilog/register_file.v
-FC:/Users/jules/Documents/RISC-V/verilog/register_file.v
-!i122 130
-L0 1 33
-R10
-R11
+R9
 r1
 !s85 0
 31
-R12
-!s107 C:/Users/jules/Documents/RISC-V/verilog/register_file.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V/verilog/register_file.v|
+R16
+!s107 /home/jules/Documents/RISC-V/verilog/pc.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/verilog/pc.v|
 !i113 0
-R13
-R4
+R11
+R2
+vram
+R5
+!i10b 1
+!s100 1Ih1EAz^UlkTLUo0jF^Hk1
+I5HoCZhjB_JL`3kOO0OKBO3
+R6
+w1679586648
+8/home/jules/Documents/RISC-V/verilog/mem_unit/ram.v
+F/home/jules/Documents/RISC-V/verilog/mem_unit/ram.v
+!i122 421
+L0 1 30
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 /home/jules/Documents/RISC-V/verilog/mem_unit/ram.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/verilog/mem_unit/ram.v|
+!i113 0
+R11
+R2
+vregister_file
+R15
+!i10b 1
+!s100 1J_:QiE87^L`a[^iS<:hc0
+I49^<=EOPboZSKWM@E`MNR3
+R6
+R14
+8/home/jules/Documents/RISC-V/verilog/register_file.v
+F/home/jules/Documents/RISC-V/verilog/register_file.v
+!i122 425
+L0 1 31
+R8
+R9
+r1
+!s85 0
+31
+R16
+!s107 /home/jules/Documents/RISC-V/verilog/register_file.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/verilog/register_file.v|
+!i113 0
+R11
+R2
+vrom
+R5
+!i10b 1
+!s100 eRGDcjHk957PDCCS@7mng3
+IjlPkIFYj8RzCS>[?>S5n72
+R6
+w1679589585
+8/home/jules/Documents/RISC-V/verilog/mem_unit/rom.v
+F/home/jules/Documents/RISC-V/verilog/mem_unit/rom.v
+!i122 422
+R17
+R8
+R9
+r1
+!s85 0
+31
+R10
+!s107 /home/jules/Documents/RISC-V/verilog/mem_unit/rom.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V/verilog/mem_unit/rom.v|
+!i113 0
+R11
+R2

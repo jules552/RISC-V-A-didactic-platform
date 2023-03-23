@@ -1,5 +1,5 @@
 module rom (
-    input wire clock,
+    input wire clk,
     input [31:0] addr,
     output reg [31:0] instruction
 );
@@ -10,7 +10,7 @@ initial begin
     $readmemh("program.hex", mem);
 end
 
-always @(posedge clock) begin
+always @(posedge clk) begin
     instruction <= mem[addr];
 end
 
