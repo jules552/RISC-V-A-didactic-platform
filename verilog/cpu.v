@@ -65,14 +65,14 @@ module cpu (
     );
 
     mux2x32 mux_pc_rs1 (
-        .a(pc),
-        .b(rs1),
+        .a(rs1),
+        .b(pc),
         .sel(data_origin[0]),
         .out(pc_rs1)
     );
 
     mux2x32 mux_imm_rs2 (
-        .a(pc),
+        .a(rs2),
         .b(imm),
         .sel(data_origin[1]),
         .out(imm_rs2)

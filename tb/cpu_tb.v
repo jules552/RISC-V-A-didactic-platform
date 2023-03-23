@@ -51,8 +51,12 @@ module cpu_tb;
     );
 
 initial begin
-    #1000 $display("Simulation finished");
-    $finish;
+    reset_n = 0;
+    #20 
+    reset_n = 1;
+
+    #1000
+    $stop;
 end
 
 endmodule

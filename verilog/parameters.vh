@@ -92,7 +92,7 @@ localparam IMM_RS1 = 2'b10;
 localparam IMM_PC = 2'b11;
 
 // DESTINATION DATA
-localparam ALU = 2'b00;
-localparam PC = 2'b01;
+localparam PC = 2'b00;
+localparam ALU = 2'b01;
 localparam MEM = 2'b10;
 `endif
