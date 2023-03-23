@@ -18,6 +18,7 @@ module cpu (
     wire [1:0] data_dest;
 
     wire [31:0] imm;
+    wire [31:0] reg_wr_data;
     wire [4:0] reg_addr1;
     wire [4:0] reg_addr2;
     wire [4:0] reg_wr_addr;
@@ -34,6 +35,10 @@ module cpu (
     wire [31:0] pc_plus4;
 
     wire [31:0] alu;
+
+    wire [31:0] new_pc;
+
+    wire [31:0] rd_data;
 
     control_unit control_unit_inst (
         .instruction_i(instuction),
@@ -56,7 +61,7 @@ module cpu (
         .reset_n(reset_n),
         .rs1_addr(reg_addr1),
         .rs2_addr(reg_addr2),
-        .wr_data(mem_rd_data),
+        .wr_data(reg_wr_data),
         .wr_addr(reg_wr_addr),
         .wr_enable(reg_wr_sig),
         .rs1(rs1),
@@ -90,14 +95,33 @@ module cpu (
         .br_sig(br_sig),
         .alu_out(alu),
         .br_op(br_op)
-        .new_pc(pc),
+        .new_pc(new_pc),
         .pc_plus4(pc_plus4)
     );
 
     lsu lsu_inst (
         .lsu_op(lsu_op),
-        .addr(???)
+        .addr(alu)
+        .wr_data(rs2),
+        .mem_rd_data(mem_rd_data),
+        .rd_data(rd_data),
+        .mem_addr(mem_addr),
+        .mem_wr_data(mem_wr_data),
     );
 
+    mux3x32 data_written_back (
+        .a(pc_plus4),
+        .b(alu),
+        .c(rd_data),
+        .sel(data_dest),
+        .out(reg_wr_data)
+    );
+
+    pc pc_inst (
+        .clk(clk),
+        .reset_n(reset_n),
+        .pc(pc),
+        .new_pc(new_pc)
+    );
 
 endmodule
