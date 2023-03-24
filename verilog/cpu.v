@@ -12,7 +12,7 @@ module cpu (
     wire br_sig;
     wire [2:0] br_op;
     wire [2:0] lsu_op;
-    wire [3:0] alu_op;
+    wire [4:0] alu_op;
 
     wire [1:0] data_origin;
     wire [1:0] data_dest;

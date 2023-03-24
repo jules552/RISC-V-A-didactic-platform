@@ -4,7 +4,7 @@ module controler (
     output reg br_sig_o,
     output reg [2:0] br_op_o,
     output reg [2:0] lsu_op_o,
-    output reg [3:0] alu_op_o,
+    output reg [4:0] alu_op_o,
 
     output reg [1:0] data_origin_o,
     output reg [1:0] data_dest_o,
@@ -70,8 +70,7 @@ module controler (
         mem_wr_sig_o = 1'b0;
 
         case (opcode)
-            default : $display("Invalid opcode: %b", opcode); 
-            OPCODE_IMM_ARITH : begin
+                        OPCODE_IMM_ARITH : begin
                 data_origin_o = IMM_RS1;
                 data_dest_o = ALU;
                 reg_addr1_o = rs1;
@@ -129,42 +128,76 @@ module controler (
                 reg_wr_addr_o = rd;
                 reg_wr_sig_o = 1'b1;
 
-                case (funct3)
-                    FUNCT3_ADD_SUB : begin
-                        case (funct7)
-                            FUNCT7_ADD : begin
+                case (funct7)
+                    FUNCT7_ADD: begin
+                        case (funct3)
+                            FUNCT3_ADD_SUB : begin
                                 alu_op_o = ALU_ADD;
                             end
-                            FUNCT7_SUB : begin
-                                alu_op_o = ALU_SUB;
+                            FUNCT3_SLL : begin
+                                alu_op_o = ALU_SSL;
                             end
-                            default : $display("Invalid funct7: %b", funct7);
-                        endcase
-                    end
-                    FUNCT3_SLL : begin
-                        alu_op_o = ALU_SSL;
-                    end
-                    FUNCT3_SLT : begin
-                        alu_op_o = ALU_SLT;
-                    end
-                    FUNCT3_SLTU : begin
-                        alu_op_o = ALU_SLTU;
-                    end
-                    FUNCT3_XOR : begin
-                        alu_op_o = ALU_XOR;
-                    end
-                    FUNCT3_SRL_SRA : begin
-                        case (funct7)
-                            FUNCT7_SRL : begin
+                            FUNCT3_SLT : begin
+                                alu_op_o = ALU_SLT;
+                            end
+                            FUNCT3_SLTU : begin
+                                alu_op_o = ALU_SLTU;
+                            end
+                            FUNCT3_XOR : begin
+                                alu_op_o = ALU_XOR;
+                            end
+                            FUNCT3_SRL_SRA : begin
                                 alu_op_o = ALU_SRL;
                             end
-                            FUNCT7_SRA : begin
-                                alu_op_o = ALU_SRA;
+                            FUNCT3_OR : begin
+                                alu_op_o = ALU_OR;
                             end
-                            default : $display("Invalid funct7: %b", funct7);
+                            FUNCT3_AND : begin
+                                alu_op_o = ALU_AND;
+                            end
+                            default : $display("Invalid funct3: %b", funct3);
                         endcase
                     end
-                    default : $display("Invalid funct3: %b", funct3);
+                    FUNCT7_SUB : begin
+                        case (funct3)
+                            FUNCT3_ADD_SUB : begin
+                                alu_op_o = ALU_SUB;
+                            end
+                            FUNCT3_SRL_SRA : begin
+                                alu_op_o = ALU_SRA;
+                            end
+                            default : $display("Invalid funct3: %b", funct3);
+                        endcase
+                    end
+                    FUNCT7_MUL_DIV_REM : begin
+                        case (funct3)
+                            FUNCT3_MUL : begin
+                                alu_op_o = ALU_MUL;
+                            end
+                            FUNCT3_MULH : begin
+                                alu_op_o = ALU_MULH;
+                            end
+                            FUNCT3_MULHSU : begin
+                                alu_op_o = ALU_MULHSU;
+                            end
+                            FUNCT3_MULHU : begin
+                                alu_op_o = ALU_MULHU;
+                            end
+                            FUNCT3_DIV : begin
+                                alu_op_o = ALU_DIV;
+                            end
+                            FUNCT3_DIVU : begin
+                                alu_op_o = ALU_DIVU;
+                            end
+                            FUNCT3_REM : begin
+                                alu_op_o = ALU_REM;
+                            end
+                            FUNCT3_REMU : begin
+                                alu_op_o = ALU_REMU;
+                            end
+                            default : $display("Invalid funct3: %b", funct3);
+                        endcase
+                    end
                 endcase
             end
 

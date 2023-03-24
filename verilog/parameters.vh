@@ -1,16 +1,24 @@
 `ifndef _parameters_h
 `define _parameters_h
-localparam ALU_ADD = 'b0000;
-localparam ALU_SUB = 'b0001;
-localparam ALU_XOR = 'b0010;
-localparam ALU_OR = 'b0011;
-localparam ALU_AND = 'b0100;
-localparam ALU_SSL = 'b0101;
-localparam ALU_SRL = 'b0110;
-localparam ALU_SRA = 'b0111;
-localparam ALU_SLT = 'b1000;
-localparam ALU_SLTU = 'b1001;
-localparam ALU_NOP = 'b1010;
+localparam ALU_ADD = 'b00000;
+localparam ALU_SUB = 'b00001;
+localparam ALU_XOR = 'b00010;
+localparam ALU_OR = 'b00011;
+localparam ALU_AND = 'b00100;
+localparam ALU_SSAAAAL = 'b00101;
+localparam ALU_SRL = 'b00110;
+localparam ALU_SRA = 'b00111;
+localparam ALU_SLT = 'b01000;
+localparam ALU_SLTU = 'b01001;
+localparam ALU_NOP = 'b01010;
+localparam ALU_MUL = 'b01011;
+localparam ALU_MULH = 'b01100;
+localparam ALU_MULHU = 'b01101;
+localparam ALU_MULHSU = 'b01110;
+localparam ALU_DIV = 'b01111;
+localparam ALU_DIVU = 'b10000;
+localparam ALU_REM = 'b10001;
+localparam ALU_REMU = 'b10010;
 
 localparam BR_BEQ = 'b0000;
 localparam BR_BNE = 'b0001;
@@ -86,6 +94,17 @@ localparam FUNCT7_SRA = 7'b0100000;
 localparam FUNCT7_SRLI = 7'b0000000;
 localparam FUNCT7_SRAI = 7'b0100000;
 
+// RV32M extension FUNCT3 and FUNCT7 parameters
+localparam FUNCT3_MUL = 3'b000;
+localparam FUNCT3_MULH = 3'b001;
+localparam FUNCT3_MULHSU = 3'b010;
+localparam FUNCT3_MULHU = 3'b011;
+localparam FUNCT3_DIV = 3'b100;
+localparam FUNCT3_DIVU = 3'b101;
+localparam FUNCT3_REM = 3'b110;
+localparam FUNCT3_REMU = 3'b111;
+
+localparam FUNCT7_MUL_DIV_REM = 7'b0000001;
 // ORIGIN DATA
 localparam RS2_RS1 = 2'b00;
 localparam IMM_RS1 = 2'b10;
