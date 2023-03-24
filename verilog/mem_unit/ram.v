@@ -7,11 +7,11 @@ module ram (
     output reg [31:0] rd_data
 );
 
-wire [9:0] addr10;
-
-assign addr10 = addr[11:2];
-
 reg [31:0] mem [0:1023];
+
+always @(*) begin : read 
+    rd_data <= mem[addr >> 2];
+end
 
 always @(posedge clk or negedge reset_n) begin : ram
     integer i;
@@ -21,9 +21,8 @@ always @(posedge clk or negedge reset_n) begin : ram
         end
     end else begin
         if (wr_sig) begin
-            mem[addr10] <= wr_data;
+            mem[addr >> 2] <= wr_data;
         end
-        rd_data <= mem[addr10];
     end
 end
 
