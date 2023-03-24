@@ -10,7 +10,8 @@ module br (
 
     `include "../parameters.vh"
 
-    wire signed [31:0] alu_out_signed;
+    wire signed [31:0] alu_out_signed = alu_out;
+
     always @ (*) begin
         pc_plus4 = pc + 4;
 

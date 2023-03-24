@@ -8,6 +8,8 @@ module rom (
 reg [31:0] mem [0:1023];
 
 initial begin
+    //$readmemh("recursive_sum_of_n.hex", mem);
+    //$readmemh("fibonacci.hex", mem);
     $readmemh("program.hex", mem);
 end
 always @(posedge clk) begin : rom

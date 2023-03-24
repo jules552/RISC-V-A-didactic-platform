@@ -4,8 +4,8 @@ module alu (
     output reg [31:0] result
 );
 
-    wire signed [31:0] a_signed;
-    wire signed [31:0] b_signed;
+    wire signed [31:0] a_signed = a;
+    wire signed [31:0] b_signed = b;
 
     `include "../parameters.vh"
 
