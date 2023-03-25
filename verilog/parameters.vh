@@ -1,5 +1,3 @@
-`ifndef _parameters_h
-`define _parameters_h
 localparam ALU_ADD = 'b00000;
 localparam ALU_SUB = 'b00001;
 localparam ALU_XOR = 'b00010;
@@ -114,4 +112,3 @@ localparam IMM_PC = 2'b11;
 localparam PC = 2'b00;
 localparam ALU = 2'b01;
 localparam MEM = 2'b10;
-`endif
