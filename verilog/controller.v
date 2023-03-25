@@ -235,6 +235,7 @@ module controler (
                 alu_op_o = ALU_ADD;
                 data_origin_o = IMM_RS1;
                 data_dest_o = MEM;
+                reg_addr1_o = rs1;
                 reg_addr2_o = rs2;
                 imm_o = imm_s;
                 mem_wr_sig_o = 1'b1;

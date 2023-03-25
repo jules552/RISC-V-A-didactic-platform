@@ -53,7 +53,7 @@ initial begin
     #20
     reset_n = 1;
 
-    #1000
+    #15000
     $stop;
 end
 

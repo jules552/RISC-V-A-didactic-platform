@@ -1,6 +1,6 @@
 module pc (
     input wire reset_n, clk,
-    input reg [31:0] new_pc,
+    input wire [31:0] new_pc,
     output reg [31:0] pc
 );
 

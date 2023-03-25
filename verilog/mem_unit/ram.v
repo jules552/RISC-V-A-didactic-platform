@@ -9,19 +9,21 @@ module ram (
 
 reg [31:0] mem [0:1023];
 
+wire [9:0] addr10 = addr[11:2];
+
 always @(*) begin : read 
-    rd_data <= mem[addr >> 2];
+    rd_data <= mem[addr10];
 end
 
 always @(posedge clk or negedge reset_n) begin : ram
     integer i;
     if (!reset_n) begin
-        for (i = 0; i < 1023; i = i+1) begin
+        for (i = 0; i < 1024; i = i+1) begin
             mem[i] <= 0;
         end
     end else begin
         if (wr_sig) begin
-            mem[addr >> 2] <= wr_data;
+            mem[addr10] <= wr_data;
         end
     end
 end
