@@ -3,7 +3,7 @@ module cpu (
     input wire reset_n,
     input wire [31:0] instruction,
     input wire [31:0] mem_rd_data,
-    output wire [31:0] new_pc,
+    output wire [31:0] rom_addr,
     output wire [31:0] mem_addr,
     output wire [31:0] mem_wr_data,
     output wire mem_wr_sig
@@ -30,11 +30,14 @@ module cpu (
     wire [31:0] pc_rs1;
     wire [31:0] imm_rs2;
     wire [31:0] pc;
+    wire [31:0] new_pc;
     wire [31:0] pc_plus4;
 
     wire [31:0] alu;
 
     wire [31:0] rd_data;
+
+    assign rom_addr = new_pc;
 
     controler controler_inst (
         .instruction_i(instruction),

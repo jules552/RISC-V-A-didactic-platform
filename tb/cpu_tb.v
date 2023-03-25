@@ -10,7 +10,7 @@ module cpu_tb;
     always #20 clk = ~clk;
 
     // Signals
-    wire [31:0] new_pc;
+    wire [31:0] rom_addr;
     wire [31:0] instruction; 
 
     wire mem_wr_sig;
@@ -23,7 +23,7 @@ module cpu_tb;
     rom rom_init (
         .clk(clk),
         .reset_n(reset_n),
-        .addr(new_pc),
+        .addr(rom_addr),
         .instruction(instruction)
     );
 
@@ -46,7 +46,7 @@ module cpu_tb;
         .mem_wr_sig(mem_wr_sig),
         .mem_wr_data(mem_wr_data),
         .mem_addr(mem_addr),
-        .new_pc(new_pc)
+        .rom_addr(rom_addr)
     );
 
 initial begin

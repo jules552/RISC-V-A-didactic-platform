@@ -67,7 +67,7 @@ module controler (
         mem_wr_sig_o = 1'b0;
 
         case (opcode)
-                        OPCODE_IMM_ARITH : begin
+            OPCODE_IMM_ARITH : begin
                 data_origin_o = IMM_RS1;
                 data_dest_o = ALU;
                 imm_o = imm;
