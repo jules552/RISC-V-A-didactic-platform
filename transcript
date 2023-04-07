@@ -4,16 +4,16 @@
 # Compile of register_file.v was successful.
 # Compile of ram.v was successful.
 # Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
 # Compile of alu.v was successful.
 # Compile of br.v was successful.
 # Compile of lsu.v was successful.
 # Compile of mux2x32.v was successful.
 # Compile of mux3x32.v was successful.
-# Compile of cpu_tb.v was successful.
 # 12 compiles, 0 failed with no errors.
 vsim work.cpu_tb -voptargs=+acc
 # vsim work.cpu_tb -voptargs="+acc" 
-# Start time: 23:43:44 on Mar 25,2023
+# Start time: 15:05:38 on Apr 07,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.cpu_tb(fast)
 # Loading work.rom(fast)
@@ -28,48 +28,343 @@ vsim work.cpu_tb -voptargs=+acc
 # Loading work.mux3x32(fast)
 # Loading work.pc(fast)
 add wave -position insertpoint sim:/cpu_tb/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: jules  Hostname: Jules-Laptop  ProcessID: 22292
-#           Attempting to use alternate WLF file "./wlftf1vji1".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftf1vji1
 add wave -position insertpoint  \
 sim:/cpu_tb/cpu_inst/register_file_inst/registers
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/br_inst/*
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Causality operation skipped due to absence of debug database file
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+run -all
+# Break key hit
+# Break in Module br at /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/exec_unit/br.v line 16
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/br_inst/*
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/controler_inst/*
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+run -all
+# Break key hit
+# Simulation stop requested.
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+run -all
+# Break key hit
+# Simulation stop requested.
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+run -all
+# Break key hit
+# Simulation stop requested.
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Compile of controller.v failed with 3 errors.
+# Compile of cpu.v was successful.
+# Compile of pc.v failed with 2 errors.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v failed with 1 errors.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 3 failed with 6 errors.
+# Compile of controller.v failed with 3 errors.
+# Compile of cpu.v was successful.
+# Compile of pc.v failed with 2 errors.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 2 failed with 5 errors.
+# Compile of controller.v failed with 3 errors.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 1 failed with 3 errors.
+# Compile of controller.v failed with 3 errors.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 1 failed with 3 errors.
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/cpu_tb/cpu_inst/br_inst/flush_inst'. 
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
 add wave -position insertpoint  \
-sim:/cpu_tb/ram_init/mem
-run -all
-# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# Compile of cpu_tb.v was successful.
-# 12 compiles, 0 failed with no errors.
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# Compile of cpu_tb.v was successful.
-# 12 compiles, 0 failed with no errors.
+sim:/cpu_tb/cpu_inst/register_file_inst/registers
 restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # Loading work.cpu_tb(fast)
 # Loading work.rom(fast)
 # Loading work.ram(fast)
@@ -82,24 +377,22 @@ restart
 # Loading work.lsu(fast)
 # Loading work.mux3x32(fast)
 # Loading work.pc(fast)
-# Warning in wave window restart: (vish-4014) No objects found matching '/cpu_tb/new_pc'. 
-add wave -position insertpoint sim:/cpu_tb/*
 run -all
-# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
 #    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
 # Compile of controller.v was successful.
 # Compile of cpu.v was successful.
 # Compile of pc.v was successful.
 # Compile of register_file.v was successful.
 # Compile of ram.v was successful.
 # Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
 # Compile of alu.v was successful.
 # Compile of br.v was successful.
 # Compile of lsu.v was successful.
 # Compile of mux2x32.v was successful.
 # Compile of mux3x32.v was successful.
-# Compile of cpu_tb.v was successful.
 # 12 compiles, 0 failed with no errors.
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
@@ -117,21 +410,21 @@ restart
 # Loading work.mux3x32(fast)
 # Loading work.pc(fast)
 run -all
-# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
 #    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
 # Compile of controller.v was successful.
 # Compile of cpu.v was successful.
 # Compile of pc.v was successful.
 # Compile of register_file.v was successful.
 # Compile of ram.v was successful.
 # Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
 # Compile of alu.v was successful.
 # Compile of br.v was successful.
 # Compile of lsu.v was successful.
 # Compile of mux2x32.v was successful.
 # Compile of mux3x32.v was successful.
-# Compile of cpu_tb.v was successful.
 # 12 compiles, 0 failed with no errors.
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
@@ -149,6 +442,212 @@ restart
 # Loading work.mux3x32(fast)
 # Loading work.pc(fast)
 run -all
-# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
 #    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v failed with 1 errors.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 1 failed with 1 error.
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Compile of controller.v was successful.
+# Compile of cpu.v was successful.
+# Compile of pc.v was successful.
+# Compile of register_file.v was successful.
+# Compile of ram.v was successful.
+# Compile of rom.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of mux3x32.v was successful.
+# 12 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.controler(fast)
+# Loading work.register_file(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.lsu(fast)
+# Loading work.mux3x32(fast)
+# Loading work.pc(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/cpu_tb/cpu_inst/controler_inst/flush_inst_i'. 
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57

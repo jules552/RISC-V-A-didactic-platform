@@ -11,10 +11,10 @@ assign pc = pc_reg;
 // We change the PC on the rising edge of the clock
 always @ (posedge clk or negedge reset_n) begin
     if (!reset_n) begin
-        pc_reg <= -4;
+        pc_reg = 0;
     end
     else begin
-        pc_reg <= new_pc;
+        pc_reg = new_pc;
     end
 end
 

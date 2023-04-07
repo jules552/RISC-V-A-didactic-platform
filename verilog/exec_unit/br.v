@@ -14,23 +14,44 @@ module br (
 
     always @ (*) begin
         pc_plus4 = pc + 4;
+        new_pc = pc_plus4;
 
         if (br_sig) begin
             case (br_op)
-                BR_BEQ : new_pc = alu_out == 0 ? pc + imm : pc + 4;
-                BR_BNE : new_pc = alu_out != 0 ? pc + imm : pc + 4;
-                BR_BLT : new_pc = alu_out_signed < 0 ? pc + imm : pc + 4;
-                BR_BLTU : new_pc = alu_out < 0 ? pc + imm : pc + 4;
-                BR_BGE : new_pc = alu_out_signed >= 0 ? pc + imm : pc + 4;
-                BR_BGEU : new_pc = alu_out >= 0 ? pc + imm : pc + 4;
+                BR_BEQ : begin 
+                    if (alu_out == 0) begin
+                        new_pc = pc + imm;
+                    end
+                end
+                BR_BNE : begin
+                    if (alu_out != 0) begin
+                        new_pc = pc + imm;
+                    end
+                end
+                BR_BLT : begin
+                    if (alu_out_signed < 0) begin
+                        new_pc = pc + imm;
+                    end
+                end
+                BR_BLTU : begin
+                    if (alu_out < 0) begin
+                        new_pc = pc + imm;
+                    end
+                end
+                BR_BGE : begin
+                    if (alu_out_signed >= 0) begin
+                        new_pc = pc + imm;
+                    end
+                end
+                BR_BGEU : begin
+                    if (alu_out >= 0) begin
+                        new_pc = pc + imm;
+                    end
+                end
                 BR_JALR : new_pc = alu_out & ~1;
-                BR_JAL : new_pc = alu_out;
+                BR_JAL : new_pc = pc + imm;
                 default: new_pc = pc + 4;
             endcase
         end
-        else begin
-            new_pc = pc + 4;
-        end
     end
-
 endmodule

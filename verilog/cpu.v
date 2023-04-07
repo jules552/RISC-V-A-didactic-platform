@@ -37,7 +37,7 @@ module cpu (
 
     wire [31:0] rd_data;
 
-    assign rom_addr = new_pc;
+    assign rom_addr = pc;
 
     controler controler_inst (
         .instruction_i(instruction),
@@ -119,8 +119,8 @@ module cpu (
     pc pc_inst (
         .clk(clk),
         .reset_n(reset_n),
-        .pc(pc),
-        .new_pc(new_pc)
+        .new_pc(new_pc),
+        .pc(pc)
     );
 
 endmodule
