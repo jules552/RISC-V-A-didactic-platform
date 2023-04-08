@@ -2290,3 +2290,408 @@ run -all
 # ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
 #    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
 # Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_out'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/br.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_stage_inst/br_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(11).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'new_pc_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(16).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(22).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(23).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 206
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(16).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 206
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_out'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/br.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_stage_inst/br_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(11).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'new_pc_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(16).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(22).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(23).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 206
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(16).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 206
+
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_out'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/br.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_stage_inst/br_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(11).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'new_pc_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(16).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(22).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(23).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 206
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(16).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 206
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_out'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/br.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_stage_inst/br_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(11).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'new_pc_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(16).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(22).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(23).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 206
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(16).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 206
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(81): (vopt-2685) [TFMPC] - Too few port connections for 'if_stage_inst'.  Expected 6, found 5.
+# ** Warning: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(81): (vopt-2718) [TFMPC] - Missing connection for port 'instruction_i'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_out'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/br.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_stage_inst/br_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(11).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(22).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(23).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 206
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(16).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 206
+# Warning in wave window restart: (vish-4014) No objects found matching '/cpu_tb/cpu_inst/ex_mem_pc'. 
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(81): (vopt-2685) [TFMPC] - Too few port connections for 'if_stage_inst'.  Expected 6, found 5.
+# ** Warning: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(81): (vopt-2718) [TFMPC] - Missing connection for port 'instruction_i'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_out'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/br.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_stage_inst/br_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v Line: 41
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(11).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(22).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(23).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 168
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 206
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(16).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 206
+run -all
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58

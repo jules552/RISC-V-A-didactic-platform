@@ -83,7 +83,7 @@ module cpu (
         .clk(clk),
 
         .new_pc_i(ex_mem_new_pc),
-        .br_taken_i(br_taken),
+        .br_taken_i(ex_mem_br_taken),
 
         .pc_o(rom_addr)
     );
@@ -180,7 +180,7 @@ module cpu (
         .reg_wr_sig_i(id_ex_reg_wr_sig),
         .mem_wr_sig_i(id_ex_mem_wr_sig),
 
-        .new_pc_o(ex_mem_pc),
+        .new_pc_o(ex_mem_new_pc),
         .br_taken_o(ex_mem_br_taken),
         .pc_plus4_o(ex_mem_pc_plus4),
         .alu_result_o(ex_mem_alu_result),
