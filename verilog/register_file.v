@@ -1,19 +1,19 @@
 module register_file (
     input reg clk,
     input reg reset_n,
-    input reg [4:0] rs1_addr,
-    input reg [4:0] rs2_addr,
-    input reg [31:0] wr_data,
-    input reg [4:0] wr_addr,
-    input reg wr_enable,
-    output [31:0] rs1,
-    output [31:0] rs2
+    input reg [4:0] rs1_addr_i,
+    input reg [4:0] rs2_addr_i,
+    input reg [31:0] wr_data_i,
+    input reg [4:0] wr_addr_i,
+    input reg wr_enable_i,
+    output [31:0] rs1_o,
+    output [31:0] rs2_o
 );
 
     reg [31:0] registers [0:31];
 
-    assign rs1 = registers[rs1_addr];
-    assign rs2 = registers[rs2_addr];
+    assign rs1_o = registers[rs1_addr_i];
+    assign rs2_o = registers[rs2_addr_i];
 
     // Writes need to be synchronous to the clock
     always @ (posedge clk or negedge reset_n) begin : write_registers
@@ -23,9 +23,9 @@ module register_file (
                 registers[i] <= 0;
             end
         end 
-        else if (wr_enable) begin
-            if (wr_addr != 0) begin
-                registers[wr_addr] <= wr_data;
+        else if (wr_enable_i) begin
+            if (wr_addr_i != 0) begin
+                registers[wr_addr_i] <= wr_data_i;
             end
         end
     end

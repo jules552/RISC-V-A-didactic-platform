@@ -25,7 +25,7 @@ module cpu_tb;
         .reset_n(reset_n),
         .addr(rom_addr),
         .instruction(instruction)
-    );sim:/cpu_tb/cpu_inst/br_inst/alu_out_signed
+    );
 
 
     //RAM

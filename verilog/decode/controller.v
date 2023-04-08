@@ -1,4 +1,4 @@
-module controler (
+module controller (
     input reg [31:0] instruction_i,
 
     output reg br_sig_o,
@@ -18,7 +18,7 @@ module controler (
     output reg mem_wr_sig_o
 );
 
-    `include "parameters.vh"
+    `include "../parameters.vh"
 
     wire [6:0] opcode;
     wire [2:0] funct3;

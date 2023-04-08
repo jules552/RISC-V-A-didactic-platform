@@ -1,653 +1,1028 @@
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
+# Compile of cpu.v failed with 6 errors.
 # Compile of ram.v was successful.
+# Compile of register_file.v was successful.
 # Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
 # Compile of alu.v was successful.
 # Compile of br.v was successful.
-# Compile of lsu.v was successful.
+# Compile of ex_stage.v failed with 2 errors.
 # Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v failed with 8 errors.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v failed with 1 errors.
 # Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
+# Compile of wb_stage.v failed with 1 errors.
+# 20 compiles, 5 failed with 18 errors.
+# Compile of cpu.v failed with 6 errors.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v failed with 8 errors.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v failed with 1 errors.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v failed with 1 errors.
+# 20 compiles, 4 failed with 16 errors.
+# Compile of cpu.v failed with 6 errors.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v failed with 8 errors.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v failed with 1 errors.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v failed with 1 errors.
+# 20 compiles, 4 failed with 16 errors.
+# Compile of cpu.v failed with 6 errors.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v failed with 8 errors.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v failed with 1 errors.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v failed with 1 errors.
+# 20 compiles, 4 failed with 16 errors.
+# Compile of cpu.v failed with 6 errors.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v failed with 8 errors.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v failed with 1 errors.
+# 20 compiles, 3 failed with 15 errors.
+# Compile of cpu.v failed with 6 errors.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v failed with 8 errors.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v failed with 1 errors.
+# 20 compiles, 3 failed with 15 errors.
+# Compile of cpu.v failed with 6 errors.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v failed with 8 errors.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# 20 compiles, 2 failed with 14 errors.
+# Compile of cpu.v failed with 6 errors.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v failed with 3 errors.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# 20 compiles, 2 failed with 9 errors.
+# Compile of cpu.v failed with 6 errors.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# 20 compiles, 1 failed with 6 errors.
+# Compile of cpu.v failed with 2 errors.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# 20 compiles, 1 failed with 2 errors.
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# 20 compiles, 0 failed with no errors.
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v failed with 3 errors.
+# 21 compiles, 1 failed with 3 errors.
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+vsim work.cpu_tb
+# vsim work.cpu_tb 
+# Start time: 16:06:17 on Apr 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(229): Module 'reg_file' is not defined.
+#  For instance 'reg_file_inst' at path 'cpu_tb.cpu_inst'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 16:06:17 on Apr 08,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 24
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
 vsim work.cpu_tb -voptargs=+acc
 # vsim work.cpu_tb -voptargs="+acc" 
-# Start time: 15:05:38 on Apr 07,2023
+# Start time: 16:06:53 on Apr 08,2023
 # ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(229): (vopt-2912) Port 'reg_rd_data1_o' not found in module 'register_file' (8th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(229): (vopt-2912) Port 'reg_rd_data2_o' not found in module 'register_file' (9th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/writeback/wb_stage.v(9): (vopt-8884) Illegal output port connection for 'out' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'pc_plus4_i' not found in module 'wb_stage' (1st connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'alu_result_i' not found in module 'wb_stage' (2nd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'mem_rd_data_i' not found in module 'wb_stage' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'data_dest_i' not found in module 'wb_stage' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'reg_wr_data_o' not found in module 'wb_stage' (5th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'rd_data' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'mem_addr' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'mem_wr_data' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(44): (vopt-2912) Port 'op' not found in module 'br' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(37): (vopt-2912) Port 'op' not found in module 'alu' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(37): (vopt-2912) Port 'out' not found in module 'alu' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'reset_n' not found in module 'ex_stage' (1st connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'clk' not found in module 'ex_stage' (2nd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'pc_i' not found in module 'ex_stage' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr1_i' not found in module 'id_ex_register' (10th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr2_i' not found in module 'id_ex_register' (11th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_sig_o' (2nd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_op_o' (3rd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'lsu_op_o' (4th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'alu_op_o' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_origin_o' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_dest_o' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'imm_o' (8th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr1_o' (9th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr2_o' (10th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_addr_o' (11th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_sig_o' (12th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'mem_wr_sig_o' (13th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(98): (vopt-2912) Port 'instruction_i' not found in module 'id_stage' (1st connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=32, Warnings=0.
+# Error loading design
+# End time: 16:06:53 on Apr 08,2023, Elapsed time: 0:00:00
+# Errors: 32, Warnings: 2
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 16:09:10 on Apr 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(229): (vopt-2912) Port 'reg_rd_data1_o' not found in module 'register_file' (8th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(229): (vopt-2912) Port 'reg_rd_data2_o' not found in module 'register_file' (9th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/writeback/wb_stage.v(9): (vopt-8884) Illegal output port connection for 'out' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'pc_plus4_i' not found in module 'wb_stage' (1st connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'alu_result_i' not found in module 'wb_stage' (2nd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'mem_rd_data_i' not found in module 'wb_stage' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'data_dest_i' not found in module 'wb_stage' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'reg_wr_data_o' not found in module 'wb_stage' (5th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'rd_data' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'mem_addr' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'mem_wr_data' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(44): (vopt-2912) Port 'op' not found in module 'br' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(37): (vopt-2912) Port 'op' not found in module 'alu' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(37): (vopt-2912) Port 'out' not found in module 'alu' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'reset_n' not found in module 'ex_stage' (1st connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'clk' not found in module 'ex_stage' (2nd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'pc_i' not found in module 'ex_stage' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr1_i' not found in module 'id_ex_register' (10th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr2_i' not found in module 'id_ex_register' (11th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_sig_o' (2nd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_op_o' (3rd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'lsu_op_o' (4th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'alu_op_o' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_origin_o' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_dest_o' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'imm_o' (8th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr1_o' (9th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr2_o' (10th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_addr_o' (11th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_sig_o' (12th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'mem_wr_sig_o' (13th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(98): (vopt-2912) Port 'instruction_i' not found in module 'id_stage' (1st connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=32, Warnings=0.
+# Error loading design
+# End time: 16:09:11 on Apr 08,2023, Elapsed time: 0:00:01
+# Errors: 32, Warnings: 1
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 16:09:40 on Apr 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(229): (vopt-2912) Port 'reg_rd_data1_o' not found in module 'register_file' (8th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(229): (vopt-2912) Port 'reg_rd_data2_o' not found in module 'register_file' (9th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/writeback/wb_stage.v(9): (vopt-8884) Illegal output port connection for 'out' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'pc_plus4_i' not found in module 'wb_stage' (1st connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'alu_result_i' not found in module 'wb_stage' (2nd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'mem_rd_data_i' not found in module 'wb_stage' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'data_dest_i' not found in module 'wb_stage' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(221): (vopt-2912) Port 'reg_wr_data_o' not found in module 'wb_stage' (5th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'rd_data' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'mem_addr' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'mem_wr_data' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(44): (vopt-2912) Port 'op' not found in module 'br' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(37): (vopt-2912) Port 'op' not found in module 'alu' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(37): (vopt-2912) Port 'out' not found in module 'alu' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'reset_n' not found in module 'ex_stage' (1st connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'clk' not found in module 'ex_stage' (2nd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'pc_i' not found in module 'ex_stage' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr1_i' not found in module 'id_ex_register' (10th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr2_i' not found in module 'id_ex_register' (11th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_sig_o' (2nd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_op_o' (3rd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'lsu_op_o' (4th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'alu_op_o' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_origin_o' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_dest_o' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'imm_o' (8th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr1_o' (9th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr2_o' (10th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_addr_o' (11th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_sig_o' (12th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'mem_wr_sig_o' (13th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(98): (vopt-2912) Port 'instruction_i' not found in module 'id_stage' (1st connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=32, Warnings=0.
+# Error loading design
+# End time: 16:09:40 on Apr 08,2023, Elapsed time: 0:00:00
+# Errors: 32, Warnings: 1
+restart
+# No Design Loaded!
+
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 16:10:06 on Apr 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/writeback/wb_stage.v(9): (vopt-8884) Illegal output port connection for 'out' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'rd_data' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'mem_addr' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'mem_wr_data' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(44): (vopt-2912) Port 'op' not found in module 'br' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(37): (vopt-2912) Port 'op' not found in module 'alu' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(37): (vopt-2912) Port 'out' not found in module 'alu' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'reset_n' not found in module 'ex_stage' (1st connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'clk' not found in module 'ex_stage' (2nd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'pc_i' not found in module 'ex_stage' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr1_i' not found in module 'id_ex_register' (10th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr2_i' not found in module 'id_ex_register' (11th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_sig_o' (2nd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_op_o' (3rd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'lsu_op_o' (4th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'alu_op_o' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_origin_o' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_dest_o' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'imm_o' (8th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr1_o' (9th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr2_o' (10th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_addr_o' (11th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_sig_o' (12th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'mem_wr_sig_o' (13th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(98): (vopt-2912) Port 'instruction_i' not found in module 'id_stage' (1st connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=25, Warnings=0.
+# Error loading design
+# End time: 16:10:07 on Apr 08,2023, Elapsed time: 0:00:01
+# Errors: 25, Warnings: 2
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 16:10:44 on Apr 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'rd_data' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'mem_addr' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(11): (vopt-8884) Illegal output port connection for 'mem_wr_data' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(44): (vopt-2912) Port 'op' not found in module 'br' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(37): (vopt-2912) Port 'op' not found in module 'alu' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(37): (vopt-2912) Port 'out' not found in module 'alu' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'reset_n' not found in module 'ex_stage' (1st connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'clk' not found in module 'ex_stage' (2nd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'pc_i' not found in module 'ex_stage' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr1_i' not found in module 'id_ex_register' (10th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr2_i' not found in module 'id_ex_register' (11th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_sig_o' (2nd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_op_o' (3rd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'lsu_op_o' (4th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'alu_op_o' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_origin_o' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_dest_o' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'imm_o' (8th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr1_o' (9th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr2_o' (10th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_addr_o' (11th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_sig_o' (12th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'mem_wr_sig_o' (13th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(98): (vopt-2912) Port 'instruction_i' not found in module 'id_stage' (1st connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=24, Warnings=0.
+# Error loading design
+# End time: 16:10:45 on Apr 08,2023, Elapsed time: 0:00:01
+# Errors: 24, Warnings: 2
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 16:11:14 on Apr 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(44): (vopt-2912) Port 'op' not found in module 'br' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(37): (vopt-2912) Port 'op' not found in module 'alu' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(37): (vopt-2912) Port 'out' not found in module 'alu' (4th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'reset_n' not found in module 'ex_stage' (1st connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'clk' not found in module 'ex_stage' (2nd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'pc_i' not found in module 'ex_stage' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr1_i' not found in module 'id_ex_register' (10th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr2_i' not found in module 'id_ex_register' (11th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_sig_o' (2nd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_op_o' (3rd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'lsu_op_o' (4th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'alu_op_o' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_origin_o' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_dest_o' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'imm_o' (8th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr1_o' (9th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr2_o' (10th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_addr_o' (11th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_sig_o' (12th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'mem_wr_sig_o' (13th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(98): (vopt-2912) Port 'instruction_i' not found in module 'id_stage' (1st connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=21, Warnings=0.
+# Error loading design
+# End time: 16:11:15 on Apr 08,2023, Elapsed time: 0:00:01
+# Errors: 21, Warnings: 2
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 16:12:07 on Apr 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'reset_n' not found in module 'ex_stage' (1st connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'clk' not found in module 'ex_stage' (2nd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'pc_i' not found in module 'ex_stage' (3rd connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr1_i' not found in module 'id_ex_register' (10th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr2_i' not found in module 'id_ex_register' (11th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_sig_o' (2nd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_op_o' (3rd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'lsu_op_o' (4th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'alu_op_o' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_origin_o' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_dest_o' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'imm_o' (8th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr1_o' (9th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr2_o' (10th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_addr_o' (11th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_sig_o' (12th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'mem_wr_sig_o' (13th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(98): (vopt-2912) Port 'instruction_i' not found in module 'id_stage' (1st connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=18, Warnings=0.
+# Error loading design
+# End time: 16:12:08 on Apr 08,2023, Elapsed time: 0:00:01
+# Errors: 18, Warnings: 2
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 16:12:33 on Apr 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(148): (vopt-2912) Port 'pc_i' not found in module 'ex_stage' (1st connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr1_i' not found in module 'id_ex_register' (10th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr2_i' not found in module 'id_ex_register' (11th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_sig_o' (2nd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_op_o' (3rd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'lsu_op_o' (4th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'alu_op_o' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_origin_o' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_dest_o' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'imm_o' (8th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr1_o' (9th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr2_o' (10th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_addr_o' (11th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_sig_o' (12th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'mem_wr_sig_o' (13th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(98): (vopt-2912) Port 'instruction_i' not found in module 'id_stage' (1st connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=16, Warnings=0.
+# Error loading design
+# End time: 16:12:33 on Apr 08,2023, Elapsed time: 0:00:00
+# Errors: 16, Warnings: 2
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 16:13:06 on Apr 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr1_i' not found in module 'id_ex_register' (10th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr2_i' not found in module 'id_ex_register' (11th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_sig_o' (2nd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_op_o' (3rd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'lsu_op_o' (4th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'alu_op_o' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_origin_o' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_dest_o' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'imm_o' (8th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr1_o' (9th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr2_o' (10th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_addr_o' (11th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_sig_o' (12th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'mem_wr_sig_o' (13th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(98): (vopt-2912) Port 'instruction_i' not found in module 'id_stage' (1st connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=15, Warnings=0.
+# Error loading design
+# End time: 16:13:06 on Apr 08,2023, Elapsed time: 0:00:00
+# Errors: 15, Warnings: 2
+# Compile of cpu.v failed with 1 errors.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 1 failed with 1 error.
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 16:15:24 on Apr 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr1_i' not found in module 'id_ex_register' (10th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(115): (vopt-2912) Port 'reg_addr2_i' not found in module 'id_ex_register' (11th connection).
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_sig_o' (2nd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_op_o' (3rd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'lsu_op_o' (4th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'alu_op_o' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_origin_o' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_dest_o' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'imm_o' (8th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr1_o' (9th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr2_o' (10th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_addr_o' (11th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_sig_o' (12th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'mem_wr_sig_o' (13th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(98): (vopt-2912) Port 'instruction_i' not found in module 'id_stage' (1st connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=15, Warnings=0.
+# Error loading design
+# End time: 16:15:24 on Apr 08,2023, Elapsed time: 0:00:00
+# Errors: 15, Warnings: 2
+# Compile of cpu.v failed with 1 errors.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 1 failed with 1 error.
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 16:15:44 on Apr 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_sig_o' (2nd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'br_op_o' (3rd connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'lsu_op_o' (4th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'alu_op_o' (5th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_origin_o' (6th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'data_dest_o' (7th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'imm_o' (8th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr1_o' (9th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_addr2_o' (10th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_addr_o' (11th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'reg_wr_sig_o' (12th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v(21): (vopt-8884) Illegal output port connection for 'mem_wr_sig_o' (13th connection) to reg type. 
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(98): (vopt-2912) Port 'instruction_i' not found in module 'id_stage' (1st connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=13, Warnings=0.
+# Error loading design
+# End time: 16:15:44 on Apr 08,2023, Elapsed time: 0:00:00
+# Errors: 13, Warnings: 3
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 16:16:33 on Apr 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(98): (vopt-2912) Port 'instruction_i' not found in module 'id_stage' (1st connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 16:16:34 on Apr 08,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 2
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# 21 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 16:16:48 on Apr 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(78): (vopt-2685) [TFMPC] - Too few port connections for 'if_stage_inst'.  Expected 5, found 4.
+# ** Warning: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(78): (vopt-2718) [TFMPC] - Missing connection for port 'instruction_i'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
 # Loading work.cpu_tb(fast)
 # Loading work.rom(fast)
 # Loading work.ram(fast)
 # Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
 # Loading work.mux2x32(fast)
 # Loading work.alu(fast)
 # Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
 # Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
 # Loading work.mux3x32(fast)
-# Loading work.pc(fast)
+# Loading work.register_file(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'rs1_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/id_ex_register.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/id_ex_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 115
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'rs2_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/id_ex_register.v(21).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/id_ex_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 115
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'data_origin_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/id_ex_register.v(26).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/id_ex_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 115
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'data_dest_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/id_ex_register.v(27).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/id_ex_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 115
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'data_origin_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_stage_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 148
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_out'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/br.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_stage_inst/br_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'data_dest_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 163
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 163
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(11).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 163
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'lsu_op_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 163
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(21).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 163
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (32) for port 'lsu_op_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_stage_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 188
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 199
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(16).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 199
 add wave -position insertpoint sim:/cpu_tb/*
 add wave -position insertpoint  \
-sim:/cpu_tb/cpu_inst/register_file_inst/registers
-add wave -position insertpoint sim:/cpu_tb/cpu_inst/br_inst/*
+sim:/cpu_tb/cpu_inst/reg_file_inst/registers
 run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
 #    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Causality operation skipped due to absence of debug database file
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/if_id_register_inst/*
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/ex_stage_inst/*
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/id_stage_inst/*
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# Break key hit
-# Break in Module br at /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/exec_unit/br.v line 16
-add wave -position insertpoint sim:/cpu_tb/cpu_inst/br_inst/*
-add wave -position insertpoint sim:/cpu_tb/cpu_inst/controler_inst/*
-restart
 # ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
 # Loading work.cpu_tb(fast)
 # Loading work.rom(fast)
 # Loading work.ram(fast)
 # Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
 # Loading work.mux2x32(fast)
 # Loading work.alu(fast)
 # Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
 # Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
 # Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# Break key hit
-# Simulation stop requested.
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
 # Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'rs1_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/id_ex_register.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/id_ex_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 115
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'rs2_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/id_ex_register.v(21).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/id_ex_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 115
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'data_origin_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/id_ex_register.v(26).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/id_ex_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 115
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'data_dest_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/id_ex_register.v(27).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/id_ex_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 115
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'data_origin_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_stage_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 148
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_out'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/br.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_stage_inst/br_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v Line: 43
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'data_dest_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 163
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 163
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(11).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 163
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'lsu_op_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(20).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 163
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(21).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 163
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (32) for port 'lsu_op_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_stage_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 188
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_i'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(9).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 199
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'reg_wr_addr_o'. The port definition is at: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v(16).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/mem_wb_register_inst File: /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 199
 run -all
-# Break key hit
-# Simulation stop requested.
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# Break key hit
-# Simulation stop requested.
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
+# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
 #    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Compile of controller.v failed with 3 errors.
-# Compile of cpu.v was successful.
-# Compile of pc.v failed with 2 errors.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v failed with 1 errors.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 3 failed with 6 errors.
-# Compile of controller.v failed with 3 errors.
-# Compile of cpu.v was successful.
-# Compile of pc.v failed with 2 errors.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 2 failed with 5 errors.
-# Compile of controller.v failed with 3 errors.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 1 failed with 3 errors.
-# Compile of controller.v failed with 3 errors.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 1 failed with 3 errors.
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-# Warning in wave window restart: (vish-4014) No objects found matching '/cpu_tb/cpu_inst/br_inst/flush_inst'. 
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-add wave -position insertpoint  \
-sim:/cpu_tb/cpu_inst/register_file_inst/registers
-restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v failed with 1 errors.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 1 failed with 1 error.
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
-# Compile of controller.v was successful.
-# Compile of cpu.v was successful.
-# Compile of pc.v was successful.
-# Compile of register_file.v was successful.
-# Compile of ram.v was successful.
-# Compile of rom.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of mux3x32.v was successful.
-# 12 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.controler(fast)
-# Loading work.register_file(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.lsu(fast)
-# Loading work.mux3x32(fast)
-# Loading work.pc(fast)
-# Warning in wave window restart: (vish-4014) No objects found matching '/cpu_tb/cpu_inst/controler_inst/flush_inst_i'. 
-run -all
-# ** Note: $stop    : /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(57)
-#    Time: 15020 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 57
+# Break in Module cpu_tb at /home/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
