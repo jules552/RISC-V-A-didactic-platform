@@ -9,6 +9,7 @@ module ex_stage (
     input reg [31:0] imm_i,
 
     output wire [31:0] new_pc_o,
+    output wire br_taken_o,
     output wire [31:0] pc_plus4_o,
     output wire [31:0] alu_result_o
 );
@@ -44,6 +45,7 @@ module ex_stage (
         .br_op(br_op_i),
         .alu_out(alu_out),
         .new_pc(new_pc_o),
+        .br_taken(br_taken_o),
         .pc_plus4(pc_plus4_o)
     );
 

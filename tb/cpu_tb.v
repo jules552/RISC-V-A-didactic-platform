@@ -4,7 +4,7 @@ module cpu_tb;
 
     // Clock
     reg clk;
-    initial clk = 0;
+    initial clk = 1;
     reg reset_n;
     initial reset_n = 0;
     always #20 clk = ~clk;
@@ -51,7 +51,7 @@ module cpu_tb;
     );
 
 initial begin
-    #20
+    #40
     reset_n = 1;
 
     #15000

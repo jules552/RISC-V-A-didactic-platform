@@ -18,8 +18,8 @@ module cpu (
     // Wire for ID/EX register
     wire [31:0] id_ex_pc;
     wire [31:0] id_ex_imm;
-    wire [4:0] id_ex_rs1;
-    wire [4:0] id_ex_rs2;
+    wire [31:0] id_ex_rs1;
+    wire [31:0] id_ex_rs2;
     wire [2:0] id_ex_br_op;
     wire id_ex_br_sig;
     wire [2:0] id_ex_lsu_op;
@@ -31,7 +31,8 @@ module cpu (
     wire id_ex_mem_wr_sig;
 
     // Wire for EX/MEM register
-    wire [31:0] ex_mem_pc;
+    wire [31:0] ex_mem_new_pc;
+    wire ex_mem_br_taken;
     wire [31:0] ex_mem_pc_plus4;
     wire [31:0] ex_mem_alu_result;
     wire [31:0] ex_mem_rs2;
@@ -66,6 +67,7 @@ module cpu (
     wire mem_wr_enable;
 
     wire [31:0] new_pc;
+    wire br_taken;
     wire [31:0] pc_plus4;
     wire [31:0] alu_result;
 
@@ -80,7 +82,8 @@ module cpu (
         .reset_n(reset_n),
         .clk(clk),
 
-        .new_pc_i(ex_mem_pc),
+        .new_pc_i(ex_mem_new_pc),
+        .br_taken_i(br_taken),
 
         .pc_o(rom_addr)
     );
@@ -149,14 +152,15 @@ module cpu (
     ex_stage ex_stage_inst (
         .pc_i(id_ex_pc),
         .imm_i(id_ex_imm),
-        .rs1_i(rs1),
-        .rs2_i(rs2),
+        .rs1_i(id_ex_rs1),
+        .rs2_i(id_ex_rs2),
         .br_op_i(id_ex_br_op),
         .br_sig_i(id_ex_br_sig),
         .alu_op_i(id_ex_alu_op),
         .data_origin_i(id_ex_data_origin),
 
         .new_pc_o(new_pc),
+        .br_taken_o(br_taken),
         .pc_plus4_o(pc_plus4),
         .alu_result_o(alu_result)
     );
@@ -166,9 +170,10 @@ module cpu (
         .clk(clk),
 
         .new_pc_i(new_pc),
+        .br_taken_i(br_taken),
         .pc_plus4_i(pc_plus4),
         .alu_result_i(alu_result),
-        .rs2_i(rs2),
+        .rs2_i(id_ex_rs2),
         .lsu_op_i(id_ex_lsu_op),
         .data_dest_i(id_ex_data_dest),
         .reg_wr_addr_i(id_ex_reg_wr_addr),
@@ -176,6 +181,7 @@ module cpu (
         .mem_wr_sig_i(id_ex_mem_wr_sig),
 
         .new_pc_o(ex_mem_pc),
+        .br_taken_o(ex_mem_br_taken),
         .pc_plus4_o(ex_mem_pc_plus4),
         .alu_result_o(ex_mem_alu_result),
         .rs2_o(ex_mem_rs2),
@@ -229,8 +235,8 @@ module cpu (
         .clk(clk),
         .reset_n(reset_n),
 
-        .rs1_addr_i(id_ex_rs1),
-        .rs2_addr_i(id_ex_rs2),
+        .rs1_addr_i(reg_addr1),
+        .rs2_addr_i(reg_addr2),
         .wr_data_i(reg_wr_data),
         .wr_addr_i(mem_wb_reg_wr_addr),
         .wr_enable_i(mem_wb_reg_wr_sig),
