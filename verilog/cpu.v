@@ -23,6 +23,8 @@ module cpu (
     wire [2:0] id_ex_br_op;
     wire id_ex_br_sig;
     wire [2:0] id_ex_lsu_op;
+    wire [1:0] id_ex_data_origin;
+    wire [1:0] id_ex_data_dest;
     wire [4:0] id_ex_alu_op;
     wire [4:0] id_ex_reg_wr_addr;
     wire id_ex_reg_wr_sig;
@@ -33,11 +35,10 @@ module cpu (
     wire [31:0] ex_mem_pc_plus4;
     wire [31:0] ex_mem_alu_result;
     wire [31:0] ex_mem_rs2;
-    wire [31:0] ex_mem_lsu_op;
+    wire [2:0] ex_mem_lsu_op;
     wire [1:0] ex_mem_data_dest;
     wire [4:0] ex_mem_reg_wr_addr;
     wire ex_mem_reg_wr_sig;
-    wire ex_mem_mem_wr_sig;
 
     // Wire for MEM/WB register
     wire [31:0] mem_wb_pc_plus4;
@@ -109,13 +110,14 @@ module cpu (
         .reg_addr2_o(reg_addr2),
         .reg_wr_addr_o(reg_wr_addr),
         .reg_wr_sig_o(reg_wr_sig),
-        .mem_wr_sig_o(mem_wr_sig)
+        .mem_wr_sig_o(mem_wr_enable)
     );
 
     id_ex_register id_ex_register_inst (
         .reset_n(reset_n),
         .clk(clk),
 
+        .pc_i(if_id_pc),
         .br_sig_i(br_sig),
         .br_op_i(br_op),
         .alu_op_i(alu_op),
@@ -128,8 +130,7 @@ module cpu (
         .reg_wr_addr_i(reg_wr_addr),
         .reg_wr_sig_i(reg_wr_sig),
         .mem_wr_sig_i(mem_wr_enable),
-
-        .pc_i(if_id_pc),
+        
         .pc_o(id_ex_pc),
         .imm_o(id_ex_imm),
         .rs1_o(id_ex_rs1),
@@ -182,7 +183,7 @@ module cpu (
         .data_dest_o(ex_mem_data_dest),
         .reg_wr_addr_o(ex_mem_reg_wr_addr),
         .reg_wr_sig_o(ex_mem_reg_wr_sig),
-        .mem_wr_sig_o(ex_mem_mem_wr_sig)
+        .mem_wr_sig_o(mem_wr_sig)
     );
 
     mem_stage mem_stage_inst (
@@ -220,6 +221,7 @@ module cpu (
         .alu_result_i(mem_wb_alu_result),
         .mem_rd_data_i(mem_wb_mem_rd_data),
         .data_dest_i(mem_wb_data_dest),
+
         .reg_wr_data_o(reg_wr_data)
     );
 

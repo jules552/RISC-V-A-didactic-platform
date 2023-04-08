@@ -5,16 +5,13 @@ module id_stage (
     output wire [2:0] br_op_o,
     output wire [2:0] lsu_op_o,
     output wire [4:0] alu_op_o,
-
     output wire [1:0] data_origin_o,
     output wire [1:0] data_dest_o,
-
     output wire [31:0] imm_o,
     output wire [4:0] reg_addr1_o,
     output wire [4:0] reg_addr2_o,
     output wire [4:0] reg_wr_addr_o,
     output wire reg_wr_sig_o,
-
     output wire mem_wr_sig_o
 );
 
