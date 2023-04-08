@@ -2,13 +2,10 @@ module ex_stage (
     input wire [31:0] pc_i,
     input wire [31:0] rs1_i,
     input wire [31:0] rs2_i,
-
     input reg br_sig_i,
     input reg [2:0] br_op_i,
     input reg [4:0] alu_op_i,
-
     input reg [1:0] data_origin_i,
-
     input reg [31:0] imm_i,
 
     output wire [31:0] new_pc_o,
