@@ -15,7 +15,7 @@ module br (
 
     always @ (*) begin
         pc_plus4 = pc + 4;
-        new_pc = pc_plus4;
+        new_pc = 0;
         br_taken = 0;
 
         if (br_sig) begin
@@ -64,7 +64,7 @@ module br (
                     new_pc = pc + imm;
                     br_taken = 1;
                 end
-                default: new_pc = pc + 4;
+                default: new_pc = 0;
             endcase
         end
     end
