@@ -1,10 +1,10 @@
 # RISC-V-A-didactic-plateform
 
-The development of this project is on progress...
+The development of this project is in progress...
 
 Here are some of the major milestones of my Bachelor Project.
 
-- [X] Create an unpiplined RV32IM processor using verilog
+- [X] Create an unexplained RV32IM processor using Verilog
 - [ ] Pipeline the existing unpipelined RV32IM Verilog processor in 5 stages
 - [ ] Add support for custom instructions
 - [ ] Create and document the entire project to make it easy to understand how a RISC-V, and in general, 
