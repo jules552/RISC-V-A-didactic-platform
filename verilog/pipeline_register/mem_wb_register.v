@@ -6,14 +6,14 @@ module mem_wb_register (
     input wire [31:0] alu_result_i,
     input wire [31:0] mem_rd_data_i,
     input wire [1:0] data_dest_i,
-    input wire [31:0] reg_wr_addr_i,
+    input wire [4:0] reg_wr_addr_i,
     input wire reg_wr_sig_i,
 
     output wire [31:0] pc_plus4_o,
     output wire [31:0] alu_result_o,
     output wire [31:0] mem_rd_data_o,
     output wire [1:0] data_dest_o,
-    output wire [31:0] reg_wr_addr_o,
+    output wire [4:0] reg_wr_addr_o,
     output wire reg_wr_sig_o
 );
 
@@ -21,7 +21,7 @@ module mem_wb_register (
     reg [31:0] alu_result;
     reg [31:0] mem_rd_data;
     reg [1:0] data_dest;
-    reg [31:0] reg_wr_addr;
+    reg [4:0] reg_wr_addr;
     reg reg_wr_sig;
 
     always @(posedge clk or negedge reset_n) begin

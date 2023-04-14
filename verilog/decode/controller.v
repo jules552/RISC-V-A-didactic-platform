@@ -57,10 +57,10 @@ module controller (
 
         data_origin_o = 0;
         data_dest_o = 0;
+        reg_addr1_o = 0;
+        reg_addr2_o = 0;
+        reg_wr_addr_o = 0;
 
-        reg_addr1_o = rs1;
-        reg_addr2_o = rs2;
-        reg_wr_addr_o = rd;
         reg_wr_sig_o = 1'b0;
         imm_o = 0;
 
@@ -72,6 +72,9 @@ module controller (
                 data_dest_o = ALU;
                 imm_o = imm;
                 reg_wr_sig_o = 1'b1;
+                reg_addr1_o = rs1;
+                reg_addr2_o = rs2;
+                reg_wr_addr_o = rd;
 
                 case (funct3)
                     FUNCT3_ADDI : begin
@@ -119,6 +122,9 @@ module controller (
                 data_origin_o = RS2_RS1;
                 data_dest_o = ALU;
                 reg_wr_sig_o = 1'b1;
+                reg_addr1_o = rs1;
+                reg_addr2_o = rs2;
+                reg_wr_addr_o = rd;
 
                 case (funct7)
                     FUNCT7_ADD: begin
@@ -199,6 +205,9 @@ module controller (
                 data_dest_o = MEM;
                 imm_o = imm;
                 reg_wr_sig_o = 1'b1;
+                reg_addr1_o = rs1;
+                reg_addr2_o = rs2;
+                reg_wr_addr_o = rd;
 
                 case (funct3)
                     FUNCT3_LB : begin
@@ -226,6 +235,9 @@ module controller (
                 data_dest_o = MEM;
                 imm_o = imm_s;
                 mem_wr_sig_o = 1'b1;
+                reg_addr1_o = rs1;
+                reg_addr2_o = rs2;
+                reg_wr_addr_o = rd;
 
                 case (funct3)
                     FUNCT3_SB : begin
@@ -247,6 +259,9 @@ module controller (
                 imm_o = imm_b;
                 reg_wr_sig_o = 1'b1;
                 br_sig_o = 1'b1;
+                reg_addr1_o = rs1;
+                reg_addr2_o = rs2;
+                reg_wr_addr_o = rd;
 
                 case (funct3)
                     FUNCT3_BEQ : begin
@@ -278,6 +293,9 @@ module controller (
                 imm_o = imm;
                 reg_wr_sig_o = 1'b1;
                 br_sig_o = 1'b1;
+                reg_addr1_o = rs1;
+                reg_addr2_o = rs2;
+                reg_wr_addr_o = rd;
 
                 br_op_o = BR_JALR;
             end
@@ -289,6 +307,9 @@ module controller (
                 imm_o = imm_j;
                 reg_wr_sig_o = 1'b1;
                 br_sig_o = 1'b1;
+                reg_addr1_o = rs1;
+                reg_addr2_o = rs2;
+                reg_wr_addr_o = rd;
                 
                 br_op_o = BR_JAL;
             end
@@ -308,6 +329,9 @@ module controller (
                 data_dest_o = ALU;
                 imm_o = imm_u;
                 reg_wr_sig_o = 1'b1;
+                reg_addr1_o = rs1;
+                reg_addr2_o = rs2;
+                reg_wr_addr_o = rd;
             end
 
             OPCODE_SYSTEM : begin

@@ -66,6 +66,8 @@ module cpu (
 
     wire mem_wr_enable;
 
+    wire hazard_detected;
+
     wire [31:0] new_pc;
     wire br_taken;
     wire [31:0] pc_plus4;
@@ -75,6 +77,8 @@ module cpu (
 
     wire [31:0] reg_wr_data;
 
+
+    // Register values
     wire [31:0] rs1;
     wire [31:0] rs2;
 
@@ -101,6 +105,12 @@ module cpu (
 
     id_stage id_stage_inst (
         .instruction_i(if_id_instruction),
+        .ex_reg_wr_addr_i(id_ex_reg_wr_addr),
+        .mem_reg_wr_addr_i(ex_mem_reg_wr_addr),
+        .wb_reg_wr_addr_i(mem_wb_reg_wr_addr),
+        .ex_reg_wr_sig_i(id_ex_reg_wr_sig),
+        .mem_reg_wr_sig_i(ex_mem_reg_wr_sig),
+        .wb_reg_wr_sig_i(mem_wb_reg_wr_sig),
 
         .br_sig_o(br_sig),
         .br_op_o(br_op),
@@ -113,8 +123,10 @@ module cpu (
         .reg_addr2_o(reg_addr2),
         .reg_wr_addr_o(reg_wr_addr),
         .reg_wr_sig_o(reg_wr_sig),
-        .mem_wr_sig_o(mem_wr_enable)
+        .mem_wr_sig_o(mem_wr_enable),
+        .hazard_detected_o(hazard_detected)
     );
+
 
     id_ex_register id_ex_register_inst (
         .reset_n(reset_n),
