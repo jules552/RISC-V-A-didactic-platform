@@ -19,11 +19,52 @@
 # Compile of mux3x32.v was successful.
 # Compile of wb_stage.v was successful.
 # Compile of cpu_tb.v was successful.
-# Compile of hazard_detection_unit.v failed with 4 errors.
-# 22 compiles, 1 failed with 4 errors.
-# ** Error: Acsrfs.
-# 
-#        Unable to replace existing ini file (C:/Users/jules/Documents/RISC-V-A-didactic-plateform/RISC-V.mpf).  File can not be renamed.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim work.cpu_tb
+# vsim work.cpu_tb 
+# Start time: 07:37:34 on Apr 22,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2685) [TFMPC] - Too few port connections for 'if_stage_inst'.  Expected 7, found 6.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2718) [TFMPC] - Missing connection for port 'instruction_i'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.cpu_tb(fast)
+# Load canceled
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim work.cpu_tb
+# End time: 07:38:47 on Apr 22,2023, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 5
+# vsim work.cpu_tb 
+# Start time: 07:38:47 on Apr 22,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Error (suppressible): C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2912) Port 'stall_i' not found in module 'if_stage' (5th connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 07:38:47 on Apr 22,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
 # Compile of cpu.v was successful.
 # Compile of ram.v was successful.
 # Compile of register_file.v was successful.
@@ -49,11 +90,12 @@
 # 22 compiles, 0 failed with no errors.
 vsim work.cpu_tb -voptargs=+acc
 # vsim work.cpu_tb -voptargs="+acc" 
-# Start time: 03:58:04 on Apr 22,2023
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2685) [TFMPC] - Too few port connections for 'if_stage_inst'.  Expected 7, found 6.
+# Start time: 07:39:29 on Apr 22,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2685) [TFMPC] - Too few port connections for 'if_stage_inst'.  Expected 6, found 5.
 # ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2718) [TFMPC] - Missing connection for port 'instruction_i'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
 # Loading work.cpu_tb(fast)
 # Loading work.rom(fast)
 # Loading work.ram(fast)
@@ -76,101 +118,18 @@ vsim work.cpu_tb -voptargs=+acc
 # Loading work.wb_stage(fast)
 # Loading work.mux3x32(fast)
 # Loading work.register_file(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'alu_out'. The port definition is at: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/br.v(5).
-#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_stage_inst/br_inst File: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v Line: 41
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_i'. The port definition is at: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(11).
-#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 186
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_o'. The port definition is at: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(22).
-#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 186
-# Compile of cpu.v was successful.
-# Compile of ram.v was successful.
-# Compile of register_file.v was successful.
-# Compile of rom.v was successful.
-# Compile of controller.v was successful.
-# Compile of id_stage.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of ex_stage.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of if_stage.v was successful.
-# Compile of pc.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mem_stage.v was successful.
-# Compile of ex_mem_register.v was successful.
-# Compile of id_ex_register.v was successful.
-# Compile of if_id_register.v was successful.
-# Compile of mem_wb_register.v was successful.
-# Compile of mux3x32.v was successful.
-# Compile of wb_stage.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of hazard_detection_unit.v was successful.
-# 22 compiles, 0 failed with no errors.
-# Compile of cpu.v was successful.
-# Compile of ram.v was successful.
-# Compile of register_file.v was successful.
-# Compile of rom.v was successful.
-# Compile of controller.v was successful.
-# Compile of id_stage.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of ex_stage.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of if_stage.v was successful.
-# Compile of pc.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mem_stage.v was successful.
-# Compile of ex_mem_register.v was successful.
-# Compile of id_ex_register.v was successful.
-# Compile of if_id_register.v was successful.
-# Compile of mem_wb_register.v was successful.
-# Compile of mux3x32.v was successful.
-# Compile of wb_stage.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of hazard_detection_unit.v was successful.
-# 22 compiles, 0 failed with no errors.
-# Compile of cpu.v was successful.
-# Compile of ram.v was successful.
-# Compile of register_file.v was successful.
-# Compile of rom.v was successful.
-# Compile of controller.v was successful.
-# Compile of id_stage.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of ex_stage.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of if_stage.v was successful.
-# Compile of pc.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mem_stage.v was successful.
-# Compile of ex_mem_register.v was successful.
-# Compile of id_ex_register.v was successful.
-# Compile of if_id_register.v was successful.
-# Compile of mem_wb_register.v was successful.
-# Compile of mux3x32.v was successful.
-# Compile of wb_stage.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of hazard_detection_unit.v was successful.
-# 22 compiles, 0 failed with no errors.
 add wave -position insertpoint sim:/cpu_tb/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: jules  Hostname: Jules-Laptop  ProcessID: 36617
-#           Attempting to use alternate WLF file "./wlfthd1235".
+#           Attempting to use alternate WLF file "./wlft1m0nwc".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfthd1235
+#           Using alternate file: ./wlft1m0nwc
 add wave -position insertpoint  \
 sim:/cpu_tb/cpu_inst/reg_file_inst/registers
 run -all
 # ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
-#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
 # Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
-add wave -position insertpoint  \
-sim:/cpu_tb/cpu_inst/if_id_register_inst/stall_i
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Error (suppressible): C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v(41): (vopt-2912) Port 'alu_out' not found in module 'br' (5th connection).
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
 # Compile of cpu.v was successful.
 # Compile of ram.v was successful.
 # Compile of register_file.v was successful.
@@ -195,14 +154,68 @@ restart
 # Compile of hazard_detection_unit.v was successful.
 # 22 compiles, 0 failed with no errors.
 restart
-# No Design Loaded!
-vsim -voptargs=+acc work.cpu_tb
-# vsim -voptargs="+acc" work.cpu_tb 
-# Start time: 03:58:04 on Apr 22,2023
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2685) [TFMPC] - Too few port connections for 'if_stage_inst'.  Expected 7, found 6.
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2685) [TFMPC] - Too few port connections for 'if_stage_inst'.  Expected 6, found 5.
 # ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2718) [TFMPC] - Missing connection for port 'instruction_i'.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=2.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(187): (vopt-2685) [TFMPC] - Too few port connections for 'ex_mem_register_inst'.  Expected 23, found 22.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(187): (vopt-2718) [TFMPC] - Missing connection for port 'flush_i'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=5.
 # Loading work.cpu_tb(fast)
 # Loading work.rom(fast)
 # Loading work.ram(fast)
@@ -225,46 +238,15 @@ vsim -voptargs=+acc work.cpu_tb
 # Loading work.wb_stage(fast)
 # Loading work.mux3x32(fast)
 # Loading work.register_file(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_i'. The port definition is at: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(11).
-#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 186
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_o'. The port definition is at: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(22).
-#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 186
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: jules  Hostname: Jules-Laptop  ProcessID: 36617
-#           Attempting to use alternate WLF file "./wlft5e5zz9".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft5e5zz9
 run -all
 # ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
-#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
 # Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
-# Compile of cpu.v was successful.
-# Compile of ram.v was successful.
-# Compile of register_file.v was successful.
-# Compile of rom.v was successful.
-# Compile of controller.v was successful.
-# Compile of id_stage.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of ex_stage.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of if_stage.v was successful.
-# Compile of pc.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mem_stage.v was successful.
-# Compile of ex_mem_register.v was successful.
-# Compile of id_ex_register.v was successful.
-# Compile of if_id_register.v was successful.
-# Compile of mem_wb_register.v was successful.
-# Compile of mux3x32.v was successful.
-# Compile of wb_stage.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of hazard_detection_unit.v was successful.
-# 22 compiles, 0 failed with no errors.
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/ex_mem_register_inst/*
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-8009) Loading existing optimized design _opt3
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=5.
 # Loading work.cpu_tb(fast)
 # Loading work.rom(fast)
 # Loading work.ram(fast)
@@ -287,13 +269,9 @@ restart
 # Loading work.wb_stage(fast)
 # Loading work.mux3x32(fast)
 # Loading work.register_file(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_i'. The port definition is at: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(11).
-#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 186
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'lsu_op_o'. The port definition is at: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v(22).
-#    Time: 0 ns  Iteration: 0  Instance: /cpu_tb/cpu_inst/ex_mem_register_inst File: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v Line: 186
 run -all
 # ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
-#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
 # Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
 # Compile of cpu.v was successful.
 # Compile of ram.v was successful.
@@ -321,6 +299,10 @@ run -all
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2685) [TFMPC] - Too few port connections for 'if_stage_inst'.  Expected 6, found 5.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2718) [TFMPC] - Missing connection for port 'instruction_i'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
 # Loading work.cpu_tb(fast)
 # Loading work.rom(fast)
 # Loading work.ram(fast)
@@ -343,39 +325,10 @@ restart
 # Loading work.wb_stage(fast)
 # Loading work.mux3x32(fast)
 # Loading work.register_file(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/cpu_tb/cpu_inst/ex_mem_register_inst/flush_i'. 
 run -all
 # ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
-#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
-add wave -position insertpoint  \
-sim:/cpu_tb/cpu_inst/id_stage_inst/hazard_detection_unit_inst/stall_counter
-restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt3
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.if_stage(fast)
-# Loading work.pc(fast)
-# Loading work.if_id_register(fast)
-# Loading work.id_stage(fast)
-# Loading work.controller(fast)
-# Loading work.hazard_detection_unit(fast)
-# Loading work.id_ex_register(fast)
-# Loading work.ex_stage(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.ex_mem_register(fast)
-# Loading work.mem_stage(fast)
-# Loading work.lsu(fast)
-# Loading work.mem_wb_register(fast)
-# Loading work.wb_stage(fast)
-# Loading work.mux3x32(fast)
-# Loading work.register_file(fast)
-run -all
-# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
-#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
 # Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
 # Compile of cpu.v was successful.
 # Compile of ram.v was successful.
@@ -403,6 +356,8 @@ run -all
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading work.cpu_tb(fast)
 # Loading work.rom(fast)
 # Loading work.ram(fast)
@@ -427,7 +382,7 @@ restart
 # Loading work.register_file(fast)
 run -all
 # ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
-#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
 # Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
 # Compile of cpu.v was successful.
 # Compile of ram.v was successful.
@@ -455,6 +410,8 @@ run -all
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading work.cpu_tb(fast)
 # Loading work.rom(fast)
 # Loading work.ram(fast)
@@ -479,185 +436,5 @@ restart
 # Loading work.register_file(fast)
 run -all
 # ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
-#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
-# Compile of cpu.v was successful.
-# Compile of ram.v was successful.
-# Compile of register_file.v was successful.
-# Compile of rom.v was successful.
-# Compile of controller.v was successful.
-# Compile of id_stage.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of ex_stage.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of if_stage.v was successful.
-# Compile of pc.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mem_stage.v was successful.
-# Compile of ex_mem_register.v was successful.
-# Compile of id_ex_register.v was successful.
-# Compile of if_id_register.v was successful.
-# Compile of mem_wb_register.v was successful.
-# Compile of mux3x32.v was successful.
-# Compile of wb_stage.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of hazard_detection_unit.v failed with 1 errors.
-# 22 compiles, 1 failed with 1 error.
-# Compile of cpu.v was successful.
-# Compile of ram.v was successful.
-# Compile of register_file.v was successful.
-# Compile of rom.v was successful.
-# Compile of controller.v was successful.
-# Compile of id_stage.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of ex_stage.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of if_stage.v was successful.
-# Compile of pc.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mem_stage.v was successful.
-# Compile of ex_mem_register.v was successful.
-# Compile of id_ex_register.v was successful.
-# Compile of if_id_register.v was successful.
-# Compile of mem_wb_register.v was successful.
-# Compile of mux3x32.v was successful.
-# Compile of wb_stage.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of hazard_detection_unit.v was successful.
-# 22 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.if_stage(fast)
-# Loading work.pc(fast)
-# Loading work.if_id_register(fast)
-# Loading work.id_stage(fast)
-# Loading work.controller(fast)
-# Loading work.hazard_detection_unit(fast)
-# Loading work.id_ex_register(fast)
-# Loading work.ex_stage(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.ex_mem_register(fast)
-# Loading work.mem_stage(fast)
-# Loading work.lsu(fast)
-# Loading work.mem_wb_register(fast)
-# Loading work.wb_stage(fast)
-# Loading work.mux3x32(fast)
-# Loading work.register_file(fast)
-run -all
-# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
-#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
-# Compile of cpu.v was successful.
-# Compile of ram.v was successful.
-# Compile of register_file.v was successful.
-# Compile of rom.v was successful.
-# Compile of controller.v was successful.
-# Compile of id_stage.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of ex_stage.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of if_stage.v was successful.
-# Compile of pc.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mem_stage.v was successful.
-# Compile of ex_mem_register.v was successful.
-# Compile of id_ex_register.v was successful.
-# Compile of if_id_register.v was successful.
-# Compile of mem_wb_register.v was successful.
-# Compile of mux3x32.v was successful.
-# Compile of wb_stage.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of hazard_detection_unit.v was successful.
-# 22 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.if_stage(fast)
-# Loading work.pc(fast)
-# Loading work.if_id_register(fast)
-# Loading work.id_stage(fast)
-# Loading work.controller(fast)
-# Loading work.hazard_detection_unit(fast)
-# Loading work.id_ex_register(fast)
-# Loading work.ex_stage(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.ex_mem_register(fast)
-# Loading work.mem_stage(fast)
-# Loading work.lsu(fast)
-# Loading work.mem_wb_register(fast)
-# Loading work.wb_stage(fast)
-# Loading work.mux3x32(fast)
-# Loading work.register_file(fast)
-# Warning in wave window restart: (vish-4014) No objects found matching '/cpu_tb/cpu_inst/id_stage_inst/hazard_detection_unit_inst/stall_counter'. 
-run -all
-# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
-#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
-# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
-# Compile of cpu.v was successful.
-# Compile of ram.v was successful.
-# Compile of register_file.v was successful.
-# Compile of rom.v was successful.
-# Compile of controller.v was successful.
-# Compile of id_stage.v was successful.
-# Compile of alu.v was successful.
-# Compile of br.v was successful.
-# Compile of ex_stage.v was successful.
-# Compile of mux2x32.v was successful.
-# Compile of if_stage.v was successful.
-# Compile of pc.v was successful.
-# Compile of lsu.v was successful.
-# Compile of mem_stage.v was successful.
-# Compile of ex_mem_register.v was successful.
-# Compile of id_ex_register.v was successful.
-# Compile of if_id_register.v was successful.
-# Compile of mem_wb_register.v was successful.
-# Compile of mux3x32.v was successful.
-# Compile of wb_stage.v was successful.
-# Compile of cpu_tb.v was successful.
-# Compile of hazard_detection_unit.v was successful.
-# 22 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.cpu_tb(fast)
-# Loading work.rom(fast)
-# Loading work.ram(fast)
-# Loading work.cpu(fast)
-# Loading work.if_stage(fast)
-# Loading work.pc(fast)
-# Loading work.if_id_register(fast)
-# Loading work.id_stage(fast)
-# Loading work.controller(fast)
-# Loading work.hazard_detection_unit(fast)
-# Loading work.id_ex_register(fast)
-# Loading work.ex_stage(fast)
-# Loading work.mux2x32(fast)
-# Loading work.alu(fast)
-# Loading work.br(fast)
-# Loading work.ex_mem_register(fast)
-# Loading work.mem_stage(fast)
-# Loading work.lsu(fast)
-# Loading work.mem_wb_register(fast)
-# Loading work.wb_stage(fast)
-# Loading work.mux3x32(fast)
-# Loading work.register_file(fast)
-run -all
-# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
-#    Time: 15040 ns  Iteration: 0  Instance: /cpu_tb
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
 # Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58

@@ -65,9 +65,15 @@ module id_ex_register (
             reg_wr_sig <= 1'b0;
             mem_wr_sig <= 1'b0;
         end else if (flush_i || stall_i) begin
+            pc <= 32'b0;
+            rs1 <= 32'b0;
+            rs2 <= 32'b0;
+            br_sig <= 1'b0;
+            br_op <= 3'b0;
+            lsu_op <= 3'b0;
+            alu_op <= ALU_ADD;
             data_origin <= IMM_RS1;
             data_dest <= ALU;
-            alu_op <= ALU_ADD;
             imm <= 32'b0;
             reg_wr_addr <= 5'b0;
             reg_wr_sig <= 1'b0;

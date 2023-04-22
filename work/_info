@@ -52,6 +52,13 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f MIXED_VERSIONS
 R0
 R0
@@ -142,63 +149,65 @@ R3
 R4
 R5
 n@_opt2
-Z7 OL;O;2021.3;73
+OL;O;2021.3;73
 R1
 T_opt3
-!s110 1682130828
-VMi@TVU6;DE?H0=E5eR0Y60
+!s110 1682142995
+VG>kdMO5VOn=kZ:KJ5:KP=2
 R2
-=11-d85ed3e4ae0b-6443478b-376-7d34
+=7-d85ed3e4ae0b-64437713-1ee-85c8
+R0
+!s12b OEM100
 !s124 OEM10U23 
 R4
 R5
 n@_opt3
-R7
+OL;O;2022.4;75
 valu
-Z8 !s110 1682130822
+Z7 !s110 1682142982
 !i10b 1
-!s100 XaX;A]PGV0YBXmV9:3hgl3
-I5[d`2oS]]Y][knh^6o?iD1
-Z9 dC:/Users/jules/Documents/RISC-V-A-didactic-plateform
-Z10 w1680975678
+!s100 FZ9<13UX5Q:8=k]]T=SjL2
+IkMRnGaT0N@3Wl@kh<GKi]1
+Z8 dC:/Users/jules/Documents/RISC-V-A-didactic-plateform
+Z9 w1682141829
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/alu.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/alu.v
-Z11 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/../parameters.vh
-!i122 2951
-L0 1 162
-Z12 VDg1SIo80bB@j0V0VzS_@n1
-Z13 OL;L;2021.3;73
+Z10 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/../parameters.vh
+!i122 3149
+L0 1 163
+Z11 VDg1SIo80bB@j0V0VzS_@n1
+Z12 OL;L;2022.4;75
 r1
 !s85 0
 31
-Z14 !s108 1682130822.000000
+Z13 !s108 1682142982.000000
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/../parameters.vh|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/alu.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/alu.v|
 !i113 0
-Z15 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R5
 vbr
-R8
+R7
 !i10b 1
-!s100 JPa7hj?j0Q_e051FFX?m<1
-IUL:H^MH[WbgATeLLATdJ00
+!s100 KV5_ADmnYJXM7]g2>a>S53
+INhClD`al6V3QK2M04JgXK1
+R8
 R9
-w1682128933
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/br.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/br.v
+R10
+!i122 3150
+L0 1 186
 R11
-!i122 2952
-L0 1 185
 R12
-R13
 r1
 !s85 0
 31
-R14
+R13
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/../parameters.vh|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/br.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/br.v|
 !i113 0
-R15
+R14
 R5
 vcontroler
 !s110 1680879489
@@ -212,7 +221,7 @@ F/home/jules/Documents/RISC-V-A-didactic-plateform/verilog/controller.v
 F/home/jules/Documents/RISC-V-A-didactic-plateform/verilog/parameters.vh
 !i122 1235
 L0 1 439
-R12
+R11
 OL;L;2021.2;73
 r1
 !s85 0
@@ -221,448 +230,449 @@ r1
 !s107 /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/parameters.vh|/home/jules/Documents/RISC-V-A-didactic-plateform/verilog/controller.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/jules/Documents/RISC-V-A-didactic-plateform/verilog/controller.v|
 !i113 0
-R15
+R14
 R5
 vcontroller
-R8
+R7
 !i10b 1
-!s100 ZH]a2dVfnWN=NnDD@>F0o0
-IklJWcJDRD9@iE=?Q_hi`E3
+!s100 l1de@D``J8cX66Rd=?=3i2
+IodFzLWZYLH_17MjSOPFbP2
+R8
 R9
-w1681484203
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/controller.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/controller.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/../parameters.vh
-!i122 2949
-L0 1 463
+!i122 3147
+L0 1 464
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R13
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/../parameters.vh|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/controller.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/controller.v|
 !i113 0
-R15
+R14
 R5
 vcpu
-Z16 !s110 1682130821
+R7
 !i10b 1
-!s100 kn1ChfQzZiF969Z9j=oUI0
-ILEd=BV9cLgTD7J8NN=P<:0
-R9
-w1682128396
+!s100 ::<:0m9=`1kS`]FNSG[6i0
+IQ2hg`z3U`>TKTDdO@ZdM93
+R8
+w1682142213
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v
-!i122 2945
-L0 1 266
+!i122 3143
+L0 1 267
+R11
 R12
-R13
 r1
 !s85 0
 31
-Z17 !s108 1682130821.000000
+R13
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v|
 !i113 0
-R15
+R14
 R5
 vcpu_tb
-R8
+Z15 !s110 1682142983
 !i10b 1
-!s100 fDeJzTO^HWLD<YU<KlMYL1
-IM81N6Ran@0HjcJTiAhPUQ3
+!s100 9C]:nMB@]3lPdU<cD=ilJ2
+I8E0U?@hG;>izf9>BISPkf2
+R8
 R9
-R10
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/../verilog/parameters.vh
-!i122 2965
-L0 1 175
+!i122 3163
+L0 1 176
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+Z16 !s108 1682142983.000000
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/../verilog/parameters.vh|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v|
 !i113 0
-R15
+R14
 R5
 vex_mem_register
-R8
+R15
 !i10b 1
 !s100 8cg;DS>I=PYR1lPoaHZ<a2
 I924Bj]gKLCc>ALZV3Z>jR2
-R9
-w1682129493
+R8
+w1682142617
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v
-!i122 2959
+!i122 3157
 L0 1 79
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R16
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v|
 !i113 0
-R15
+R14
 R5
 vex_stage
-R8
+R7
 !i10b 1
 !s100 PnmM8ZfM@SY]8nIj9JO`n1
 IN87JCRh<Z2Wm`a46;BG`00
-R9
+R8
 w1682129048
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v
-!i122 2953
+!i122 3151
 L0 1 52
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R13
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/ex_stage.v|
 !i113 0
-R15
+R14
 R5
 vhazard_detection_unit
-R8
+R15
 !i10b 1
 !s100 LIZdL_c3IdnWMDkHObHZ^1
 I?>PL7WoLTi9]]ME[8ZhVa1
-R9
+R8
 w1682130446
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/hazard_detection_unit.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/hazard_detection_unit.v
-!i122 2966
+!i122 3164
 L0 1 30
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R16
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/hazard_detection_unit.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/hazard_detection_unit.v|
 !i113 0
-R15
+R14
 R5
 vid_ex_register
-R8
+R15
 !i10b 1
-!s100 KWkREzzXIffg;zM]2VWhi1
-IXTg4Qm[a4:F5EPmUi?U:>0
-R9
-w1682130806
+!s100 3EIgE[lD=Kb`e`c@eDBCa1
+II^CKF?KV`ELVAVch3]Qi?0
+R8
+w1682142965
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/id_ex_register.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/id_ex_register.v
-!i122 2960
-L0 1 102
+FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/../parameters.vh
+!i122 3158
+L0 1 227
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
-!s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/id_ex_register.v|
+R16
+!s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/../parameters.vh|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/id_ex_register.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/id_ex_register.v|
 !i113 0
-R15
+R14
 R5
 vid_stage
-R8
+R7
 !i10b 1
 !s100 XMaDTIjVL9MmTOATTao[J3
 IijASfnn]=kId6O?Jl8JE>0
-R9
+R8
 w1682127747
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v
-!i122 2950
+!i122 3148
 L0 1 59
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R13
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/decode/id_stage.v|
 !i113 0
-R15
+R14
 R5
 vif_id_register
-R8
+R15
 !i10b 1
-!s100 S3ZLm;4<aoBUf9YSNN[Yi3
-I8X8>FRO49boN88NE45z[b1
+!s100 2feN<zgzA;:>4S@FXSM1E2
+IfV4DfhMP?3^KUBUf<5^RB1
+R8
 R9
-w1682128147
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/if_id_register.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/if_id_register.v
-!i122 2961
-L0 1 29
+!i122 3159
+Z17 L0 1 33
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R16
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/if_id_register.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/if_id_register.v|
 !i113 0
-R15
+R14
 R5
 vif_stage
-R8
+R15
 !i10b 1
-!s100 e<6]e2z>o;d@j];0<PaLM2
-Ia?TIYX3KE2;]=RHH31kEM0
-R9
-w1682127871
+!s100 6bLlfRnV`YC6jFm0bB`^O3
+I6S9`ZJR9_13ngIH5OO4=P3
+R8
+w1682141897
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/fetch/if_stage.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/fetch/if_stage.v
-!i122 2955
-L0 1 19
+!i122 3153
+L0 1 18
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R16
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/fetch/if_stage.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/fetch/if_stage.v|
 !i113 0
-R15
+R14
 R5
 vlsu
-R8
+R15
 !i10b 1
-!s100 o<O_O3ndbZQl;0C1nV[3U1
-I>`T=V^SaJ9`zi7m8QO4D33
+!s100 AM[J<9=nSQAnQj9R7k1ab3
+IFnYA_4IK4[d;mB]o=l4KN1
+R8
 R9
-R10
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/lsu.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/lsu.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/../parameters.vh
-!i122 2957
-L0 1 146
+!i122 3155
+L0 1 147
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R16
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/../parameters.vh|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/lsu.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/lsu.v|
 !i113 0
-R15
+R14
 R5
 vmem_stage
-R8
+R15
 !i10b 1
 !s100 7YYBNeW`D8PDHlOUz@8J<2
 IMiGWMDMg<697A=0zQC3O=2
-R9
-R10
+R8
+Z18 w1680975678
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v
-!i122 2958
+!i122 3156
 L0 1 21
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R16
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/memory/mem_stage.v|
 !i113 0
-R15
+R14
 R5
 vmem_wb_register
-R8
+R15
 !i10b 1
 !s100 cIae2iBUYZV<Ym12m>;<`1
 IU?8NZbn5hD_5BhQAeddL13
-R9
+R8
 w1681482871
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v
-!i122 2962
+!i122 3160
 L0 1 51
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R16
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/mem_wb_register.v|
 !i113 0
-R15
+R14
 R5
 vmux2x32
-R8
+R7
 !i10b 1
 !s100 a2d3LQKno8S4bQY4^[fc53
 I:M^@]Mg4EmYZM2aLg0AgI1
-R9
-R10
+R8
+R18
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/mux2x32.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/mux2x32.v
-!i122 2954
+!i122 3152
 L0 1 14
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R13
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/mux2x32.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/mux2x32.v|
 !i113 0
-R15
+R14
 R5
 vmux3x32
-R8
+R15
 !i10b 1
 !s100 jA0@?CzXcJ8TolV?0L[:`1
 IL<PRRN`B;jESm2C:=coMZ0
-R9
-R10
+R8
+R18
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/writeback/mux3x32.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/writeback/mux3x32.v
-!i122 2963
-Z18 L0 1 17
+!i122 3161
+Z19 L0 1 17
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R16
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/writeback/mux3x32.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/writeback/mux3x32.v|
 !i113 0
-R15
+R14
 R5
 vpc
-R8
+R15
 !i10b 1
 !s100 CjoO3KFk=FABj8;P7kNJ<3
 II<b`YNU59o7jb[NhHC;8S2
-R9
+R8
 w1682127968
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/fetch/pc.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/fetch/pc.v
-!i122 2956
+!i122 3154
 L0 1 28
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R16
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/fetch/pc.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/fetch/pc.v|
 !i113 0
-R15
+R14
 R5
 vram
-R16
+R7
 !i10b 1
 !s100 JnGhL9@WknQ@<SNdzoK6Q2
 IN;9QfO5g1iigT?l>>:Uk[3
-R9
-R10
+R8
+R18
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/ram.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/ram.v
-!i122 2946
+!i122 3144
 L0 1 31
+R11
 R12
-R13
 r1
 !s85 0
 31
-R17
+R13
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/ram.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/ram.v|
 !i113 0
-R15
+R14
 R5
 vregister_file
-R8
+R7
 !i10b 1
 !s100 GUhzA>`j:T36<bE2dM1EM0
 If_jIMZ`7o6P;M78cn0lmW2
-R9
-R10
+R8
+R18
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/register_file.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/register_file.v
-!i122 2947
-L0 1 33
+!i122 3145
+R17
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R13
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/register_file.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/register_file.v|
 !i113 0
-R15
+R14
 R5
 vrom
-R8
+R7
 !i10b 1
-!s100 n_h@zRJYE?BgGWniPa9P53
-I03C01>zAnSNA3S?e7l1V?2
-R9
-w1681481418
+!s100 K0o@;MXam_>DFY=ISn@L`2
+I;0g=N`X8z[3lB]k?^25WE0
+R8
+w1682142080
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/rom.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/rom.v
-!i122 2948
+!i122 3146
 L0 1 20
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R13
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/rom.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/rom.v|
 !i113 0
-R15
+R14
 R5
 vwb_stage
-R8
+R15
 !i10b 1
 !s100 1FUGMMU7C0HgTDZSEUln03
 Ioa3JVQWH3BX@dE^8G702o3
-R9
-R10
+R8
+R18
 8C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/writeback/wb_stage.v
 FC:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/writeback/wb_stage.v
-!i122 2964
-R18
+!i122 3162
+R19
+R11
 R12
-R13
 r1
 !s85 0
 31
-R14
+R16
 !s107 C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/writeback/wb_stage.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/writeback/wb_stage.v|
 !i113 0
-R15
+R14
 R5
