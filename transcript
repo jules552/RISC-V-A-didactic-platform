@@ -704,3 +704,1086 @@ view -new wave
 add wave -position insertpoint sim:/cpu_tb/*
 add wave -position insertpoint  \
 sim:/cpu_tb/cpu_inst/reg_file_inst/registers
+add wave -position insertpoint  \
+sim:/cpu_tb/ram_init/mem
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2685) [TFMPC] - Too few port connections for 'if_stage_inst'.  Expected 6, found 5.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2718) [TFMPC] - Missing connection for port 'instruction_i'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2685) [TFMPC] - Too few port connections for 'if_stage_inst'.  Expected 6, found 5.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2718) [TFMPC] - Missing connection for port 'instruction_i'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(187): (vopt-2912) Port 'flush_i' not found in module 'ex_mem_register' (13th connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+run -all
+# No Design Loaded!
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 07:39:29 on Apr 22,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Error (suppressible): C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(188): (vopt-2912) Port 'flush_i' not found in module 'ex_mem_register' (13th connection).
+# ** Error (suppressible): C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2912) Port 'stall_i' not found in module 'if_stage' (5th connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=3, Warnings=2.
+# Error loading design
+# End time: 08:35:57 on Apr 22,2023, Elapsed time: 0:56:28
+# Errors: 3, Warnings: 4
+# Load canceled
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.cpu_tb
+# vsim -voptargs="+acc" work.cpu_tb 
+# Start time: 08:36:58 on Apr 22,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2685) [TFMPC] - Too few port connections for 'if_stage_inst'.  Expected 6, found 5.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2718) [TFMPC] - Missing connection for port 'instruction_i'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: jules  Hostname: Jules-Laptop  ProcessID: 36617
+#           Attempting to use alternate WLF file "./wlfts0e5f2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfts0e5f2
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/ex_stage_inst/alu_inst/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/if_stage_inst/*
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/id_stage_inst/*
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/ex_stage_inst/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2685) [TFMPC] - Too few port connections for 'if_stage_inst'.  Expected 6, found 5.
+# ** Warning: C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v(85): (vopt-2718) [TFMPC] - Missing connection for port 'stall_i'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+# Warning in wave window restart: (vish-4014) No objects found matching '/cpu_tb/cpu_inst/if_stage_inst/instruction_i'. 
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/if_id_register_inst/*
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/id_ex_register_inst/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+add wave -position insertpoint sim:/cpu_tb/cpu_inst/ex_mem_register_inst/*
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+# Compile of cpu.v was successful.
+# Compile of ram.v was successful.
+# Compile of register_file.v was successful.
+# Compile of rom.v was successful.
+# Compile of controller.v was successful.
+# Compile of id_stage.v was successful.
+# Compile of alu.v was successful.
+# Compile of br.v was successful.
+# Compile of ex_stage.v was successful.
+# Compile of mux2x32.v was successful.
+# Compile of if_stage.v was successful.
+# Compile of pc.v was successful.
+# Compile of lsu.v was successful.
+# Compile of mem_stage.v was successful.
+# Compile of ex_mem_register.v was successful.
+# Compile of id_ex_register.v was successful.
+# Compile of if_id_register.v was successful.
+# Compile of mem_wb_register.v was successful.
+# Compile of mux3x32.v was successful.
+# Compile of wb_stage.v was successful.
+# Compile of cpu_tb.v was successful.
+# Compile of hazard_detection_unit.v was successful.
+# 22 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58
+add wave -position insertpoint  \
+sim:/cpu_tb/ram_init/mem
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt3
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.cpu_tb(fast)
+# Loading work.rom(fast)
+# Loading work.ram(fast)
+# Loading work.cpu(fast)
+# Loading work.if_stage(fast)
+# Loading work.pc(fast)
+# Loading work.if_id_register(fast)
+# Loading work.id_stage(fast)
+# Loading work.controller(fast)
+# Loading work.hazard_detection_unit(fast)
+# Loading work.id_ex_register(fast)
+# Loading work.ex_stage(fast)
+# Loading work.mux2x32(fast)
+# Loading work.alu(fast)
+# Loading work.br(fast)
+# Loading work.ex_mem_register(fast)
+# Loading work.mem_stage(fast)
+# Loading work.lsu(fast)
+# Loading work.mem_wb_register(fast)
+# Loading work.wb_stage(fast)
+# Loading work.mux3x32(fast)
+# Loading work.register_file(fast)
+run -all
+# ** Note: $stop    : C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v(58)
+#    Time: 15040 ms  Iteration: 0  Instance: /cpu_tb
+# Break in Module cpu_tb at C:/Users/jules/Documents/RISC-V-A-didactic-plateform/tb/cpu_tb.v line 58

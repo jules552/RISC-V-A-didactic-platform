@@ -14,11 +14,11 @@ always @ (posedge clk or negedge reset_n) begin
     if (!reset_n) begin
         pc_reg = 0;
     end
-    else if (stall) begin
-        pc_reg = pc_reg;
-    end
     else if (br_taken) begin
         pc_reg = new_pc;
+    end
+    else if (stall) begin
+        pc_reg = pc_reg;
     end
     else begin
         pc_reg = pc_reg + 4;

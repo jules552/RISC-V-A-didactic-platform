@@ -49,6 +49,18 @@ module ex_mem_register (
             reg_wr_addr <= 0;
             reg_wr_sig <= 0;
             mem_wr_sig <= 0;
+        end else if (br_taken) begin
+            new_pc <= 0;
+            br_taken <= 0;
+            alu_result <= 0;
+            rs2 <= 0;
+            pc_plus4 <= 0;
+            data_dest <= 0;
+            lsu_op <= 0;
+            new_pc <= 0;
+            reg_wr_addr <= 0;
+            reg_wr_sig <= 0;
+            mem_wr_sig <= 0;
         end else begin
             new_pc <= new_pc_i;
             br_taken <= br_taken_i;
