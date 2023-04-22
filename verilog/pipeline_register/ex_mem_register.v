@@ -25,6 +25,7 @@ module ex_mem_register (
     output wire mem_wr_sig_o
 );
 
+    wire flush;
     reg [31:0] new_pc;
     reg br_taken;
     reg [31:0] pc_plus4;
@@ -35,6 +36,10 @@ module ex_mem_register (
     reg [4:0] reg_wr_addr;
     reg reg_wr_sig;
     reg mem_wr_sig;
+
+    // We should flush the registers if the last instruction
+    // was a branch that was taken, that's why we have flush =
+    assign flush = br_taken;
 
     always @(posedge clk or negedge reset_n) begin
         if (!reset_n) begin
@@ -49,7 +54,7 @@ module ex_mem_register (
             reg_wr_addr <= 0;
             reg_wr_sig <= 0;
             mem_wr_sig <= 0;
-        end else if (br_taken) begin
+        end else if (flush) begin
             new_pc <= 0;
             br_taken <= 0;
             alu_result <= 0;
