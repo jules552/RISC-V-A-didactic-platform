@@ -16,15 +16,8 @@ always @(*) begin : read
 end
 
 always @(posedge clk or negedge reset_n) begin : ram
-    integer i;
-    if (!reset_n) begin
-        for (i = 0; i < 1024; i = i+1) begin
-            mem[i] <= 0;
-        end
-    end else begin
-        if (wr_sig) begin
-            mem[addr10] <= wr_data;
-        end
+    if (wr_sig) begin
+        mem[addr10] <= wr_data;
     end
 end
 

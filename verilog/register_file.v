@@ -17,15 +17,13 @@ module register_file (
 
     // Writes need to be synchronous to the clock
     always @ (posedge clk or negedge reset_n) begin : write_registers
-        integer i;
         if (!reset_n) begin
-            for (i = 0; i < 32; i = i+1) begin
-                registers[i] <= 0;
-            end
-        end 
-        else if (wr_enable_i) begin
-            if (wr_addr_i != 0) begin
-                registers[wr_addr_i] <= wr_data_i;
+            registers[0] <= 0;
+        end else begin
+            if (wr_enable_i) begin
+                if (wr_addr_i != 0) begin
+                    registers[wr_addr_i] <= wr_data_i;
+                end
             end
         end
     end
