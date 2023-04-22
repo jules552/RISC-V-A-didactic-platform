@@ -3,6 +3,7 @@ module if_stage (
     input wire [31:0] new_pc_i,
     input wire br_taken_i,
     input wire [31:0] instruction_i,
+    input wire stall_i,
     output wire [31:0] pc_o
 );
 
@@ -11,6 +12,7 @@ module if_stage (
         .clk(clk),
         .new_pc(new_pc_i),
         .br_taken(br_taken_i),
+        .stall(stall_i),
         .pc(pc_o)
     );
 

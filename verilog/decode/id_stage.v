@@ -1,4 +1,6 @@
 module id_stage (
+    input wire clk,
+    input wire reset_n,
     input wire [31:0] instruction_i,
     input wire [4:0] ex_reg_wr_addr_i,
     input wire [4:0] mem_reg_wr_addr_i,
@@ -19,7 +21,7 @@ module id_stage (
     output wire [4:0] reg_wr_addr_o,
     output wire reg_wr_sig_o,
     output wire mem_wr_sig_o,
-    output wire hazard_detected_o
+    output wire stall_o
 );
 
     controller controller_inst (
@@ -40,6 +42,8 @@ module id_stage (
     );
 
     hazard_detection_unit hazard_detection_unit_inst (
+        .clk(clk),
+        .reset_n(reset_n),
         .reg_rs1_addr_i(reg_addr1_o),
         .reg_rs2_addr_i(reg_addr2_o),
         .ex_reg_wr_addr_i(ex_reg_wr_addr_i),
@@ -49,7 +53,7 @@ module id_stage (
         .mem_reg_wr_sig_i(mem_reg_wr_sig_i),
         .wb_reg_wr_sig_i(wb_reg_wr_sig_i),
 
-        .hazard_detected_o(hazard_detected_o)
+        .stall_o(stall_o)
     );
 
 endmodule

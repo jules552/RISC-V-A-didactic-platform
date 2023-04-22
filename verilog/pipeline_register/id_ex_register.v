@@ -15,6 +15,7 @@ module id_ex_register (
     input wire [4:0] reg_wr_addr_i,
     input wire reg_wr_sig_i,
     input wire mem_wr_sig_i,
+    input wire stall_i,
 
     output wire [31:0] pc_o,
     output wire [31:0] rs1_o,
@@ -60,7 +61,7 @@ module id_ex_register (
             reg_wr_addr <= 5'b0;
             reg_wr_sig <= 1'b0;
             mem_wr_sig <= 1'b0;
-        end else begin
+        end else if (!stall_i)begin
             pc <= pc_i;
             rs1 <= rs1_i;
             rs2 <= rs2_i;
@@ -74,6 +75,13 @@ module id_ex_register (
             reg_wr_addr <= reg_wr_addr_i;
             reg_wr_sig <= reg_wr_sig_i;
             mem_wr_sig <= mem_wr_sig_i;
+        end else begin // stall condition
+            data_origin <= 2'b0;
+            data_dest <= 2'b0;
+            imm <= 32'b0;
+            reg_wr_addr <= 5'b0;
+            reg_wr_sig <= 1'b0;
+            mem_wr_sig <= 1'b0;
         end
     end
 

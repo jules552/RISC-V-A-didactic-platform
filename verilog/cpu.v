@@ -66,7 +66,7 @@ module cpu (
 
     wire mem_wr_enable;
 
-    wire hazard_detected;
+    wire stall;
 
     wire [31:0] new_pc;
     wire br_taken;
@@ -83,27 +83,32 @@ module cpu (
     wire [31:0] rs2;
 
     if_stage if_stage_inst (
-        .reset_n(reset_n),
         .clk(clk),
+        .reset_n(reset_n),
 
         .new_pc_i(ex_mem_new_pc),
         .br_taken_i(ex_mem_br_taken),
+        .stall_i(stall),
 
         .pc_o(rom_addr)
     );
 
     if_id_register if_id_register_inst (
-        .reset_n(reset_n),
         .clk(clk),
+        .reset_n(reset_n),
 
         .instruction_i(instruction),
         .pc_i(rom_addr),
+        .stall_i(stall),
 
         .instruction_o(if_id_instruction),
         .pc_o(if_id_pc)
     );
 
     id_stage id_stage_inst (
+        .clk(clk),
+        .reset_n(reset_n),
+
         .instruction_i(if_id_instruction),
         .ex_reg_wr_addr_i(id_ex_reg_wr_addr),
         .mem_reg_wr_addr_i(ex_mem_reg_wr_addr),
@@ -124,13 +129,13 @@ module cpu (
         .reg_wr_addr_o(reg_wr_addr),
         .reg_wr_sig_o(reg_wr_sig),
         .mem_wr_sig_o(mem_wr_enable),
-        .hazard_detected_o(hazard_detected)
+        .stall_o(stall)
     );
 
 
     id_ex_register id_ex_register_inst (
-        .reset_n(reset_n),
         .clk(clk),
+        .reset_n(reset_n),
 
         .pc_i(if_id_pc),
         .br_sig_i(br_sig),
@@ -145,6 +150,7 @@ module cpu (
         .reg_wr_addr_i(reg_wr_addr),
         .reg_wr_sig_i(reg_wr_sig),
         .mem_wr_sig_i(mem_wr_enable),
+        .stall_i(stall),
         
         .pc_o(id_ex_pc),
         .imm_o(id_ex_imm),
@@ -178,8 +184,8 @@ module cpu (
     );
 
     ex_mem_register ex_mem_register_inst (
-        .reset_n(reset_n),
         .clk(clk),
+        .reset_n(reset_n),
 
         .new_pc_i(new_pc),
         .br_taken_i(br_taken),
@@ -216,8 +222,8 @@ module cpu (
     );
 
     mem_wb_register mem_wb_register_inst (
-        .reset_n(reset_n),
         .clk(clk),
+        .reset_n(reset_n),
 
         .pc_plus4_i(ex_mem_pc_plus4),
         .alu_result_i(ex_mem_alu_result),

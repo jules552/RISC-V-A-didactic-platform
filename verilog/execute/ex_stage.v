@@ -43,7 +43,7 @@ module ex_stage (
         .imm(imm_i),
         .br_sig(br_sig_i),
         .br_op(br_op_i),
-        .alu_out(alu_out),
+        .alu_result(alu_result_o),
         .new_pc(new_pc_o),
         .br_taken(br_taken_o),
         .pc_plus4(pc_plus4_o)

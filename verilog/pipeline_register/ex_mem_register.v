@@ -8,7 +8,7 @@ module ex_mem_register (
     input wire [31:0] alu_result_i,
     input wire [31:0] rs2_i,
     input wire [1:0] data_dest_i,
-    input wire [3:0] lsu_op_i,
+    input wire [2:0] lsu_op_i,
     input wire [4:0] reg_wr_addr_i,
     input wire reg_wr_sig_i,
     input wire mem_wr_sig_i,
@@ -19,7 +19,7 @@ module ex_mem_register (
     output wire [31:0] alu_result_o,
     output wire [31:0] rs2_o,
     output wire [1:0] data_dest_o,
-    output wire [3:0] lsu_op_o,
+    output wire [2:0] lsu_op_o,
     output wire [4:0] reg_wr_addr_o,
     output wire reg_wr_sig_o,
     output wire mem_wr_sig_o
@@ -31,7 +31,7 @@ module ex_mem_register (
     reg [31:0] alu_result;
     reg [31:0] rs2;
     reg [1:0] data_dest;
-    reg [3:0] lsu_op;
+    reg [2:0] lsu_op;
     reg [4:0] reg_wr_addr;
     reg reg_wr_sig;
     reg mem_wr_sig;

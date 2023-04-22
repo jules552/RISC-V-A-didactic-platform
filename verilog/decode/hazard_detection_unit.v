@@ -1,4 +1,6 @@
 module hazard_detection_unit (
+    input wire clk,
+    input wire reset_n,
     input wire [4:0] reg_rs1_addr_i,
     input wire [4:0] reg_rs2_addr_i,
     input wire [4:0] ex_reg_wr_addr_i,
@@ -7,7 +9,7 @@ module hazard_detection_unit (
     input wire ex_reg_wr_sig_i,
     input wire mem_reg_wr_sig_i,
     input wire wb_reg_wr_sig_i,
-    output wire hazard_detected_o
+    output wire stall_o
 );
 
     wire ex_hazard;
@@ -24,5 +26,5 @@ module hazard_detection_unit (
     assign wb_hazard = wb_reg_wr_sig_i && (wb_reg_wr_addr_i != 5'd0) && (reg_rs1_addr_i == wb_reg_wr_addr_i || reg_rs2_addr_i == wb_reg_wr_addr_i);
 
     // If any hazard is detected, then the hazard_detected_o signal is asserted
-    assign hazard_detected_o = ex_hazard || mem_hazard || wb_hazard;
+    assign stall_o = ex_hazard || mem_hazard || wb_hazard;
 endmodule
