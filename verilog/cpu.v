@@ -100,6 +100,7 @@ module cpu (
         .instruction_i(instruction),
         .pc_i(rom_addr),
         .stall_i(stall),
+        .flush_i(br_taken),
 
         .instruction_o(if_id_instruction),
         .pc_o(if_id_pc)
@@ -151,6 +152,7 @@ module cpu (
         .reg_wr_sig_i(reg_wr_sig),
         .mem_wr_sig_i(mem_wr_enable),
         .stall_i(stall),
+        .flush_i(br_taken),
         
         .pc_o(id_ex_pc),
         .imm_o(id_ex_imm),
@@ -197,6 +199,7 @@ module cpu (
         .reg_wr_addr_i(id_ex_reg_wr_addr),
         .reg_wr_sig_i(id_ex_reg_wr_sig),
         .mem_wr_sig_i(id_ex_mem_wr_sig),
+        .flush_i(br_taken),
 
         .new_pc_o(ex_mem_new_pc),
         .br_taken_o(ex_mem_br_taken),

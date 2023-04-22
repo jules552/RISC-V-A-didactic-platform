@@ -12,6 +12,7 @@ module ex_mem_register (
     input wire [4:0] reg_wr_addr_i,
     input wire reg_wr_sig_i,
     input wire mem_wr_sig_i,
+    input wire flush_i,
 
     output wire [31:0] new_pc_o,
     output wire br_taken_o,
@@ -49,6 +50,17 @@ module ex_mem_register (
             reg_wr_addr <= 0;
             reg_wr_sig <= 0;
             mem_wr_sig <= 0;
+        end else if (flush_i) begin
+            new_pc <= 32'b0;
+            br_taken <= 1'b0;
+            alu_result <= 32'b0;
+            rs2 <= 32'b0;
+            pc_plus4 <= 32'b0;
+            data_dest <= 2'b0;
+            lsu_op <= 3'b0;
+            reg_wr_addr <= 5'b0;
+            reg_wr_sig <= 1'b0;
+            mem_wr_sig <= 1'b0;
         end else begin
             new_pc <= new_pc_i;
             br_taken <= br_taken_i;

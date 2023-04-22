@@ -103,6 +103,7 @@ localparam FUNCT3_REM = 3'b110;
 localparam FUNCT3_REMU = 3'b111;
 
 localparam FUNCT7_MUL_DIV_REM = 7'b0000001;
+
 // ORIGIN DATA
 localparam RS2_RS1 = 2'b00;
 localparam IMM_RS1 = 2'b10;
