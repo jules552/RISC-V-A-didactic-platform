@@ -77,6 +77,8 @@ module cpu (
 
     wire [31:0] reg_wr_data;
 
+    wire flush;
+
 
     // Register values
     wire [31:0] rs1;
@@ -100,11 +102,11 @@ module cpu (
         .instruction_i(instruction),
         .pc_i(rom_addr),
         .stall_i(stall),
-        .flush_i(ex_mem_br_taken),
+        .flush_i(flush),
 
         .instruction_o(if_id_instruction),
         .pc_o(if_id_pc)
-    );
+);
 
     id_stage id_stage_inst (
         .clk(clk),
@@ -152,7 +154,7 @@ module cpu (
         .reg_wr_sig_i(reg_wr_sig),
         .mem_wr_sig_i(mem_wr_enable),
         .stall_i(stall),
-        .flush_i(ex_mem_br_taken),
+        .flush_i(flush),
         
         .pc_o(id_ex_pc),
         .imm_o(id_ex_imm),
@@ -199,6 +201,7 @@ module cpu (
         .reg_wr_addr_i(id_ex_reg_wr_addr),
         .reg_wr_sig_i(id_ex_reg_wr_sig),
         .mem_wr_sig_i(id_ex_mem_wr_sig),
+        .flush_i(flush),
 
         .new_pc_o(ex_mem_new_pc),
         .br_taken_o(ex_mem_br_taken),
@@ -263,6 +266,15 @@ module cpu (
 
         .rs1_o(rs1),
         .rs2_o(rs2)
+    );
+
+    flush_controller flush_controller_inst (
+        .clk(clk),
+        .reset_n(reset_n),
+
+        .br_taken_i(br_taken),
+
+        .flush_o(flush)
     );
     
 endmodule
