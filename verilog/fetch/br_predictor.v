@@ -1,6 +1,7 @@
 module br_predictor (
     input wire reset_n,
-    input wire clk, // Add the clock signal
+    input wire clk,
+
     input wire [31:0] instruction_i,
     input wire [31:0] pc_i,
     input wire miss_pred_i,
@@ -23,8 +24,8 @@ module br_predictor (
     reg br_pred;
     reg [31:0] new_pc_pred;
 
-    reg [GH_SIZE-1:0] global_history; // Global history register
-    reg [1:0] PHT [0:PHT_SIZE-1];      // Pattern history table
+    reg [GH_SIZE-1:0] global_history;
+    reg [1:0] PHT [0:PHT_SIZE-1];
 
     assign opcode = instruction_i[6:0];
     assign funct3 = instruction_i[14:12];
