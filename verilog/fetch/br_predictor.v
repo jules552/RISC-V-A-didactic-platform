@@ -1,6 +1,6 @@
 module br_predictor (
     input wire reset_n,
-
+    input wire clk, // Add the clock signal
     input wire [31:0] instruction_i,
     input wire [31:0] pc_i,
     input wire miss_pred_i,
@@ -8,10 +8,11 @@ module br_predictor (
     output wire br_pred_o,
     output wire [31:0] new_pc_pred_o
 );
-    // For the moment the branch predictor only predict that the branch will be taken
-    // but before that it checks if the instruction is a conditional branch
     `include "../parameters.vh"
 
+    // Parameters for the two-level adaptive branch predictor
+    localparam PHT_SIZE = 64;  // Pattern history table size
+    localparam GH_SIZE = 6;      // Global history register size
 
     wire [6:0] opcode;
     wire [2:0] funct3;
@@ -21,6 +22,9 @@ module br_predictor (
     reg is_branch;
     reg br_pred;
     reg [31:0] new_pc_pred;
+
+    reg [GH_SIZE-1:0] global_history; // Global history register
+    reg [1:0] PHT [0:PHT_SIZE-1];      // Pattern history table
 
     assign opcode = instruction_i[6:0];
     assign funct3 = instruction_i[14:12];
@@ -73,17 +77,34 @@ module br_predictor (
         endcase
     end
 
-    always @ (*) begin
-        if (!reset_n) begin
-            br_pred = 1'b0;
-        end else begin
-            if (miss_pred_i) begin
-                br_pred = ~br_pred;
-            end else begin
-                br_pred = br_pred;
+    // Update the branch predictor based on the actual outcome of the branch
+    always @(posedge clk) begin : predict_branch
+        if (!reset_n) begin : reset_pht_and_ghr
+            integer i;
+            global_history <= {GH_SIZE{1'b0}};
+            for (i = 0; i < PHT_SIZE; i = i + 1) begin
+                PHT[i] <= 2'b11; // Initialize the PHT to strongly taken
             end
+        end else if (is_branch) begin
+            if (miss_pred_i) begin
+                if (PHT[global_history] > 2'b00) begin
+                    PHT[global_history] <= PHT[global_history] - 1'b1;
+                end
+            end else begin
+                if (PHT[global_history] < 2'b11) begin
+                    PHT[global_history] <= PHT[global_history] + 1'b1;
+                end
+            end
+            // Shift in the outcome of the branch into the global history register
+            global_history <= {global_history[GH_SIZE-2:0], miss_pred_i};
         end
     end
+
+
+    always @ (*) begin : update_pht_ghr
+        br_pred = PHT[global_history][1];
+    end
+
 
     assign br_pred_o = is_branch ? br_pred : 1'b0;
     assign new_pc_pred_o = new_pc_pred;

@@ -29,6 +29,7 @@ module if_stage (
     );
 
     br_predictor br_predictor_inst (
+        .clk(clk),
         .reset_n(reset_n),
 
         .instruction_i(instruction_i),
