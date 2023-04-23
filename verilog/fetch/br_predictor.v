@@ -1,4 +1,6 @@
 module br_predictor (
+    input wire reset_n,
+
     input wire [31:0] instruction_i,
     input wire [31:0] pc_i,
     input wire miss_pred_i,
@@ -10,11 +12,13 @@ module br_predictor (
     // but before that it checks if the instruction is a conditional branch
     `include "../parameters.vh"
 
+
     wire [6:0] opcode;
     wire [2:0] funct3;
     wire [31:0] imm_b;
     wire [31:0] imm_j;
 
+    reg is_branch;
     reg br_pred;
     reg [31:0] new_pc_pred;
 
@@ -24,42 +28,41 @@ module br_predictor (
     assign imm_j = {{11{instruction_i[31]}}, instruction_i[31], instruction_i[19:12], instruction_i[20], instruction_i[30:21], 1'b0};
 
     always @ (*) begin
+        is_branch = 1'b0;
+        new_pc_pred = pc_i + 4;
+
         case(opcode)
             OPCODE_BRANCH : begin
                 case(funct3)
                     FUNCT3_BEQ : begin
-                        br_pred = 1'b1;
+                        is_branch = 1'b1;
                         new_pc_pred = pc_i + imm_b;
                     end
                     FUNCT3_BNE : begin
-                        br_pred = 1'b1;
+                        is_branch = 1'b1;
                         new_pc_pred = pc_i + imm_b;
                     end
                     FUNCT3_BLT : begin
-                        br_pred = 1'b1;
+                        is_branch = 1'b1;
                         new_pc_pred = pc_i + imm_b;
                     end
                     FUNCT3_BGE : begin
-                        br_pred = 1'b1;
+                        is_branch = 1'b1;
                         new_pc_pred = pc_i + imm_b;
                     end
                     FUNCT3_BLTU : begin
-                        br_pred = 1'b1;
+                        is_branch = 1'b1;
                         new_pc_pred = pc_i + imm_b;
                     end
                     FUNCT3_BGEU : begin
-                        br_pred = 1'b1;
+                        is_branch = 1'b1;
                         new_pc_pred = pc_i + imm_b;
-                    end
-                    default : begin
-                        br_pred = 1'b0;
-                        new_pc_pred = pc_i + 4;
                     end
                 endcase
             end
 
             OPCODE_JAL : begin
-                br_pred = 1'b1;
+                is_branch = 1'b1;
                 new_pc_pred = pc_i + imm_j;
             end
             /**
@@ -67,14 +70,22 @@ module br_predictor (
             * and the branch predictor cannot know the value of rs1 because it could
             * be modified by a previous instruction that hasn't been written back yet
             **/
-            default : begin
-                br_pred = 1'b0;
-                new_pc_pred = pc_i + 4;
-            end
         endcase
     end
 
-    assign br_pred_o = br_pred;
+    always @ (*) begin
+        if (!reset_n) begin
+            br_pred = 1'b0;
+        end else begin
+            if (miss_pred_i) begin
+                br_pred = ~br_pred;
+            end else begin
+                br_pred = br_pred;
+            end
+        end
+    end
+
+    assign br_pred_o = is_branch ? br_pred : 1'b0;
     assign new_pc_pred_o = new_pc_pred;
 
 endmodule

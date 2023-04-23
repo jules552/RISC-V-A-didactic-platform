@@ -4,6 +4,7 @@ module br (
     input wire br_sig,
     input wire [31:0] alu_result,
     input wire [2:0] br_op,
+
     output reg [31:0] new_pc,
     output reg [31:0] pc_plus4,
     output reg br_taken
