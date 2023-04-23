@@ -15,6 +15,8 @@ module id_ex_register (
     input wire [4:0] reg_wr_addr_i,
     input wire reg_wr_sig_i,
     input wire mem_wr_sig_i,
+    input wire br_pred_i,
+    input wire [31:0] new_pc_pred_i,
     input wire stall_i,
     input wire flush_i,
 
@@ -30,7 +32,9 @@ module id_ex_register (
     output wire [31:0] imm_o,
     output wire [4:0] reg_wr_addr_o,
     output wire reg_wr_sig_o,
-    output wire mem_wr_sig_o
+    output wire mem_wr_sig_o,
+    output wire br_pred_o,
+    output wire [31:0] new_pc_pred_o
 );
 
     `include "../parameters.vh"
@@ -48,6 +52,8 @@ module id_ex_register (
     reg [4:0] reg_wr_addr;
     reg reg_wr_sig;
     reg mem_wr_sig;
+    reg br_pred;
+    reg [31:0] new_pc_pred;
 
     always @(posedge clk or negedge reset_n) begin
         if (!reset_n) begin
@@ -64,6 +70,8 @@ module id_ex_register (
             reg_wr_addr <= 5'b0;
             reg_wr_sig <= 1'b0;
             mem_wr_sig <= 1'b0;
+            br_pred <= 1'b0;
+            new_pc_pred <= 32'b0;
         end else if (flush_i || stall_i) begin
             pc <= 32'b0;
             rs1 <= 32'b0;
@@ -78,6 +86,8 @@ module id_ex_register (
             reg_wr_addr <= 5'b0;
             reg_wr_sig <= 1'b0;
             mem_wr_sig <= 1'b0;
+            br_pred <= 1'b0;
+            new_pc_pred <= 32'b0;
         end else begin
             pc <= pc_i;
             rs1 <= rs1_i;
@@ -92,6 +102,8 @@ module id_ex_register (
             reg_wr_addr <= reg_wr_addr_i;
             reg_wr_sig <= reg_wr_sig_i;
             mem_wr_sig <= mem_wr_sig_i;
+            br_pred <= br_pred_i;
+            new_pc_pred <= new_pc_pred_i;
         end
     end
 
@@ -108,5 +120,7 @@ module id_ex_register (
     assign reg_wr_addr_o = reg_wr_addr;
     assign reg_wr_sig_o = reg_wr_sig;
     assign mem_wr_sig_o = mem_wr_sig;
+    assign br_pred_o = br_pred;
+    assign new_pc_pred_o = new_pc_pred;
 
 endmodule

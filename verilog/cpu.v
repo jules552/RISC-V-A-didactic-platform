@@ -14,6 +14,8 @@ module cpu (
     // Wire for IF/ID register
     wire [31:0] if_id_instruction;
     wire [31:0] if_id_pc;
+    wire if_id_br_pred;
+    wire [31:0] if_id_new_pc_pred;
 
     // Wire for ID/EX register
     wire [31:0] id_ex_pc;
@@ -29,6 +31,8 @@ module cpu (
     wire [4:0] id_ex_reg_wr_addr;
     wire id_ex_reg_wr_sig;
     wire id_ex_mem_wr_sig;
+    wire id_ex_br_pred;
+    wire [31:0] id_ex_new_pc_pred;
 
     // Wire for EX/MEM register
     wire [31:0] ex_mem_new_pc;
@@ -40,6 +44,9 @@ module cpu (
     wire [1:0] ex_mem_data_dest;
     wire [4:0] ex_mem_reg_wr_addr;
     wire ex_mem_reg_wr_sig;
+    wire ex_mem_br_pred;
+    wire [31:0] ex_mem_new_pc_pred;
+    
 
     // Wire for MEM/WB register
     wire [31:0] mem_wb_pc_plus4;
@@ -77,8 +84,9 @@ module cpu (
 
     wire [31:0] reg_wr_data;
 
-    wire flush;
-
+    wire br_pred;
+    wire [31:0] new_pc_pred;
+    wire miss_pred;
 
     // Register values
     wire [31:0] rs1;
@@ -89,10 +97,15 @@ module cpu (
         .reset_n(reset_n),
 
         .new_pc_i(ex_mem_new_pc),
+        .instruction_i(instruction),
         .br_taken_i(ex_mem_br_taken),
+        .br_pred_i(ex_mem_br_pred),
         .stall_i(stall),
 
-        .pc_o(rom_addr)
+        .pc_o(rom_addr),
+        .br_pred_o(br_pred),
+        .new_pc_pred_o(new_pc_pred),
+        .miss_pred_o(miss_pred)
     );
 
     if_id_register if_id_register_inst (
@@ -101,11 +114,15 @@ module cpu (
 
         .instruction_i(instruction),
         .pc_i(rom_addr),
+        .br_pred_i(br_pred),
+        .new_pc_pred_i(new_pc_pred),
         .stall_i(stall),
-        .flush_i(flush),
+        .flush_i(miss_pred),
 
         .instruction_o(if_id_instruction),
-        .pc_o(if_id_pc)
+        .pc_o(if_id_pc),
+        .br_pred_o(if_id_br_pred),
+        .new_pc_pred_o(if_id_new_pc_pred)
 );
 
     id_stage id_stage_inst (
@@ -153,8 +170,10 @@ module cpu (
         .reg_wr_addr_i(reg_wr_addr),
         .reg_wr_sig_i(reg_wr_sig),
         .mem_wr_sig_i(mem_wr_enable),
+        .br_pred_i(if_id_br_pred),
+        .new_pc_pred_i(if_id_new_pc_pred),
         .stall_i(stall),
-        .flush_i(flush),
+        .flush_i(miss_pred),
         
         .pc_o(id_ex_pc),
         .imm_o(id_ex_imm),
@@ -168,7 +187,9 @@ module cpu (
         .data_dest_o(id_ex_data_dest),
         .reg_wr_addr_o(id_ex_reg_wr_addr),
         .reg_wr_sig_o(id_ex_reg_wr_sig),
-        .mem_wr_sig_o(id_ex_mem_wr_sig)
+        .mem_wr_sig_o(id_ex_mem_wr_sig),
+        .br_pred_o(id_ex_br_pred),
+        .new_pc_pred_o(id_ex_new_pc_pred)
     );
 
     ex_stage ex_stage_inst (
@@ -201,7 +222,9 @@ module cpu (
         .reg_wr_addr_i(id_ex_reg_wr_addr),
         .reg_wr_sig_i(id_ex_reg_wr_sig),
         .mem_wr_sig_i(id_ex_mem_wr_sig),
-        .flush_i(flush),
+        .br_pred_i(id_ex_br_pred),
+        .new_pc_pred_i(id_ex_new_pc_pred),
+        .flush_i(miss_pred),
 
         .new_pc_o(ex_mem_new_pc),
         .br_taken_o(ex_mem_br_taken),
@@ -212,7 +235,9 @@ module cpu (
         .data_dest_o(ex_mem_data_dest),
         .reg_wr_addr_o(ex_mem_reg_wr_addr),
         .reg_wr_sig_o(ex_mem_reg_wr_sig),
-        .mem_wr_sig_o(mem_wr_sig)
+        .mem_wr_sig_o(mem_wr_sig),
+        .br_pred_o(ex_mem_br_pred),
+        .new_pc_pred_o(ex_mem_new_pc_pred)
     );
 
     mem_stage mem_stage_inst (
@@ -267,14 +292,4 @@ module cpu (
         .rs1_o(rs1),
         .rs2_o(rs2)
     );
-
-    flush_controller flush_controller_inst (
-        .clk(clk),
-        .reset_n(reset_n),
-
-        .br_taken_i(br_taken),
-
-        .flush_o(flush)
-    );
-    
 endmodule

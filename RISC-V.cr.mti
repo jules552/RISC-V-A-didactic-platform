@@ -1,11 +1,4 @@
-C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/fetch/if_stage.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/fetch/if_stage.v
-Questa Intel Starter FPGA Edition-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
--- Compiling module if_stage
-
-Top level modules:
-	if_stage
-
-} {} {}} C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/controller.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/controller.v
+C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/controller.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/controller.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
 -- Compiling module controler
 
@@ -75,19 +68,19 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
 Top level modules:
 	rom
 
-} {} {}} C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/register_file.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/register_file.v
-Questa Intel Starter FPGA Edition-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
--- Compiling module register_file
-
-Top level modules:
-	register_file
-
 } {} {}} C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/fetch/pc.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/fetch/pc.v
 Questa Intel Starter FPGA Edition-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
 -- Compiling module pc
 
 Top level modules:
 	pc
+
+} {} {}} C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/register_file.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/register_file.v
+Questa Intel Starter FPGA Edition-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+-- Compiling module register_file
+
+Top level modules:
+	register_file
 
 } {} {}} C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/alu.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/execute/alu.v
 Questa Intel Starter FPGA Edition-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
@@ -180,6 +173,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
 Top level modules:
 	lsu
 
+} {} {}} C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/pipeline_register/ex_mem_register.v
+Questa Intel Starter FPGA Edition-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+-- Compiling module ex_mem_register
+
+Top level modules:
+	ex_mem_register
+
 } {} {}} /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/ram.v {1 {vlog -work work -vopt -stats=none /home/jules/Documents/RISC-V-A-didactic-plateform/verilog/ram.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 -- Compiling module ram
@@ -214,6 +214,13 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
 
 Top level modules:
 	mux2x32
+
+} {} {}} C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/cpu.v
+Questa Intel Starter FPGA Edition-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
+-- Compiling module cpu
+
+Top level modules:
+	cpu
 
 } {} {}} /home/jules/Documents/RISC-V/verilog/exec_unit/mux3x32.v {1 {vlog -work work -vopt -stats=none /home/jules/Documents/RISC-V/verilog/exec_unit/mux3x32.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
@@ -312,13 +319,6 @@ Questa Intel Starter FPGA Edition-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
 
 Top level modules:
 	ram
-
-} {} {}} C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/rom.v {1 {vlog -work work -vopt -stats=none C:/Users/jules/Documents/RISC-V-A-didactic-plateform/verilog/rom.v
-Questa Intel Starter FPGA Edition-64 vlog 2022.4 Compiler 2022.10 Oct 18 2022
--- Compiling module rom
-
-Top level modules:
-	rom
 
 } {} {}} /home/jules/Documents/RISC-V/verilog/controller.v {1 {vlog -work work -vopt -stats=none /home/jules/Documents/RISC-V/verilog/controller.v
 Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
