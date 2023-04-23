@@ -37,6 +37,7 @@ module cpu (
     // Wire for EX/MEM register
     wire [31:0] ex_mem_new_pc;
     wire ex_mem_br_taken;
+    wire ex_mem_br_sig;
     wire [31:0] ex_mem_pc_plus4;
     wire [31:0] ex_mem_alu_result;
     wire [31:0] ex_mem_rs2;
@@ -99,6 +100,7 @@ module cpu (
         .new_pc_i(ex_mem_new_pc),
         .instruction_i(instruction),
         .br_taken_i(ex_mem_br_taken),
+        .br_sig_i(ex_mem_br_sig),
         .br_pred_i(ex_mem_br_pred),
         .stall_i(stall),
 
@@ -214,6 +216,7 @@ module cpu (
 
         .new_pc_i(new_pc),
         .br_taken_i(br_taken),
+        .br_sig_i(id_ex_br_sig),
         .pc_plus4_i(pc_plus4),
         .alu_result_i(alu_result),
         .rs2_i(id_ex_rs2),
@@ -228,6 +231,7 @@ module cpu (
 
         .new_pc_o(ex_mem_new_pc),
         .br_taken_o(ex_mem_br_taken),
+        .br_sig_o(ex_mem_br_sig),
         .pc_plus4_o(ex_mem_pc_plus4),
         .alu_result_o(ex_mem_alu_result),
         .rs2_o(ex_mem_rs2),

@@ -4,6 +4,7 @@ module ex_mem_register (
 
     input wire [31:0] pc_i,
     input wire [31:0] new_pc_i,
+    input wire br_sig_i,
     input wire br_taken_i,
     input wire [31:0] pc_plus4_i,
     input wire [31:0] alu_result_i,
@@ -19,6 +20,7 @@ module ex_mem_register (
 
     output wire [31:0] pc_o,
     output wire [31:0] new_pc_o,
+    output wire br_sig_o,
     output wire br_taken_o,
     output wire [31:0] pc_plus4_o,
     output wire [31:0] alu_result_o,
@@ -34,6 +36,7 @@ module ex_mem_register (
 
     reg [31:0] pc;
     reg [31:0] new_pc;
+    reg br_sig;
     reg br_taken;
     reg [31:0] pc_plus4;
     reg [31:0] alu_result;
@@ -52,6 +55,7 @@ module ex_mem_register (
             pc <= 0;
             new_pc <= 0;
             br_taken <= 0;
+            br_sig <= 0;
             alu_result <= 0;
             rs2 <= 0;
             pc_plus4 <= 0;
@@ -67,6 +71,7 @@ module ex_mem_register (
             pc <= 0;
             new_pc <= 0;
             br_taken <= 0;
+            br_sig <= 0;
             alu_result <= 0;
             rs2 <= 0;
             pc_plus4 <= 0;
@@ -82,6 +87,7 @@ module ex_mem_register (
             pc <= pc_i;
             new_pc <= new_pc_i;
             br_taken <= br_taken_i;
+            br_sig <= br_sig_i;
             alu_result <= alu_result_i;
             rs2 <= rs2_i;
             pc_plus4 <= pc_plus4_i;
@@ -99,6 +105,7 @@ module ex_mem_register (
     assign pc_o = pc;
     assign new_pc_o = new_pc;
     assign br_taken_o = br_taken;
+    assign br_sig_o = br_sig;
     assign alu_result_o = alu_result;
     assign rs2_o = rs2;
     assign pc_plus4_o = pc_plus4;

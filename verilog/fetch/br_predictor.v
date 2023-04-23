@@ -4,6 +4,7 @@ module br_predictor (
 
     input wire [31:0] instruction_i,
     input wire [31:0] pc_i,
+    input wire br_sig_i,
     input wire miss_pred_i,
 
     output wire br_pred_o,
@@ -86,7 +87,7 @@ module br_predictor (
             for (i = 0; i < PHT_SIZE; i = i + 1) begin
                 PHT[i] <= 2'b11; // Initialize the PHT to strongly taken
             end
-        end else if (is_branch) begin
+        end else if (br_sig_i) begin
             if (miss_pred_i) begin
                 if (PHT[global_history] > 2'b00) begin
                     PHT[global_history] <= PHT[global_history] - 1'b1;

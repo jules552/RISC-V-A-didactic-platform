@@ -4,6 +4,7 @@ module if_stage (
     input wire [31:0] new_pc_i,
     input wire [31:0] instruction_i,
     input wire br_taken_i,
+    input wire br_sig_i,
     input wire br_pred_i,
     input wire stall_i,
 
@@ -34,6 +35,7 @@ module if_stage (
 
         .instruction_i(instruction_i),
         .pc_i(pc_o),
+        .br_sig_i(br_sig_i),
         .miss_pred_i(miss_pred_o),
 
         .br_pred_o(br_pred_o),
