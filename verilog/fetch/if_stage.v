@@ -10,9 +10,9 @@ module if_stage (
 
     output wire [31:0] pc_o,
     output wire br_pred_o,
-    output wire [31:0] new_pc_pred_o,
     output wire miss_pred_o
 );
+    wire [31:0] new_pc_pred;
 
     assign miss_pred_o = br_pred_i != br_taken_i;
 
@@ -22,7 +22,7 @@ module if_stage (
 
         .new_pc(new_pc_i),
         .br_pred(br_pred_o),
-        .new_pc_pred(new_pc_pred_o),
+        .new_pc_pred(new_pc_pred),
         .miss_pred(miss_pred_o),
         .stall(stall_i),
 
@@ -39,7 +39,7 @@ module if_stage (
         .miss_pred_i(miss_pred_o),
 
         .br_pred_o(br_pred_o),
-        .new_pc_pred_o(new_pc_pred_o)
+        .new_pc_pred_o(new_pc_pred)
     );
 
 endmodule

@@ -11,37 +11,31 @@ module if_id_register (
 
     output wire [31:0] instruction_o,
     output wire [31:0] pc_o,
-    output wire br_pred_o,
-    output wire [31:0] new_pc_pred_o
+    output wire br_pred_o
 );
 
     reg [31:0] instruction;
     reg [31:0] pc;
     reg br_pred;
-    reg [31:0] new_pc_pred;
 
     always @(posedge clk or negedge reset_n) begin
         if (!reset_n) begin
             instruction <= 0;
             pc <= 0;
             br_pred <= 0;
-            new_pc_pred <= 0;
         end else if (flush_i) begin
             instruction <= 32'h0013; // Set to NOP (addi x0, x0, 0)
             pc <= pc_i;
             br_pred <= 0;
-            new_pc_pred <= 0;
         end else if (!stall_i) begin
             instruction <= instruction_i;
             pc <= pc_i;
             br_pred <= br_pred_i;
-            new_pc_pred <= new_pc_pred_i;
         end
     end
 
     assign instruction_o = instruction;
     assign pc_o = pc;
     assign br_pred_o = br_pred;
-    assign new_pc_pred_o = new_pc_pred;
 
 endmodule

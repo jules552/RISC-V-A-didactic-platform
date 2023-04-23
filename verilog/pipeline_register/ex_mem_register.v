@@ -15,7 +15,6 @@ module ex_mem_register (
     input wire reg_wr_sig_i,
     input wire mem_wr_sig_i,
     input wire br_pred_i,
-    input wire [31:0] new_pc_pred_i,
     input wire flush_i,
 
     output wire [31:0] pc_o,
@@ -30,8 +29,7 @@ module ex_mem_register (
     output wire [4:0] reg_wr_addr_o,
     output wire reg_wr_sig_o,
     output wire mem_wr_sig_o,
-    output wire br_pred_o,
-    output wire [31:0] new_pc_pred_o
+    output wire br_pred_o
 );
 
     reg [31:0] pc;
@@ -47,7 +45,6 @@ module ex_mem_register (
     reg reg_wr_sig;
     reg mem_wr_sig;
     reg br_pred;
-    reg [31:0] new_pc_pred;
 
 
     always @(posedge clk or negedge reset_n) begin
@@ -66,7 +63,6 @@ module ex_mem_register (
             reg_wr_sig <= 0;
             mem_wr_sig <= 0;
             br_pred <= 0;
-            new_pc_pred <= 0;
         end else if (flush_i) begin
             pc <= 0;
             new_pc <= 0;
@@ -82,7 +78,6 @@ module ex_mem_register (
             reg_wr_sig <= 0;
             mem_wr_sig <= 0;
             br_pred <= 0;
-            new_pc_pred <= 0;
         end else begin
             pc <= pc_i;
             new_pc <= new_pc_i;
@@ -98,7 +93,6 @@ module ex_mem_register (
             reg_wr_sig <= reg_wr_sig_i;
             mem_wr_sig <= mem_wr_sig_i;
             br_pred <= br_pred_i;
-            new_pc_pred <= new_pc_pred_i;
         end
     end
 
@@ -116,6 +110,5 @@ module ex_mem_register (
     assign reg_wr_sig_o = reg_wr_sig;
     assign mem_wr_sig_o = mem_wr_sig;
     assign br_pred_o = br_pred;
-    assign new_pc_pred_o = new_pc_pred;
 
 endmodule
