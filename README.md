@@ -5,7 +5,7 @@ The development of this project is in progress...
 Here are some of the major milestones of my Bachelor Project.
 
 - [X] Create an unpipelined RV32IM processor using Verilog
-- [ ] Pipeline the existing unpipelined RV32IM Verilog processor in 5 stages
+- [X] Pipeline the existing unpipelined RV32IM Verilog processor in 5 stages
 - [ ] Add support for custom instructions
 - [ ] Create and document the entire project to make it easy to understand how a RISC-V, and in general, 
       how a processor works and how to create one using Verilog
