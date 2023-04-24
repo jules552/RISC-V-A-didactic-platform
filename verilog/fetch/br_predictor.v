@@ -22,6 +22,7 @@ module br_predictor (
     wire [31:0] imm_j;
 
     reg is_branch;
+    reg is_unconditional;
     reg br_pred;
     reg [31:0] new_pc_pred;
 
@@ -35,6 +36,7 @@ module br_predictor (
 
     always @ (*) begin
         is_branch = 1'b0;
+        is_unconditional = 1'b0;
         new_pc_pred = pc_i + 4;
 
         case(opcode)
@@ -69,6 +71,7 @@ module br_predictor (
 
             OPCODE_JAL : begin
                 is_branch = 1'b1;
+                is_unconditional = 1'b1;
                 new_pc_pred = pc_i + imm_j;
             end
             /**
@@ -108,7 +111,7 @@ module br_predictor (
     end
 
 
-    assign br_pred_o = is_branch ? br_pred : 1'b0;
+    assign br_pred_o = is_branch ? br_pred || is_unconditional : 1'b0;
     assign new_pc_pred_o = new_pc_pred;
 
 endmodule
