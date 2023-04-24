@@ -1,0 +1,6 @@
+*
+!tb/*
+!verilog/*
+!programs/*
+!README.md
+!.gitignore
