@@ -113,3 +113,7 @@ localparam IMM_PC = 2'b11;
 localparam PC = 2'b00;
 localparam ALU = 2'b01;
 localparam MEM = 2'b10;
+
+// FORWARDING
+localparam NO_FORWARD = 1'b0;
+localparam FORWARD = 1'b1;
