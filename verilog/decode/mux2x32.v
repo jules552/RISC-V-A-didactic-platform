@@ -2,6 +2,7 @@ module mux2x32 (
     input reg [31:0] a,
     input reg [31:0] b,
     input reg sel,
+    
     output reg [31:0] out
 );
     always @ (*) begin

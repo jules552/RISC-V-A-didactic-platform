@@ -1,6 +1,7 @@
 module alu (
     input wire [31:0] a,b,
     input wire [4:0] alu_op,
+    
     output reg [31:0] result
 );
 

@@ -5,16 +5,13 @@ module controller (
     output reg [2:0] br_op_o,
     output reg [2:0] lsu_op_o,
     output reg [4:0] alu_op_o,
-
     output reg [1:0] data_origin_o,
     output reg [1:0] data_dest_o,
-
     output reg [31:0] imm_o,
     output reg [4:0] reg_addr1_o,
     output reg [4:0] reg_addr2_o,
     output reg [4:0] reg_wr_addr_o,
     output reg reg_wr_sig_o,
-
     output reg mem_wr_sig_o
 );
 

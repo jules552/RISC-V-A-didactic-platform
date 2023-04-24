@@ -5,13 +5,11 @@ module id_stage (
     input wire [31:0] reg_rs2_i,
     input wire [4:0] id_ex_reg_wr_addr_i,
     input wire id_ex_reg_wr_sig_i,
-
     input wire [4:0] ex_mem_reg_wr_addr_i,
     input wire ex_mem_reg_wr_sig_i,
     input wire [1:0] ex_mem_data_dest_i,
     input wire [31:0] ex_mem_alu_result_i,
     input wire [31:0] ex_mem_pc_plus4_i,
-
     input wire [4:0] mem_wb_reg_wr_addr_i,
     input wire mem_wb_reg_wr_sig_i,
     input wire [1:0] mem_wb_data_dest_i,
@@ -43,6 +41,7 @@ module id_stage (
         .a(rs1),
         .b(pc_i),
         .sel(data_origin[0]),
+
         .out(pc_rs1_o)
     );
 
@@ -50,6 +49,7 @@ module id_stage (
         .a(rs2_o),
         .b(imm_o),
         .sel(data_origin[1]),
+        
         .out(imm_rs2_o)
     );
 

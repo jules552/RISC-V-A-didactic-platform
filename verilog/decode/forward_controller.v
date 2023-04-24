@@ -9,7 +9,6 @@ module forward_controller (
     input wire [1:0] ex_mem_data_dest_i,
     input wire [31:0] ex_mem_alu_result_i,
     input wire [31:0] ex_mem_pc_plus4_i,
-
     input wire [4:0] mem_wb_reg_wr_addr_i,
     input wire mem_wb_reg_wr_sig_i,
     input wire [1:0] mem_wb_data_dest_i,
