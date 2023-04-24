@@ -10,9 +10,9 @@ reg [31:0] mem [0:1023];
 wire [9:0] addr10 = addr[11:2];
 
 initial begin
-    $readmemh("recursive_sum_of_n.hex", mem);
-    //$readmemh("fibonacci.hex", mem);
-    //$readmemh("program.hex", mem);
+    $readmemh("programs/recursive_sum_of_n.hex", mem);
+    //$readmemh("programs/fibonacci.hex", mem);
+    //$readmemh("programs/program.hex", mem);
 end
 
 assign instruction = mem[addr10];
