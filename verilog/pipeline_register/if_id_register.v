@@ -26,11 +26,7 @@ module if_id_register (
             instruction <= 32'h0013; // Set to NOP (addi x0, x0, 0)
             pc <= pc_i;
             br_pred <= 0;
-        end else if (stall_i) begin
-            instruction <= instruction;
-            pc <= pc;
-            br_pred <= br_pred;
-        end else  begin
+        end else if (!stall_i) begin
             instruction <= instruction_i;
             pc <= pc_i;
             br_pred <= br_pred_i;
