@@ -256,7 +256,6 @@ module controller (
                 br_sig_o = 1'b1;
                 reg_addr1_o = rs1;
                 reg_addr2_o = rs2;
-                reg_wr_addr_o = rd;
 
                 case (funct3)
                     FUNCT3_BEQ : begin
