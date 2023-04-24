@@ -32,13 +32,13 @@ module forward_controller (
         rs2_forward = reg_rs2_i;
 
         // If there is a data hazard, forward the data from the previous stage
-        if (ex_mem_reg_wr_sig_i && ex_mem_reg_wr_addr_i == reg_addr1_i) begin
+        if (ex_mem_reg_wr_sig_i && (ex_mem_reg_wr_sig_i != 5'd0) && ex_mem_reg_wr_addr_i == reg_addr1_i) begin
             if (ex_mem_data_dest_i == ALU) begin
                 rs1_forward = ex_mem_alu_result_i;
             end else if (ex_mem_data_dest_i == PC) begin
                 rs1_forward = ex_mem_pc_plus4_i;
             end
-        end else if (ex_mem_reg_wr_sig_i && ex_mem_reg_wr_addr_i == reg_addr2_i) begin
+        end else if (ex_mem_reg_wr_sig_i && (ex_mem_reg_wr_sig_i != 5'd0) && ex_mem_reg_wr_addr_i == reg_addr2_i) begin
             if (ex_mem_data_dest_i == ALU) begin
                 rs2_forward = ex_mem_alu_result_i;
             end else if (ex_mem_data_dest_i == PC) begin
@@ -46,7 +46,7 @@ module forward_controller (
             end
         end
 
-        if (mem_wb_reg_wr_sig_i && mem_wb_reg_wr_addr_i == reg_addr1_i) begin
+        if (mem_wb_reg_wr_sig_i && (mem_wb_reg_wr_sig_i != 5'd0) && mem_wb_reg_wr_addr_i == reg_addr1_i) begin
             if (mem_wb_data_dest_i == ALU) begin
                 rs1_forward = mem_wb_alu_result_i;
             end else if (mem_wb_data_dest_i == MEM) begin
@@ -54,7 +54,7 @@ module forward_controller (
             end else if (mem_wb_data_dest_i == PC) begin
                 rs1_forward = mem_wb_pc_plus4_i;
             end
-        end else if (mem_wb_reg_wr_sig_i && mem_wb_reg_wr_addr_i == reg_addr2_i) begin
+        end else if (mem_wb_reg_wr_sig_i && (mem_wb_reg_wr_sig_i != 5'd0) && mem_wb_reg_wr_addr_i == reg_addr2_i) begin
             if (mem_wb_data_dest_i == ALU) begin
                 rs2_forward = mem_wb_alu_result_i;
             end else if (mem_wb_data_dest_i == MEM) begin

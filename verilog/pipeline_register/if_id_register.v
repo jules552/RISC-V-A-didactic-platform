@@ -5,7 +5,6 @@ module if_id_register (
     input wire [31:0] instruction_i,
     input wire [31:0] pc_i,
     input wire br_pred_i,
-    input wire [31:0] new_pc_pred_i,
     input wire stall_i,
     input wire flush_i,
 
@@ -27,7 +26,11 @@ module if_id_register (
             instruction <= 32'h0013; // Set to NOP (addi x0, x0, 0)
             pc <= pc_i;
             br_pred <= 0;
-        end else if (!stall_i) begin
+        end else if (stall_i) begin
+            instruction <= instruction;
+            pc <= pc;
+            br_pred <= br_pred;
+        end else  begin
             instruction <= instruction_i;
             pc <= pc_i;
             br_pred <= br_pred_i;

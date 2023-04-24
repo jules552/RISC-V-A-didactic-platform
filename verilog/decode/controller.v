@@ -237,7 +237,6 @@ module controller (
                 mem_wr_sig_o = 1'b1;
                 reg_addr1_o = rs1;
                 reg_addr2_o = rs2;
-                reg_wr_addr_o = rd;
 
                 case (funct3)
                     FUNCT3_SB : begin
@@ -257,7 +256,6 @@ module controller (
                 alu_op_o = ALU_SUB;
                 data_origin_o = RS2_RS1;
                 imm_o = imm_b;
-                reg_wr_sig_o = 1'b1;
                 br_sig_o = 1'b1;
                 reg_addr1_o = rs1;
                 reg_addr2_o = rs2;

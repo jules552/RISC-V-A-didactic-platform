@@ -137,7 +137,7 @@ module cpu (
         .ex_mem_data_dest_i(ex_mem_data_dest),
         .ex_mem_alu_result_i(ex_mem_alu_result),
         .ex_mem_pc_plus4_i(ex_mem_pc_plus4),
-        
+
         .mem_wb_reg_wr_addr_i(mem_wb_reg_wr_addr),
         .mem_wb_reg_wr_sig_i(mem_wb_reg_wr_sig),
         .mem_wb_data_dest_i(mem_wb_data_dest),
@@ -219,6 +219,7 @@ module cpu (
         .clk(clk),
         .reset_n(reset_n),
 
+        .pc_i(id_ex_pc),
         .new_pc_i(new_pc),
         .br_taken_i(br_taken),
         .br_sig_i(id_ex_br_sig),
