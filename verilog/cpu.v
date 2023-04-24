@@ -131,11 +131,13 @@ module cpu (
         .reg_rs2_i(reg_rs2),
         .id_ex_reg_wr_addr_i(id_ex_reg_wr_addr),
         .id_ex_reg_wr_sig_i(id_ex_reg_wr_sig),
+
         .ex_mem_reg_wr_addr_i(ex_mem_reg_wr_addr),
         .ex_mem_reg_wr_sig_i(ex_mem_reg_wr_sig),
         .ex_mem_data_dest_i(ex_mem_data_dest),
         .ex_mem_alu_result_i(ex_mem_alu_result),
         .ex_mem_pc_plus4_i(ex_mem_pc_plus4),
+        
         .mem_wb_reg_wr_addr_i(mem_wb_reg_wr_addr),
         .mem_wb_reg_wr_sig_i(mem_wb_reg_wr_sig),
         .mem_wb_data_dest_i(mem_wb_data_dest),
@@ -147,7 +149,6 @@ module cpu (
         .br_op_o(br_op),
         .alu_op_o(alu_op),
         .lsu_op_o(lsu_op),
-        .data_origin_o(data_origin),
         .data_dest_o(data_dest),
         .imm_o(imm),
         .reg_addr1_o(reg_addr1),

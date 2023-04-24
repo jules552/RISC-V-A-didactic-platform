@@ -14,8 +14,8 @@ module ex_stage (
 );
 
     alu alu_inst (
-        .a(pc_rs1),
-        .b(imm_rs2),
+        .a(pc_rs1_i),
+        .b(imm_rs2_i),
         .alu_op(alu_op_i),
 
         .result(alu_result_o)

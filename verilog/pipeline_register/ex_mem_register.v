@@ -109,6 +109,5 @@ module ex_mem_register (
     assign reg_wr_addr_o = reg_wr_addr;
     assign reg_wr_sig_o = reg_wr_sig;
     assign mem_wr_sig_o = mem_wr_sig;
-    assigid_ex_rs1n br_pred_o = br_pred;
-
+    assign br_pred_o = br_pred;
 endmodule

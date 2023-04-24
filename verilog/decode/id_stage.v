@@ -78,14 +78,16 @@ module id_stage (
         .ex_mem_reg_wr_addr_i(ex_mem_reg_wr_addr_i),
         .ex_mem_reg_wr_sig_i(ex_mem_reg_wr_sig_i),
         .ex_mem_data_dest_i(ex_mem_data_dest_i),
-        .mem_wb_reg_wr_addr_i(mem_wb_reg_wr_addr_i),
-        .mem_wb_reg_wr_sig_i(mem_wb_reg_wr_sig_i),
-        .mem_wb_data_dest_i(mem_wb_data_dest_i),
 
         .stall_o(stall_o)
     );
 
     forward_controller forward_controller_inst (
+        .reg_addr1_i(reg_addr1_o),
+        .reg_rs1_i(reg_rs1_i),
+        .reg_addr2_i(reg_addr2_o),
+        .reg_rs2_i(reg_rs2_i),
+
         .ex_mem_reg_wr_addr_i(ex_mem_reg_wr_addr_i),
         .ex_mem_reg_wr_sig_i(ex_mem_reg_wr_sig_i),
         .ex_mem_data_dest_i(ex_mem_data_dest_i),

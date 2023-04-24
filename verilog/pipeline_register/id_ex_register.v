@@ -62,7 +62,6 @@ module id_ex_register (
             br_op <= 3'b0;
             lsu_op <= 3'b0;
             alu_op <= 5'b0;
-            data_origin <= 2'b0;
             data_dest <= 2'b0;
             imm <= 32'b0;
             reg_wr_addr <= 5'b0;
