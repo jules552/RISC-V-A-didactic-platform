@@ -1,4 +1,4 @@
-# RISC-V-A-didactic-plateform
+# RISC-V-A-didactic-platform
 
 The development of this project is in progress...
 
