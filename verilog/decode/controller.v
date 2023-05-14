@@ -1,5 +1,5 @@
 module controller (
-    input reg [31:0] instruction_i,
+    input wire [31:0] instruction_i,
 
     output reg br_sig_o,
     output reg [2:0] br_op_o,
