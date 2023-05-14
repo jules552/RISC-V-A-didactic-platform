@@ -51,11 +51,11 @@ initial begin
     reset_n = 1;
 
     #500
-    if (cpu_inst.reg_file_inst.registers[3] == 55) begin
-        $display("CPU: PASS FIBONACCI");
+    if (cpu_inst.reg_file_inst.registers[29] == 55) begin
+        $display("CPU: PASS RECURSIVE SUM OF N");
     end
     else begin
-        $display("CPU: FAIL FIBONACCI");
+        $display("CPU: FAIL RECURSIVE SUM OF N");
         $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[3]);
     end
     $finish;
