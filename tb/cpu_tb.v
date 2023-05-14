@@ -25,6 +25,7 @@ module cpu_tb;
         .reset_n(reset_n),
         .addr(rom_addr),
         .instruction(instruction)
+    );
 
     ram ram_init (
         .clk(clk),
