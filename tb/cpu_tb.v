@@ -120,7 +120,7 @@ initial begin
         $display("CPU: FAIL FIBONACCI");
         $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[3]);
     end
-    $stop;
+    $finish;
 end
 endmodule
 
