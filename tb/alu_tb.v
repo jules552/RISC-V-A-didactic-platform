@@ -4,7 +4,7 @@ module alu_tb;
 
     // Inputs
     reg [31:0] a,b;
-    reg [3:0] op_code;
+    reg [4:0] alu_op;
 
     // Outputs
     wire [31:0] result;
@@ -16,13 +16,13 @@ module alu_tb;
     alu alu_inst (
         .a(a),
         .b(b),
-        .op_code(op_code),
+        .alu_op(alu_op),
         .result(result)
     );
 
     initial begin
         // Test ALU_ADD
-        op_code = ALU_ADD;
+        alu_op = ALU_ADD;
 
         // Test Basic Addition
         // Run 1000 tests
@@ -48,7 +48,7 @@ module alu_tb;
         $display("ALU_ADD: PASS");
 
         // Test ALU_SUB
-        op_code = ALU_SUB;
+        alu_op = ALU_SUB;
         
         // Test Basic Subtraction
         // Run 1000 tests
@@ -73,7 +73,7 @@ module alu_tb;
         $display("ALU_SUB: PASS");
 
         // Test ALU_XOR
-        op_code = ALU_XOR;
+        alu_op = ALU_XOR;
 
         // Test Basic XOR
         // Run 1000 tests
@@ -89,7 +89,7 @@ module alu_tb;
         $display("ALU_XOR: PASS");
 
         // Test ALU_OR
-        op_code = ALU_OR;
+        alu_op = ALU_OR;
 
         // Test Basic OR
         // Run 1000 tests
@@ -105,7 +105,7 @@ module alu_tb;
         $display("ALU_OR: PASS");
 
         // Test ALU_AND
-        op_code = ALU_AND;
+        alu_op = ALU_AND;
 
         // Test Basic AND
         // Run 1000 tests
