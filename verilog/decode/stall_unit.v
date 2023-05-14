@@ -4,7 +4,7 @@ module stall_unit (
     input wire [4:0] id_ex_reg_wr_addr_i,
     input wire id_ex_reg_wr_sig_i,
     input wire [1:0] id_ex_data_dest_i,
-  
+
     output wire stall_o
 );
     `include "../parameters.vh"
