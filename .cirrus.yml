@@ -7,7 +7,9 @@ task:
     - ls -la
   build_script:
     - cd verilog
-    - for f in ../tb/*.v; do iverilog -I . -o "../bin/$(basename $f .v)" "$f" $(find . -name "*.v" -o -name "*.vh"); done
+    - find . -name "*.v" -o -name "*.vh" > ../sources.txt
+    - cd ../tb
+    - for f in *.v; do iverilog -I $(dirname "../verilog/$f") -o "../bin/$(basename $f .v)" "$f" $(cat ../sources.txt); done
   test_script:
     - cd ../bin
     - for f in *; do vvp "$f"; done
