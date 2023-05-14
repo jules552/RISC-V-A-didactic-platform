@@ -58,6 +58,8 @@ module cpu_tb;
         else begin
             $display("CPU: FAIL RECURSIVE SUM OF N");
             $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[29]);
+            $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[30]);
+            $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[1]);
         end
         $finish;
     end
