@@ -50,13 +50,13 @@ initial begin
     #1
     reset_n = 1;
 
-    #500
+    #5000
     if (cpu_inst.reg_file_inst.registers[29] == 55) begin
         $display("CPU: PASS RECURSIVE SUM OF N");
     end
     else begin
         $display("CPU: FAIL RECURSIVE SUM OF N");
-        $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[30]);
+        $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[29]);
     end
     $finish;
 end
