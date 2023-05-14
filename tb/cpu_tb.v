@@ -1,6 +1,6 @@
 `timescale 1ms/100us
 
-module test_fibonacci;
+module cpu_tb;
 `include "../verilog/parameters.vh"
 
     // Clock

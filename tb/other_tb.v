@@ -1,6 +1,6 @@
 `timescale 1ms/100us
 
-module test_recursive_sum_of_n;
+module other_tb;
 `include "../verilog/parameters.vh"
 
     // Clock
