@@ -25,7 +25,6 @@ module cpu_tb;
         .reset_n(reset_n),
         .addr(rom_addr),
         .instruction(instruction)
-    );
 
     ram ram_init (
         .clk(clk),
@@ -50,12 +49,19 @@ module cpu_tb;
     initial begin
         $dumpfile("vcd/dump.vcd");
         $dumpvars(0, cpu_tb);
-
+      
         #1
         reset_n = 1;
 
         #500
 
+        if (cpu_inst.reg_file_inst.registers[29] == 55) begin
+            $display("CPU: PASS RECURSIVE SUM OF N");
+        end
+        else begin : fail
+            $display("CPU: FAIL RECURSIVE SUM OF N");
+            $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[29]);
+        end
         $finish;
     end
 endmodule
