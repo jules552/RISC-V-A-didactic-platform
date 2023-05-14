@@ -1,4 +1,4 @@
-`timescale 1ms/100us
+`timescale 1ms/10us
 
 module cpu_tb;
 `include "../verilog/parameters.vh"
@@ -21,10 +21,10 @@ module cpu_tb;
 
 
     rom rom_init (
-    .clk(clk),
-    .reset_n(reset_n),
-    .addr(rom_addr),
-    .instruction(instruction)
+        .clk(clk),
+        .reset_n(reset_n),
+        .addr(rom_addr),
+        .instruction(instruction)
     );
 
     ram ram_init (
@@ -50,13 +50,6 @@ module cpu_tb;
     initial begin
         #1
         reset_n = 1;
-
-        //Print 30 first ROM instructions
-        $display("CPU: ROM instructions");
-        for (i = 0; i < 30; i = i+1) begin
-            #1
-            $display("CPU: ROM[%d] = %h", i, rom_init.mem[i]);
-        end
 
         #500
         if (cpu_inst.reg_file_inst.registers[29] == 55) begin

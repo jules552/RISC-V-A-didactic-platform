@@ -16,7 +16,7 @@ task:
         # Collect all directories in verilog/ for -I arguments
         i_args=$(find verilog/ -type d -exec echo -n "-I {} " \;)
         # Compile with iverilog
-        iverilog -g2012 -o "bin/${tb_base}" $i_args $tb $v_files
+        iverilog -O0 -g2012 -o "bin/${tb_base}" $i_args $tb $v_files
       done
   test_script:
     - |
