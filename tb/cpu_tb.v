@@ -46,18 +46,25 @@ module cpu_tb;
         .rom_addr(rom_addr)
     );
 
-initial begin
-    #1
-    reset_n = 1;
+    initial begin
+        #1
+        reset_n = 1;
 
-    #500000
-    if (cpu_inst.reg_file_inst.registers[29] == 55) begin
-        $display("CPU: PASS RECURSIVE SUM OF N");
+        #500
+        if (cpu_inst.reg_file_inst.registers[29] == 55) begin
+            $display("CPU: PASS RECURSIVE SUM OF N");
+        end
+        else begin : fail
+            $display("CPU: FAIL RECURSIVE SUM OF N");
+            $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[29]);
+
+            // Dump registers
+            $display("CPU: Register dump:");
+            // Display register 31, 30, 1
+            $display("CPU: x31 = %d", cpu_inst.reg_file_inst.registers[31]);
+            $display("CPU: x30 = %d", cpu_inst.reg_file_inst.registers[30]);
+            $display("CPU: x1 = %d", cpu_inst.reg_file_inst.registers[1]);
+        end
+        $finish;
     end
-    else begin
-        $display("CPU: FAIL RECURSIVE SUM OF N");
-        $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[29]);
-    end
-    $finish;
-end
 endmodule
