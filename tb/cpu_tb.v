@@ -54,6 +54,8 @@ module cpu_tb;
         #1
         reset_n = 1;
 
+        #500
+
         $finish;
     end
 endmodule
