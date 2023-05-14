@@ -22,10 +22,8 @@ task:
     - mkdir -p vcd 
     - |
       for tb in bin/*; do 
-        if vvp $tb > vcd/$(basename $tb).vcd; then
-          if grep -q "FAIL" vcd/$(basename $tb).vcd; then
-            exit 1
-          fi
+        if vvp $tb | tee /dev/fd/2 | grep -q "FAIL"; then
+          exit 1
         fi
       done
   artifacts:
