@@ -1,0 +1,8 @@
+container:
+  dockerfile: Dockerfile
+
+task:
+  build_script:
+    - for f in tb/*.v; do iverilog -o "bin/$(basename $f .v)" "$f"; done
+  test_script:
+    - for f in bin/*; do vvp "$f"; done

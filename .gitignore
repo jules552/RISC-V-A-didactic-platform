@@ -4,4 +4,4 @@
 !programs/*
 !README.md
 !.gitignore
-!.travis.yml
+!.cirrus.yml
