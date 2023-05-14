@@ -49,7 +49,7 @@ module cpu_tb;
 
     initial begin
         $dumpfile("vcd/dump.vcd");
-        $dumpvars(0, cpu_tb);
+        $dumpvars(12, cpu_tb);
 
         #1
         reset_n = 1;
