@@ -6,6 +6,7 @@ task:
     - pwd
     - ls -la
   build_script:
+    - mkdir -p bin
     - iverilog -o bin/alu_tb -I verilog/ -I verilog/execute/ -I tb/ tb/alu_tb.v verilog/execute/alu.v
   test_script:
     - vvp bin/alu_tb
