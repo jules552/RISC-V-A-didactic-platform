@@ -6,8 +6,8 @@ task:
     - pwd
     - ls -la
   build_script:
-    - cd tb
-    - for f in *.v; do iverilog -I /tmp/cirrus-ci-build/verilog -o "../bin/$(basename $f .v)" "$f" $(find ../verilog -name "*.v"); done
+    - cd verilog
+    - for f in ../tb/*.v; do iverilog -I . -o "../bin/$(basename $f .v)" "$f" $(find . -name "*.v"); done
   test_script:
     - cd ../bin
     - for f in *; do vvp "$f"; done
