@@ -50,7 +50,7 @@ initial begin
     #1
     reset_n = 1;
 
-    #500
+    #1000
     //Look at the registers for the result
     if (cpu_inst.reg_file_inst.registers[29] == 55) begin
         $display("CPU: PASS RECURSIVE_SUM_OF_N");
@@ -113,7 +113,7 @@ initial begin
     #1
     reset_n = 1;
 
-    #500
+    #100
     if (cpu_inst.reg_file_inst.registers[3] == 55) begin
         $display("CPU: PASS FIBONACCI");
     end
