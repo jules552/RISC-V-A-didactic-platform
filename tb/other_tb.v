@@ -59,5 +59,6 @@ initial begin
         $display("CPU: FAIL RECURSIVE_SUM_OF_N");
         $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[29]);
     end
+    $finish;
 end
 endmodule
