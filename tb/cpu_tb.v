@@ -52,9 +52,10 @@ module cpu_tb;
         $dumpvars(0, cpu_tb);
 
         //Dump the registers
-        for(i = 0; i < 32; i = i + 1) begin
-            $dumpvars(0, cpu_tb.cpu_inst.register_file_inst.registers[i]);
-        end
+        $dumpvars(0, cpu_inst.register_file_inst.registers[1]);
+        $dumpvars(0, cpu_inst.register_file_inst.registers[29]);
+        $dumpvars(0, cpu_inst.register_file_inst.registers[30]);
+        $dumpvars(0, cpu_inst.register_file_inst.registers[31]);
 
         #1
         reset_n = 1;
