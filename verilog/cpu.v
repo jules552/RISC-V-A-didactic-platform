@@ -34,6 +34,7 @@ module cpu (
     wire id_ex_br_pred;
 
     // Wire for EX/MEM register
+    wire [31:0] ex_mem_pc;
     wire [31:0] ex_mem_new_pc;
     wire ex_mem_br_taken;
     wire ex_mem_br_sig;
@@ -238,6 +239,7 @@ module cpu (
         .br_pred_i(id_ex_br_pred),
         .flush_i(miss_pred),
 
+        .pc_o(ex_mem_pc),
         .new_pc_o(ex_mem_new_pc),
         .br_taken_o(ex_mem_br_taken),
         .br_sig_o(ex_mem_br_sig),
