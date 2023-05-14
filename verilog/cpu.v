@@ -306,4 +306,13 @@ module cpu (
         .rs1_o(reg_rs1),
         .rs2_o(reg_rs2)
     );
+
+    initial begin
+        $dumpvars(0, cpu);
+        $dumpvars(0, register_file_inst.registers[1]);
+        $dumpvars(0, register_file_inst.registers[29]);
+        $dumpvars(0, register_file_inst.registers[30]);
+        $dumpvars(0, register_file_inst.registers[31]);
+        // ...
+    end
 endmodule

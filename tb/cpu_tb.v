@@ -51,12 +51,6 @@ module cpu_tb;
         $dumpfile("vcd/dump.vcd");
         $dumpvars(0, cpu_tb);
 
-        //Dump the registers
-        $dumpvars(0, cpu_inst.register_file_inst.registers[1]);
-        $dumpvars(0, cpu_inst.register_file_inst.registers[29]);
-        $dumpvars(0, cpu_inst.register_file_inst.registers[30]);
-        $dumpvars(0, cpu_inst.register_file_inst.registers[31]);
-
         #1
         reset_n = 1;
 
