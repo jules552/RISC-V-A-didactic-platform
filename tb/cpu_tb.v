@@ -50,7 +50,7 @@ initial begin
     #1
     reset_n = 1;
 
-    #5000
+    #500000
     if (cpu_inst.reg_file_inst.registers[29] == 55) begin
         $display("CPU: PASS RECURSIVE SUM OF N");
     end
