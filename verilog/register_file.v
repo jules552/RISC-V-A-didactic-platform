@@ -1,13 +1,14 @@
 module register_file (
-    input reg clk,
-    input reg reset_n,
-    input reg [4:0] rs1_addr_i,
-    input reg [4:0] rs2_addr_i,
-    input reg [31:0] wr_data_i,
-    input reg [4:0] wr_addr_i,
-    input reg wr_enable_i,
-    output [31:0] rs1_o,
-    output [31:0] rs2_o
+    input wire clk,
+    input wire reset_n,
+    input wire [4:0] rs1_addr_i,
+    input wire [4:0] rs2_addr_i,
+    input wire [31:0] wr_data_i,
+    input wire [4:0] wr_addr_i,
+    input wire wr_enable_i,
+
+    output wire [31:0] rs1_o,
+    output wire [31:0] rs2_o
 );
 
     reg [31:0] registers [0:31];
