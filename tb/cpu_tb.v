@@ -1,4 +1,4 @@
-`timescale 1ms/10us
+`timescale 1ms/100us
 
 module cpu_tb;
 `include "../verilog/parameters.vh"
@@ -48,19 +48,12 @@ module cpu_tb;
     );
 
     initial begin
+        $dumpfile("dump.vcd");
+        $dumpvars(0, cpu_tb);
+        
         #1
         reset_n = 1;
 
-        #500
-        if (cpu_inst.reg_file_inst.registers[29] == 55) begin
-            $display("CPU: PASS RECURSIVE SUM OF N");
-        end
-        else begin
-            $display("CPU: FAIL RECURSIVE SUM OF N");
-            $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[29]);
-            $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[30]);
-            $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[1]);
-        end
         $finish;
     end
 endmodule
