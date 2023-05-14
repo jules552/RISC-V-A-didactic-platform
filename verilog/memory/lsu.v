@@ -1,8 +1,9 @@
 module lsu (
-    input reg [2:0] lsu_op,
-    input reg [31:0] addr,
-    input reg [31:0] wr_data,
-    input reg [31:0] mem_rd_data,
+    input wire [2:0] lsu_op,
+    input wire [31:0] addr,
+    input wire [31:0] wr_data,
+    input wire [31:0] mem_rd_data,
+
     output reg [31:0] rd_data,
     output reg [31:0] mem_addr,
     output reg [31:0] mem_wr_data
