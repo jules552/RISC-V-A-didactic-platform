@@ -9,6 +9,7 @@ module cpu_tb;
     reg reset_n;
     initial reset_n = 0;
     always #0.5 clk = ~clk;
+    integer i;
 
     wire [31:0] rom_addr;
     wire [31:0] instruction; 
@@ -19,7 +20,7 @@ module cpu_tb;
     wire [31:0] mem_rd_data;
 
 
-    rom #(.PROGRAM("programs/recursive_sum_of_n.hex")) rom_init (
+    rom rom_init (
     .clk(clk),
     .reset_n(reset_n),
     .addr(rom_addr),
@@ -50,20 +51,20 @@ module cpu_tb;
         #1
         reset_n = 1;
 
+        //Print 30 first ROM instructions
+        $display("CPU: ROM instructions");
+        for (i = 0; i < 30; i = i+1) begin
+            #1
+            $display("CPU: ROM[%d] = %h", i, rom_init.mem[i]);
+        end
+
         #500
         if (cpu_inst.reg_file_inst.registers[29] == 55) begin
             $display("CPU: PASS RECURSIVE SUM OF N");
         end
-        else begin : fail
+        else begin
             $display("CPU: FAIL RECURSIVE SUM OF N");
             $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[29]);
-
-            // Dump registers
-            $display("CPU: Register dump:");
-            // Display register 31, 30, 1
-            $display("CPU: x31 = %d", cpu_inst.reg_file_inst.registers[31]);
-            $display("CPU: x30 = %d", cpu_inst.reg_file_inst.registers[30]);
-            $display("CPU: x1 = %d", cpu_inst.reg_file_inst.registers[1]);
         end
         $finish;
     end
