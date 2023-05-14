@@ -53,7 +53,7 @@ module cpu_tb;
 
         //Dump the registers
         for(i = 0; i < 32; i = i + 1) begin
-            $dumpvars(0, cpu_inst.register_file_inst.registers[i]);
+            $dumpvars(0, cpu_tb.cpu_inst.register_file_inst.registers[i]);
         end
 
         #1
