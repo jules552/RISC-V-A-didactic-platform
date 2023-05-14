@@ -7,6 +7,16 @@ task:
     - ls -la
   build_script:
     - mkdir -p bin
-    - iverilog -o bin/alu_tb -I verilog/ -I verilog/execute/ -I tb/ tb/alu_tb.v verilog/execute/alu.v
+    - |
+      for tb in $(find tb/ -name '*.v'); do
+        # Obtain the base name of the testbench file to use for the output file name
+        tb_base=$(basename $tb .v)
+        # Collect all .v files in verilog/
+        v_files=$(find verilog/ -name '*.v')
+        # Collect all directories in verilog/ for -I arguments
+        i_args=$(find verilog/ -type d -exec echo -n "-I {} " \;)
+        # Compile with iverilog
+        iverilog -o "bin/${tb_base}" $i_args $tb $v_files
+      done
   test_script:
-    - vvp bin/alu_tb
+    - for tb in bin/*; do vvp $tb; done
