@@ -120,7 +120,7 @@ module alu_tb;
         end
         $display("ALU_AND: PASS");
 
-        $stop;
+        $finish;
     end
 
 endmodule

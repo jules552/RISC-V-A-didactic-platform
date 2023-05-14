@@ -2,6 +2,7 @@ module test_recursive_sum_of_n;
 `include "../verilog/parameters.vh"
 `timescale 1ms/100us
 
+    // Clock
     reg clk;
     initial clk = 1;
     reg reset_n;
@@ -119,7 +120,7 @@ initial begin
         $display("CPU: FAIL FIBONACCI");
         $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[3]);
     end
-    $stop;
+    $finish;
 end
 endmodule
 
