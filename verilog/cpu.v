@@ -90,13 +90,10 @@ module cpu (
     wire br_pred;
     wire miss_pred;
 
-    wire [31:0] pc;
-
     // Register values
     wire [31:0] reg_rs1;
     wire [31:0] reg_rs2;
 
-    assign rom_addr = pc;
 
     if_stage if_stage_inst (
         .clk(clk),
@@ -109,7 +106,7 @@ module cpu (
         .br_pred_i(id_ex_br_pred),
         .stall_i(stall),
 
-        .pc_o(pc),
+        .pc_o(rom_addr),
         .br_pred_o(br_pred),
         .miss_pred_o(miss_pred)
     );
@@ -119,7 +116,7 @@ module cpu (
         .reset_n(reset_n),
 
         .instruction_i(instruction),
-        .pc_i(pc),
+        .pc_i(rom_addr),
         .br_pred_i(br_pred),
         .stall_i(stall),
         .flush_i(miss_pred),
