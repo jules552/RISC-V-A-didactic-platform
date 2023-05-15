@@ -14,19 +14,19 @@ reg [31:0] pc_reg;
 
 always @ (posedge clk or negedge reset_n) begin
     if (!reset_n) begin
-        pc_reg = 0;
+        pc_reg <= 0;
     end else begin
         if (miss_pred) begin
-            pc_reg = new_pc;
+            pc_reg <= new_pc;
         end
         else if (stall) begin
-            pc_reg = pc_reg;
+            pc_reg <= pc_reg;
         end
         else if (br_pred) begin
-            pc_reg = new_pc_pred;
+            pc_reg <= new_pc_pred;
         end
         else begin
-            pc_reg = pc_reg + 4;
+            pc_reg <= pc_reg + 4;
         end
     end
 end
