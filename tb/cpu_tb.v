@@ -3,12 +3,14 @@
 module cpu_tb;
 `include "../verilog/parameters.vh"
 
-    // Clock
     reg clk;
-    initial clk = 1;
+    initial begin
+        #0.1;  // Wait 0.1ns before starting the clock
+        clk = 0;  // Initial clock value
+        forever #0.5 clk = ~clk;  // Toggle clock every 0.5ns
+    end
     reg reset_n;
     initial reset_n = 0;
-    always #0.5 clk = ~clk;
 
     wire [31:0] rom_addr;
     wire [31:0] instruction;
@@ -49,8 +51,8 @@ module cpu_tb;
     initial begin
         $dumpfile("vcd/dump.vcd");
         $dumpvars(0, cpu_tb);
-      
-        #1
+        
+        #1.1
         reset_n = 1;
 
         #500
