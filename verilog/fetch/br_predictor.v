@@ -83,7 +83,7 @@ module br_predictor (
     end
 
     // Update the branch predictor based on the actual outcome of the branch
-    always @(posedge clk) begin : predict_branch
+    always @(posedge clk or negedge reset_n) begin : predict_branch
         if (!reset_n) begin : reset_pht_and_ghr
             integer i;
             global_history <= {GH_SIZE{1'b0}};
