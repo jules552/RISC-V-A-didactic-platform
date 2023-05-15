@@ -98,11 +98,11 @@ module cpu (
         .clk(clk),
         .reset_n(reset_n),
 
-        .new_pc_i(ex_mem_new_pc),
         .instruction_i(instruction),
-        .br_taken_i(ex_mem_br_taken),
-        .br_sig_i(ex_mem_br_sig),
-        .br_pred_i(ex_mem_br_pred),
+        .new_pc_i(new_pc),
+        .br_taken_i(br_taken),
+        .br_sig_i(id_ex_br_sig),
+        .br_pred_i(id_ex_br_pred),
         .stall_i(stall),
 
         .pc_o(rom_addr),

@@ -9,7 +9,6 @@ module cpu_tb;
     reg reset_n;
     initial reset_n = 0;
     always #0.5 clk = ~clk;
-    integer i;
 
     wire [31:0] rom_addr;
     wire [31:0] instruction; 
