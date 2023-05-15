@@ -57,9 +57,8 @@ module cpu (
     wire mem_wb_reg_wr_sig;
 
     // Other wires
-    wire [31:0] pc;
     wire br_sig;
-    wire [2:0] br_op;
+    wire [2:0] br_op;   
     wire [2:0] lsu_op;
     wire [4:0] alu_op;
 
@@ -107,19 +106,17 @@ module cpu (
         .br_pred_i(id_ex_br_pred),
         .stall_i(stall),
 
-        .pc_o(pc),
+        .pc_o(rom_addr),
         .br_pred_o(br_pred),
         .miss_pred_o(miss_pred)
     );
-
-    assign rom_addr = pc;
 
     if_id_register if_id_register_inst (
         .clk(clk),
         .reset_n(reset_n),
 
         .instruction_i(instruction),
-        .pc_i(pc),
+        .pc_i(rom_addr),
         .br_pred_i(br_pred),
         .stall_i(stall),
         .flush_i(miss_pred),
@@ -127,7 +124,7 @@ module cpu (
         .instruction_o(if_id_instruction),
         .pc_o(if_id_pc),
         .br_pred_o(if_id_br_pred)
-    );
+);
 
     id_stage id_stage_inst (
         .instruction_i(if_id_instruction),

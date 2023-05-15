@@ -22,14 +22,16 @@ module if_id_register (
             instruction <= 0;
             pc <= 0;
             br_pred <= 0;
-        end else if (flush_i) begin
-            instruction <= 32'h0013; // Set to NOP (addi x0, x0, 0)
-            pc <= pc_i;
-            br_pred <= 0;
-        end else if (!stall_i) begin
-            instruction <= instruction_i;
-            pc <= pc_i;
-            br_pred <= br_pred_i;
+        end else begin
+            if (flush_i) begin
+                instruction <= 32'h0013; // Set to NOP (addi x0, x0, 0)
+                pc <= pc_i;
+                br_pred <= 0;
+            end else if (!stall_i) begin
+                instruction <= instruction_i;
+                pc <= pc_i;
+                br_pred <= br_pred_i;
+            end
         end
     end
 
