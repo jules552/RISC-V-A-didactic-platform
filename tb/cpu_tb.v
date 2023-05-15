@@ -1,4 +1,4 @@
-`timescale 1ms/17us
+`timescale 1ns / 1ps
 
 module cpu_tb;
 `include "../verilog/parameters.vh"
