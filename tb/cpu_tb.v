@@ -11,7 +11,7 @@ module cpu_tb;
     always #0.5 clk = ~clk;
 
     wire [31:0] rom_addr;
-    wire [31:0] instruction; 
+    wire [31:0] instruction;
 
     wire mem_wr_sig;
     wire [31:0] mem_wr_data;
