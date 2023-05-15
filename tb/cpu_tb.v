@@ -52,7 +52,7 @@ module cpu_tb;
         $dumpfile("vcd/dump.vcd");
         $dumpvars(0, cpu_tb);
         
-        #1.1
+        #0.5
         reset_n = 1;
 
         #500
