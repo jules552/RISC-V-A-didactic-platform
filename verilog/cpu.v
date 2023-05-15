@@ -90,7 +90,6 @@ module cpu (
     wire br_pred;
     wire miss_pred;
 
-
     // Register values
     wire [31:0] reg_rs1;
     wire [31:0] reg_rs2;
