@@ -2,9 +2,6 @@ container:
   dockerfile: Dockerfile
 
 task:
-  debug_script:
-    - pwd
-    - ls -la
   build_script:
     - mkdir -p bin
     - |
