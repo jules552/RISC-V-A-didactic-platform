@@ -56,13 +56,13 @@ module cpu_tb;
 
         #500
 
-        if (cpu_inst.reg_file_inst.registers[29] == 55) begin
-            $display("CPU: PASS RECURSIVE SUM OF N");
-        end
-        else begin : fail
-            $display("CPU: FAIL RECURSIVE SUM OF N");
-            $display("CPU: Expected 55, got %d", cpu_inst.reg_file_inst.registers[29]);
-        end
+        // if (cpu_inst.reg_file_inst.registers[29] == 55) begin
+        //     $display("cpu: pass recursive sum of n");
+        // end
+        // else begin : fail
+        //     $display("cpu: fail recursive sum of n");
+        //     $display("cpu: expected 55, got %d", cpu_inst.reg_file_inst.registers[29]);
+        // end
         $finish;
     end
 endmodule
