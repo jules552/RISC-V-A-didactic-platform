@@ -21,7 +21,10 @@ module cpu_tb;
     wire [31:0] mem_rd_data;
 
 
-    rom rom_init (
+    rom #(
+        .PROGRAM("programs/recursive_sum_of_n.hex"),
+        .PROGRAM_SIZE(29)
+    )rom_init (
         .clk(clk),
         .reset_n(reset_n),
         .addr(rom_addr),
