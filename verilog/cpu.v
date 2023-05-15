@@ -99,10 +99,10 @@ module cpu (
         .reset_n(reset_n),
 
         .instruction_i(instruction),
-        .new_pc_i(new_pc),
-        .br_taken_i(br_taken),
-        .br_sig_i(id_ex_br_sig),
-        .br_pred_i(id_ex_br_pred),
+        .new_pc_i(ex_mem_new_pc),
+        .br_taken_i(ex_mem_br_taken),
+        .br_sig_i(ex_mem_br_sig),
+        .br_pred_i(ex_mem_br_pred),
         .stall_i(stall),
 
         .pc_o(rom_addr),
@@ -132,16 +132,12 @@ module cpu (
         .reg_rs2_i(reg_rs2),
         .id_ex_reg_wr_addr_i(id_ex_reg_wr_addr),
         .id_ex_reg_wr_sig_i(id_ex_reg_wr_sig),
-        .id_ex_data_dest_i(id_ex_data_dest),
-        .id_ex_alu_result_i(alu_result),
-        .id_ex_pc_plus4_i(pc_plus4),
 
         .ex_mem_reg_wr_addr_i(ex_mem_reg_wr_addr),
         .ex_mem_reg_wr_sig_i(ex_mem_reg_wr_sig),
         .ex_mem_data_dest_i(ex_mem_data_dest),
         .ex_mem_alu_result_i(ex_mem_alu_result),
         .ex_mem_pc_plus4_i(ex_mem_pc_plus4),
-        .ex_mem_mem_rd_data_i(rd_data),
 
         .mem_wb_reg_wr_addr_i(mem_wb_reg_wr_addr),
         .mem_wb_reg_wr_sig_i(mem_wb_reg_wr_sig),

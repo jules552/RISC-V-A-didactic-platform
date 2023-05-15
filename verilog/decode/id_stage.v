@@ -3,18 +3,15 @@ module id_stage (
     input wire [31:0] pc_i,
     input wire [31:0] reg_rs1_i,
     input wire [31:0] reg_rs2_i,
+
     input wire [4:0] id_ex_reg_wr_addr_i,
     input wire id_ex_reg_wr_sig_i,
-    input wire [1:0] id_ex_data_dest_i,
-    input wire [31:0] id_ex_alu_result_i,
-    input wire [31:0] id_ex_pc_plus4_i,
 
     input wire [4:0] ex_mem_reg_wr_addr_i,
     input wire ex_mem_reg_wr_sig_i,
     input wire [1:0] ex_mem_data_dest_i,
     input wire [31:0] ex_mem_alu_result_i,
     input wire [31:0] ex_mem_pc_plus4_i,
-    input wire [31:0] ex_mem_mem_rd_data_i,
 
     input wire [4:0] mem_wb_reg_wr_addr_i,
     input wire mem_wb_reg_wr_sig_i,
@@ -79,9 +76,13 @@ module id_stage (
     stall_unit stall_unit_inst (
         .reg_rs1_addr_i(reg_addr1_o),
         .reg_rs2_addr_i(reg_addr2_o),
+
         .id_ex_reg_wr_addr_i(id_ex_reg_wr_addr_i),
         .id_ex_reg_wr_sig_i(id_ex_reg_wr_sig_i),
-        .id_ex_data_dest_i(id_ex_data_dest_i),
+
+        .ex_mem_reg_wr_addr_i(ex_mem_reg_wr_addr_i),
+        .ex_mem_reg_wr_sig_i(ex_mem_reg_wr_sig_i),
+        .ex_mem_data_dest_i(ex_mem_data_dest_i),
 
         .stall_o(stall_o)
     );
@@ -92,17 +93,12 @@ module id_stage (
         .reg_addr2_i(reg_addr2_o),
         .reg_rs2_i(reg_rs2_i),
 
-        .id_ex_reg_wr_addr_i(id_ex_reg_wr_addr_i),
-        .id_ex_reg_wr_sig_i(id_ex_reg_wr_sig_i),
-        .id_ex_data_dest_i(id_ex_data_dest_i),
-        .id_ex_alu_result_i(id_ex_alu_result_i),
-        .id_ex_pc_plus4_i(id_ex_pc_plus4_i),
         .ex_mem_reg_wr_addr_i(ex_mem_reg_wr_addr_i),
         .ex_mem_reg_wr_sig_i(ex_mem_reg_wr_sig_i),
         .ex_mem_data_dest_i(ex_mem_data_dest_i),
         .ex_mem_alu_result_i(ex_mem_alu_result_i),
         .ex_mem_pc_plus4_i(ex_mem_pc_plus4_i),
-        .ex_mem_mem_rd_data_i(ex_mem_mem_rd_data_i),
+        
         .mem_wb_reg_wr_addr_i(mem_wb_reg_wr_addr_i),
         .mem_wb_reg_wr_sig_i(mem_wb_reg_wr_sig_i),
         .mem_wb_data_dest_i(mem_wb_data_dest_i),
