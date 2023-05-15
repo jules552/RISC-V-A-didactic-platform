@@ -4,10 +4,10 @@ module cpu_tb;
 `include "../verilog/parameters.vh"
 
     reg clk;
+    initial clk = 0;
     initial begin
-        #0.1;  // Wait 0.1ns before starting the clock
-        clk = 0;  // Initial clock value
-        forever #0.5 clk = ~clk;  // Toggle clock every 0.5ns
+        clk = 0;
+        forever #0.5 clk = ~clk;
     end
     reg reset_n;
     initial reset_n = 0;
