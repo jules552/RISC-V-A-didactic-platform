@@ -35,8 +35,7 @@ module alu_tb;
                 $display("ALU_ADD: FAIL");
                 $display("ALU_ADD: %d + %d = %d", a, b, result);
             end
-        end
-        
+        end 
 
         // Test Corner Case Overflow
         a = 1;

@@ -4,22 +4,30 @@ LD=riscv32-unknown-elf-ld
 OBJCOPY=riscv32-unknown-elf-objcopy
 OBJDUMP=riscv32-unknown-elf-objdump
 
-CFLAGS=-march=rv32im
+CFLAGS=-march=rv32im -O2
 
-all: main.hex
+all: build main.hex
 
-main.s: main.c
-	$(CC) -S -o main.s main.c $(CFLAGS)
+build:
+	mkdir -p build
 
-main.o: main.s
-	$(AS) -o main.o main.s
+build/main.s: main.c
+	$(CC) -S -o build/main.s main.c $(CFLAGS)
 
-main.elf: main.o
-	$(LD) -T linker.ld -o main.elf main.o
+build/main.o: build/main.s
+	$(AS) -o build/main.o build/main.s
 
-main.hex: main.elf
-	$(OBJDUMP) -d main.elf | awk '{print $$2}' | grep '^[0-9a-f]\{8\}$$' > main.hex
+build/main.elf: build/main.o
+	$(LD) -T linker.ld -o build/main.elf build/main.o
+
+build/main.hex: build/main.elf
+	$(OBJDUMP) -d build/main.elf | awk '{print $$2}' | grep '^[0-9a-f]\{8\}$$' > build/main.hex
+
+main.hex: build/main.hex
+	cp build/main.hex .
 
 clean:
-	rm -f main.s main.o main.elf main.hex
+	rm -rf build/*
+	rm -f main.hex
 
+.PHONY: all clean
