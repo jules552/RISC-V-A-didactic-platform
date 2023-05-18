@@ -1,8 +1,6 @@
-int main();
-
 void _start() {
-    main();
-    while (1){}
+    asm volatile("call main");    
+    while (1);
 }
 
 int main() {
