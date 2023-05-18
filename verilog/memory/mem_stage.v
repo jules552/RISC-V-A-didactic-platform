@@ -3,6 +3,7 @@ module mem_stage (
     input wire [31:0] addr_i,
     input wire [31:0] wr_data_i,
     input wire [31:0] mem_rd_data_i,
+    
     output wire [31:0] mem_rd_data_o,
     output wire [31:0] mem_addr_o,
     output wire [31:0] mem_wr_data_o

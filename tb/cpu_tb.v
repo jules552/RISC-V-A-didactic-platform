@@ -4,9 +4,8 @@ module cpu_tb;
 `include "../verilog/parameters.vh"
 
     reg clk;
-    initial clk = 0;
     initial begin
-        clk = 0;
+        clk = 1;
         forever #0.5 clk = ~clk;
     end
     reg reset_n;
@@ -55,7 +54,7 @@ module cpu_tb;
         $dumpfile("vcd/dump.vcd");
         $dumpvars(0, cpu_tb);
         
-        #0.5
+        #1
         reset_n = 1;
 
         #500

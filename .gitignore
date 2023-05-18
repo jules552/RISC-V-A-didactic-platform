@@ -7,3 +7,4 @@
 !.cirrus.yml
 !DockerFile
 !Makefile
+!c_code/*
