@@ -7,5 +7,3 @@ void _start() {
     asm volatile ("mv x29, %0" :: "r"(sum));
     while(1);
 }
-
-
