@@ -78,7 +78,7 @@ module register_file_tb;
             if (rs1_o != expected_values[i]) begin
                 num_failures = num_failures + 1;
                 $display("REGISTER %d: FAILED", i);
-                $display("Expected: %h, Got: %h", expected_values[i], rs1_o);
+                $display("Expected: %h BUT GOT %h", expected_values[i], rs1_o);
             end
         end
 
