@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module test_register_file;
+module register_file_tb;
 
     reg clk;
     reg reset_n;
