@@ -1,5 +1,4 @@
 module pc_tb;
-    `include "../parameters.vh"
 
     // Inputs
     reg reset_n, clk;
