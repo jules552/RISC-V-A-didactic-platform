@@ -22,6 +22,3 @@ test:
 			exit 1; \
 		fi \
 	done
-
-artifacts: 
-	@cp vcd/* ./artifacts
