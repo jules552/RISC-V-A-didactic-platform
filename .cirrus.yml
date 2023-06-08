@@ -15,8 +15,8 @@ task:
         tb_base=$(basename $tb .v)
         # collect all .v files in verilog/
         v_files=$(find verilog/ -name '*.v')
-        # collect all directories in verilog/ for -i arguments
-        i_args=$(find verilog/ -type d -exec echo -n "-i {} " \;)
+        # collect all directories in verilog/ for -I arguments
+        i_args=$(find verilog/ -type d -exec echo -n "-I {} " \;)
         # compile with iverilog
         iverilog -g2005 -o "bin/${tb_base}" $i_args $tb $v_files
       done
