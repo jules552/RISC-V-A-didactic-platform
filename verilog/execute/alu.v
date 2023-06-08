@@ -28,20 +28,20 @@ module alu (
             ALU_MUL: result = a * b;
             ALU_MULH: result = (a_signed * b_signed) >>> 32;
             ALU_MULHSU: result = (a_signed * b) >>> 32;
-            ALU_MULHU: result = (a * b) >>> 32;
+            ALU_MULHU: result = (a * b) >> 32;
             ALU_DIV: begin
-                if (b == 0) result = 32'hFFFFFFFF;
-                else if (a == 32'h80000000 && b == 32'hFFFFFFFF) result = a;
+                if (b == 0) result = -1;
+                else if (a == 32'h80000000 && b == -1) result = 32'h80000000;
                 else result = a_signed / b_signed;
             end
-            ALU_DIVU: result = (b == 0) ? 32'hFFFFFFFF : a / b;
+            ALU_DIVU: result = (b == 0) ? -1 : a / b;
             ALU_REM: begin
                 if (b == 0) result = a;
-                else if (a == 32'h80000000 && b == 32'hFFFFFFFF) result = 0;
+                else if (a == 32'h80000000 && b == -1) result = 0;
                 else result = a_signed % b_signed;
             end
             ALU_REMU: result = (b == 0) ? a : a % b;
-            
+
             default:
                 result = 0;
         endcase
