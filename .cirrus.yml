@@ -1,7 +1,12 @@
-container:
-  dockerfile: Dockerfile
-
 task:
+  name: Build and test
+  os: linux
+  dist: focal # for Ubuntu 20.04
+  env:
+    DEBIAN_FRONTEND: noninteractive
+  install_script:
+    - sudo apt-get update
+    - sudo apt-get install -y iverilog
   build_script:
     - mkdir -p bin
     - |
