@@ -6,23 +6,23 @@ task:
     - mkdir -p bin
     - |
       for tb in $(find tb/ -name '*.v'); do
-        # Obtain the base name of the testbench file to use for the output file name
+        # obtain the base name of the testbench file to use for the output file name
         tb_base=$(basename $tb .v)
-        # Collect all .v files in verilog/
+        # collect all .v files in verilog/
         v_files=$(find verilog/ -name '*.v')
-        # Collect all directories in verilog/ for -I arguments
-        i_args=$(find verilog/ -type d -exec echo -n "-I {} " \;)
-        # Compile with iverilog
+        # collect all directories in verilog/ for -i arguments
+        i_args=$(find verilog/ -type d -exec echo -n "-i {} " \;)
+        # compile with iverilog
         iverilog -g2005 -o "bin/${tb_base}" $i_args $tb $v_files
       done
   test_script:
     - mkdir -p vcd 
     - |
       for tb in bin/*; do 
-        if vvp $tb | tee /dev/fd/2 | grep -q "FAIL"; then
+        if vvp $tb | tee /dev/fd/2 | grep -q "fail"; then
           exit 1
         fi
       done
   artifacts:
-    name: VCD Files
+    name: vcd files
     path: vcd/*
