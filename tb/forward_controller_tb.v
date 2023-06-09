@@ -56,6 +56,8 @@ module forward_controller_tb;
     );
 
     initial begin
+        $dumpfile("vcd/forward_controller.vcd");
+        $dumpvars(0, forward_controller_tb);
         num_failures = 0;
 
         // Initialize inputs

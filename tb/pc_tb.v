@@ -29,6 +29,9 @@ module pc_tb;
     end
 
     initial begin
+        $dumpfile("vcd/pc.vcd");
+        $dumpvars(0, pc_tb);
+
         reset_n = 0;
         clk = 0;
         new_pc = 0;

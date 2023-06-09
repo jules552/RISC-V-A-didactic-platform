@@ -13,10 +13,10 @@ module register_file_tb;
     wire [31:0] rs1_o;
     wire [31:0] rs2_o;
 
-    reg [31:0] expected_values[0:31]; // Store expected values for verification later
+    reg [31:0] expected_values[0:31];
 
     integer i;
-    integer num_failures; // To keep track of number of test failures
+    integer num_failures;
 
     // Instantiate the module
     register_file rf (
@@ -31,49 +31,50 @@ module register_file_tb;
         .rs2_o(rs2_o)
     );
 
-    // Create a clock with period 20ns
     always begin
         #10 clk = ~clk;
     end
 
-    // Test procedure
     initial begin
+        $dumpfile("vcd/register_file.vcd");
+        $dumpvars(0, register_file_tb);
+
         // Reset
         clk = 0; reset_n = 0;
         rs1_addr_i = 0; rs2_addr_i = 0;
         wr_data_i = 0; wr_addr_i = 0;
         wr_enable_i = 0;
-        num_failures = 0; // Reset failure counter
+        num_failures = 0;
 
-        #15; // Wait for some time
+        #15;
         reset_n = 1;
 
         // Write random values to each register
         for (i = 0; i < 32; i = i+1) begin
-            #10; // Wait for one clock cycle
+            #10;
 
             wr_data_i = $random; 
             wr_addr_i = i;
             wr_enable_i = 1;
 
             if (i == 0) begin
-                expected_values[i] = 0; // Register 0 is always 0
+                expected_values[i] = 0;
             end else begin
                 expected_values[i] = wr_data_i;
             end
 
-            #10; // Wait for one clock cycle
+            #10;
 
             wr_enable_i = 0; 
         end
 
         // Read back and verify each register
         for (i = 0; i < 32; i = i+1) begin
-            #10; // Wait for one clock cycle
+            #10;
 
             rs1_addr_i = i;
 
-            #10; // Wait for one clock cycle
+            #10;
 
             if (rs1_o != expected_values[i]) begin
                 num_failures = num_failures + 1;
@@ -86,7 +87,6 @@ module register_file_tb;
             $display("REGISTER FILE: ALL TESTS PASSED");
         end
 
-        // End the test
         $finish;
     end
 endmodule

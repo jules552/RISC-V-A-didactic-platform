@@ -23,7 +23,10 @@ module alu_tb;
     );
 
     initial begin
-        num_failures = 0; // Reset failure counter
+        $dumpfile("vcd/alu.vcd");
+        $dumpvars(0, alu_tb);
+
+        num_failures = 0;
 
         // Test ALU_ADD
         alu_op = ALU_ADD;
