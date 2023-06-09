@@ -1,4 +1,3 @@
-
 module forward_controller_tb;
     `include "../verilog/parameters.vh"
 
