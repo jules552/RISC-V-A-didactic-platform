@@ -22,13 +22,13 @@ module br (
         if (br_sig) begin
             case (br_op)
                 BR_BEQ : begin 
-                    if (alu_result == 0) begin
+                    if (alu_result_signed == 0) begin
                         new_pc = pc + imm;
                         br_taken = 1;
                     end
                 end
                 BR_BNE : begin
-                    if (alu_result != 0) begin
+                    if (alu_result_signed != 0) begin
                         new_pc = pc + imm;
                         br_taken = 1;
                     end
@@ -40,7 +40,7 @@ module br (
                     end
                 end
                 BR_BLTU : begin
-                    if (alu_result < 0) begin
+                    if (alu_result_signed < 0) begin
                         new_pc = pc + imm;
                         br_taken = 1;
                     end
@@ -52,7 +52,7 @@ module br (
                     end
                 end
                 BR_BGEU : begin
-                    if (alu_result >= 0) begin
+                    if (alu_result_signed >= 0) begin
                         new_pc = pc + imm;
                         br_taken = 1;
                     end
