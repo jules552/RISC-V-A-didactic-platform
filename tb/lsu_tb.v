@@ -36,6 +36,9 @@ module lsu_tb;
     always #5 clk = ~clk;
 
     initial begin
+        $dumpfile("vcd/lsu_tb.vcd");
+        $dumpvars(0, lsu_tb);
+        
         // Initialize testbench
         clk = 0;
         reset_n = 0;
