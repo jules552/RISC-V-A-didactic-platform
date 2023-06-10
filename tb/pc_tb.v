@@ -78,9 +78,9 @@ module pc_tb;
         end
 
         if(num_failures == 0) begin
-            $display("PC operation test: ALL TESTS PASSED");
+            $display("PC: ALL TESTS PASSED");
         end else begin
-            $display("PC operation test: TEST FAILED. %d failures detected.", num_failures);
+            $display("PC: TEST FAILED. %d failures detected.", num_failures);
         end
 
         $finish;

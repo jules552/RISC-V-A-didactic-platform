@@ -18,7 +18,9 @@ build:
 test: 
 	@mkdir -p vcd
 	@for tb in bin/*; do \
-		if vvp $$tb | tee /dev/fd/2 | grep -q "FAIL"; then \
+		if vvp $$tb | grep -v "WARNING\\|VCD\\|\$$finish called at" | tee /dev/fd/2 | grep -q "FAIL"; then \
 			exit 1; \
 		fi \
 	done
+
+
