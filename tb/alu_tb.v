@@ -34,7 +34,7 @@ module alu_tb;
             a = $random;
             b = $random;
             #10;
-            if ($signed(result) != $signed(a) + $signed(b)) begin
+            if ($signed(result) !== $signed(a) + $signed(b)) begin
                 num_failures = num_failures + 1;
                 $display("ALU_ADD: %d + %d != %d", $signed(a), $signed(b), $signed(result));
             end
@@ -46,7 +46,7 @@ module alu_tb;
             a = $random;
             b = $random;
             #10;
-            if ($signed(result) != $signed(a) - $signed(b)) begin
+            if ($signed(result) !== $signed(a) - $signed(b)) begin
                 num_failures = num_failures + 1;
                 $display("ALU_SUB: %d - %d != %d", $signed(a), $signed(b), $signed(result));
             end
@@ -58,7 +58,7 @@ module alu_tb;
             a = $random;
             b = $random;
             #10;
-            if (result != (a ^ b)) begin
+            if (result !== (a ^ b)) begin
                 num_failures = num_failures + 1;
                 $display("ALU_XOR: %d ^ %d != %d", a, b, result);
             end
@@ -70,7 +70,7 @@ module alu_tb;
             a = $random;
             b = $random;
             #10;
-            if (result != (a | b)) begin
+            if (result !== (a | b)) begin
                 num_failures = num_failures + 1;
                 $display("ALU_OR: %d | %d != %d", a, b, result);
             end
@@ -82,7 +82,7 @@ module alu_tb;
             a = $random;
             b = $random;
             #10;
-            if (result != (a & b)) begin
+            if (result !== (a & b)) begin
                 num_failures = num_failures + 1;
                 $display("ALU_AND: %d & %d != %d", a, b, result);
             end
@@ -94,7 +94,7 @@ module alu_tb;
             a = $random;
             b = $random % 32;
             #10;
-            if (result != (a << b)) begin
+            if (result !== (a << b)) begin
                 num_failures = num_failures + 1;
                 $display("ALU_SSL: %d << %d != %d", a, b, result);
             end
@@ -106,7 +106,7 @@ module alu_tb;
             a = $random;
             b = $random % 32;
             #10;
-            if (result != (a >> b)) begin
+            if (result !== (a >> b)) begin
                 num_failures = num_failures + 1;
                 $display("ALU_SRL: %d >> %d != %d", a, b, result);
             end
@@ -118,7 +118,7 @@ module alu_tb;
             a = $random;
             b = $random % 32;
             #10;
-            if ($signed(result) != ($signed(a) >>> b)) begin
+            if ($signed(result) !== ($signed(a) >>> b)) begin
                 num_failures = num_failures + 1;
                 $display("ALU_SRA: %d >>> %d != %d", $signed(a), b, $signed(result));
             end
@@ -130,7 +130,7 @@ module alu_tb;
             a = $random;
             b = $random;
             #10;
-            if (result != ($signed(a) < $signed(b))) begin
+            if (result !== ($signed(a) < $signed(b))) begin
                 num_failures = num_failures + 1;
                 $display("ALU_SLT: %d < %d != %d", a, b, result);
             end
@@ -142,7 +142,7 @@ module alu_tb;
             a = $random;
             b = $random;
             #10;
-            if (result != (a < b)) begin
+            if (result !== (a < b)) begin
                 num_failures = num_failures + 1;
                 $display("ALU_SLTU: %d <U %d != %d", a, b, result);
             end
@@ -166,7 +166,7 @@ module alu_tb;
             a = $random;
             b = $random;
             #10;
-            if ($signed(result) != ($signed(a) * $signed(b)) >>> 32) begin
+            if ($signed(result) !== ($signed(a) * $signed(b)) >>> 32) begin
                 num_failures = num_failures + 1;
                 $display("ALU_MULH: (%d * %d) >>> 32 != %d", $signed(a), $signed(b), $signed(result));
             end
@@ -178,7 +178,7 @@ module alu_tb;
             a = $random;
             b = $random;
             #10;
-            if ($signed(result) != ($signed(a) * b) >>> 32) begin
+            if ($signed(result) !== ($signed(a) * b) >>> 32) begin
                 num_failures = num_failures + 1;
                 $display("ALU_MULHSU: (%d * %d) >>> 32 != %d", $signed(a), b, $signed(result));
             end
@@ -190,7 +190,7 @@ module alu_tb;
             a = $random;
             b = $random;
             #10;
-            if (result != (a * b) >>> 32) begin
+            if (result !== (a * b) >>> 32) begin
                 num_failures = num_failures + 1;
                 $display("ALU_MULHU: (%d * %d) >>> 32 != %d", a, b, result);
             end
@@ -202,7 +202,7 @@ module alu_tb;
             a = $random;
             b = $random | 1; // Avoid divide by zero
             #10;
-            if ($signed(result) != $signed(a) / $signed(b)) begin
+            if ($signed(result) !== $signed(a) / $signed(b)) begin
                 num_failures = num_failures + 1;
                 $display("ALU_DIV: %d / %d != %d", $signed(a), $signed(b), $signed(result));
             end
@@ -214,7 +214,7 @@ module alu_tb;
             a = $random;
             b = $random | 1; // Avoid divide by zero
             #10;
-            if (result != a / b) begin
+            if (result !== a / b) begin
                 num_failures = num_failures + 1;
                 $display("ALU_DIVU: %d /U %d != %d", a, b, result);
             end
@@ -226,7 +226,7 @@ module alu_tb;
             a = $random;
             b = $random | 1; // Avoid divide by zero
             #10;
-            if ($signed(result) != $signed(a) % $signed(b)) begin
+            if ($signed(result) !== $signed(a) % $signed(b)) begin
                 num_failures = num_failures + 1;
                 $display("ALU_REM: %d %% %d != %d", $signed(a), $signed(b), $signed(result));
             end
@@ -238,7 +238,7 @@ module alu_tb;
             a = $random;
             b = $random | 1; // Avoid divide by zero
             #10;
-            if (result != a % b) begin
+            if (result !== a % b) begin
                 num_failures = num_failures + 1;
                 $display("ALU_REMU: %d %%U %d != %d", a, b, result);
             end
