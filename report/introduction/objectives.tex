@@ -1,0 +1,21 @@
+\subsection{Project Objectives}
+
+Overall, the project aims to give a very basic implementation of an RV32IM processor such 
+that it can be used as an academic tool to teach and explain how a RISC processor works 
+and how to build one using HDL languages such as Verilog. Here are the main objectives that 
+has been set for the project:
+
+\begin{enumerate}[label={\textbullet}]
+    \item First create an unpipelined version of the RV32IM processor as a proof of concept
+    \item Pipeline the existing unpipelined version of the processor
+    \item Fix the different issues caused by the pipelining of the processor, mainly the 
+    data dependency but also the branch prediction problem by either stall or implementing some 
+    forwarding paths and branch predictor and mechanisms to make everything work correctly
+    \item The simulation should works on Icarus Verilog to make the whole process more open instead 
+    of relying on proprietary software such as Questa Modelsim.
+    \item Add extensive testing of the different main modules to make the processor as reliable 
+    as possible.
+    \item Add an easy way for users to create programs and load them into the ROM memory.
+    \item Document everything such that users can easily understand how things work and can 
+    work on it easily.
+\end{enumerate}
