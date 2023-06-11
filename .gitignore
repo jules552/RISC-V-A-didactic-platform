@@ -7,3 +7,4 @@
 !.cirrus.yml
 !Makefile
 !c_code/*
+!diagrams/*
