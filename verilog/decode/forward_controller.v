@@ -3,17 +3,20 @@ module forward_controller (
     input wire [31:0] reg_rs1_i,
     input wire [4:0] reg_addr2_i,
     input wire [31:0] reg_rs2_i,
+
     input wire [4:0] id_ex_reg_wr_addr_i,
     input wire id_ex_reg_wr_sig_i,
     input wire [1:0] id_ex_data_dest_i,
     input wire [31:0] id_ex_alu_result_i,
     input wire [31:0] id_ex_pc_plus4_i,
+
     input wire [4:0] ex_mem_reg_wr_addr_i,
     input wire ex_mem_reg_wr_sig_i,
     input wire [1:0] ex_mem_data_dest_i,
     input wire [31:0] ex_mem_alu_result_i,
     input wire [31:0] ex_mem_pc_plus4_i,
     input wire [31:0] ex_mem_mem_rd_data_i,
+    
     input wire [4:0] mem_wb_reg_wr_addr_i,
     input wire mem_wb_reg_wr_sig_i,
     input wire [1:0] mem_wb_data_dest_i,

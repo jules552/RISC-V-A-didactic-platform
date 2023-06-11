@@ -34,10 +34,6 @@ module cpu (
     wire id_ex_br_pred;
 
     // Wire for EX/MEM register
-    wire [31:0] ex_mem_pc;
-    wire [31:0] ex_mem_new_pc;
-    wire ex_mem_br_taken;
-    wire ex_mem_br_sig;
     wire [31:0] ex_mem_pc_plus4;
     wire [31:0] ex_mem_alu_result;
     wire [31:0] ex_mem_rs2;
@@ -45,7 +41,6 @@ module cpu (
     wire [1:0] ex_mem_data_dest;
     wire [4:0] ex_mem_reg_wr_addr;
     wire ex_mem_reg_wr_sig;
-    wire ex_mem_br_pred;
     
 
     // Wire for MEM/WB register
@@ -225,10 +220,6 @@ module cpu (
         .clk(clk),
         .reset_n(reset_n),
 
-        .pc_i(id_ex_pc),
-        .new_pc_i(new_pc),
-        .br_taken_i(br_taken),
-        .br_sig_i(id_ex_br_sig),
         .pc_plus4_i(pc_plus4),
         .alu_result_i(alu_result),
         .rs2_i(id_ex_rs2),
@@ -237,13 +228,8 @@ module cpu (
         .reg_wr_addr_i(id_ex_reg_wr_addr),
         .reg_wr_sig_i(id_ex_reg_wr_sig),
         .mem_wr_sig_i(id_ex_mem_wr_sig),
-        .br_pred_i(id_ex_br_pred),
         .flush_i(miss_pred),
 
-        .pc_o(ex_mem_pc),
-        .new_pc_o(ex_mem_new_pc),
-        .br_taken_o(ex_mem_br_taken),
-        .br_sig_o(ex_mem_br_sig),
         .pc_plus4_o(ex_mem_pc_plus4),
         .alu_result_o(ex_mem_alu_result),
         .rs2_o(ex_mem_rs2),
@@ -251,8 +237,7 @@ module cpu (
         .data_dest_o(ex_mem_data_dest),
         .reg_wr_addr_o(ex_mem_reg_wr_addr),
         .reg_wr_sig_o(ex_mem_reg_wr_sig),
-        .mem_wr_sig_o(mem_wr_sig),
-        .br_pred_o(ex_mem_br_pred)
+        .mem_wr_sig_o(mem_wr_sig)
     );
 
     mem_stage mem_stage_inst (
