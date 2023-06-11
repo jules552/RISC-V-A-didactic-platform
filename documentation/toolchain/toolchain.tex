@@ -1,0 +1,49 @@
+I've also put as disposition an "easy" way to generate programs to use as input to the ROM of the processor. You still have to install 
+the RISC-V toolchain to use it and configure correctly the bash or zsh file to indicate where the toolchain is installed.
+Installing the toolchain can take quite a while since you'll have to compile it and can take more than 45min and will highly depend
+on what CPU you have. \\
+
+Here is a step-by-step guide to installing the toolchain:
+
+\begin{enumerate}[label={\textbullet}]
+    \item Clone the toolchain from \href{https://github.com/riscv-collab/riscv-gnu-toolchain}{here}.
+    
+    \begin{verbatim}
+    git clone https://github.com/riscv/riscv-gnu-toolchain.git
+    \end{verbatim}
+    
+    \item Navigate into the cloned directory.
+    
+    \begin{verbatim}
+    cd riscv-gnu-toolchain
+    \end{verbatim}
+    
+    \item Run the configuration script.
+
+    \begin{verbatim}
+    ./configure --prefix=/opt/riscv --with-arch=rv32im
+    \end{verbatim}
+    
+    \item Compile the toolchain. This step may take a while.
+    
+    \begin{verbatim}
+    make
+    \end{verbatim}
+    
+    \item Once the compilation is done, add the toolchain to your PATH in your bash or zsh configuration file.
+
+    \begin{verbatim}
+    echo 'export PATH=$PATH:/opt/riscv/bin' >> ~/.bashrc
+    source ~/.bashrc
+    \end{verbatim}
+\end{enumerate}
+
+After that, you should be able to use the toolchain. To test it, you can try making a simple program like the ones in the 
+$c\_code$ folder of the project. You can simply compile them with the following command:
+
+\begin{verbatim}
+    make
+\end{verbatim}
+
+That will generate a .hex file that you can use as input to the ROM of the processor. It will also give you the assembly
+code of the program in the .s file so that you can see what the compiler generated. \\

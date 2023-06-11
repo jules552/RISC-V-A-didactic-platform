@@ -18,7 +18,7 @@ we simply use the algorithm described above to predict if the branch will be tak
 on the actual result of the branch that is represented by the $miss\_pred$ signal. If the prediction is taken, we compute the next PC \\
 
 Signals:
-\begin{enumerate}
+\begin{enumerate}[label={\textbullet}]
     \item Input: $instruction$, This signal is representing the current instruction that is being fetched.
     \item Input: $pc$, This signal is representing the current PC.
     \item Input: $br\_sig$ This signal is representing the state of the current instruction in the EX stage. It is used to know if the instruction is a branch or not.

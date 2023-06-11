@@ -6,3 +6,6 @@
 \contentsline {section}{\numberline {3}Decode}{6}{section.3}%
 \contentsline {subsection}{\numberline {3.1}ID Stage}{6}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Controller}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Stall Unit}{9}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Forward Controller}{10}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Toolchain}{12}{section.4}%
