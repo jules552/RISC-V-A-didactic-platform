@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="Cw_3OhJFvrdF9LLGUdDQ" name="Page-1">
+        <mxGraphModel dx="-1890" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;h1&gt;MEM STAGE&lt;br&gt;&lt;/h1&gt;" style="rounded=1;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;arcSize=8;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" vertex="1" parent="1">
+                    <mxGeometry x="3500" y="370" width="635" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;b&gt;LSU&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3620" y="410" width="420" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="lsu_op" style="html=1;shadow=0;dashed=0;align=left;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;labelPosition=right;verticalLabelPosition=middle;spacing=5;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;direction=east;" vertex="1" parent="1">
+                    <mxGeometry x="3615" y="440" width="20" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="addr" style="html=1;shadow=0;dashed=0;align=left;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;labelPosition=right;verticalLabelPosition=middle;spacing=5;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;direction=east;" vertex="1" parent="1">
+                    <mxGeometry x="3615" y="460" width="20" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="wr_data" style="html=1;shadow=0;dashed=0;align=left;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;labelPosition=right;verticalLabelPosition=middle;spacing=5;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;direction=east;" vertex="1" parent="1">
+                    <mxGeometry x="3615" y="480" width="20" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="mem_rd_data" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=bottom;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;labelPosition=center;verticalLabelPosition=top;spacing=5;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;direction=north;" vertex="1" parent="1">
+                    <mxGeometry x="3990" y="580" width="10" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="rd_data" style="html=1;shadow=0;dashed=0;align=right;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;labelPosition=left;verticalLabelPosition=middle;spacing=5;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;direction=east;" vertex="1" parent="1">
+                    <mxGeometry x="4030" y="440" width="20" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="mem_addr" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=bottom;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;labelPosition=center;verticalLabelPosition=top;spacing=5;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="3780" y="580" width="10" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="wr_data" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=bottom;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;labelPosition=center;verticalLabelPosition=top;spacing=5;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="3720" y="580" width="10" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

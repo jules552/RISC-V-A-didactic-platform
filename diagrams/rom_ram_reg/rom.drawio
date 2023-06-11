@@ -1,0 +1,19 @@
+<mxfile host="65bd71144e">
+    <diagram id="9vOjzF5Sk8YISdi7HLQ6" name="Page-1">
+        <mxGraphModel dx="2144" dy="1753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="&lt;b&gt;ROM&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-490" y="-750" width="120" height="390.7228915662651" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="instruction" style="html=1;shadow=0;dashed=0;align=right;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;labelPosition=left;verticalLabelPosition=middle;spacing=5;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;direction=east;" vertex="1" parent="1">
+                    <mxGeometry x="-380" y="-641.9277108433735" width="20" height="8.313253012048193" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;div&gt;pc&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=bottom;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;labelPosition=center;verticalLabelPosition=top;spacing=5;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;direction=north;" vertex="1" parent="1">
+                    <mxGeometry x="-435" y="-367.5903614457831" width="10" height="16.626506024096386" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

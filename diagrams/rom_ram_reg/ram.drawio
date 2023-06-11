@@ -1,0 +1,25 @@
+<mxfile host="65bd71144e">
+    <diagram id="IG5F1CwT7GSYheUP6BV8" name="Page-1">
+        <mxGraphModel dx="-1753" dy="831" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;b&gt;RAM&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3610" y="500" width="440" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="wr_sig" style="html=1;shadow=0;dashed=0;align=left;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;labelPosition=right;verticalLabelPosition=middle;spacing=5;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;direction=east;" vertex="1" parent="1">
+                    <mxGeometry x="3600" y="550" width="20" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;div&gt;wr_data&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=top;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;labelPosition=center;verticalLabelPosition=bottom;spacing=5;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="3740" y="490" width="10" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="addr" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=top;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;labelPosition=center;verticalLabelPosition=bottom;spacing=5;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="3800" y="490" width="10" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="rd_data" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=top;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;labelPosition=center;verticalLabelPosition=bottom;spacing=5;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;direction=north;" vertex="1" parent="1">
+                    <mxGeometry x="4010" y="490" width="10" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

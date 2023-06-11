@@ -1,0 +1,22 @@
+\subsection{Mux}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.30\textwidth]{../diagrams/writeback/mux.png}
+\caption{Diagram of the 3 entries Mux}
+\label{fig:mux3}
+\end{figure}
+
+The mux is a small module that is used to select between the three inputs that it has. In this case, it is used to select
+between the Branch Unit, the ALU, and the LSU result and then write it back to the register file. \\
+
+Signals:
+\begin{enumerate}[label={\textbullet}]
+    \item Input: $alu\_out$, This signal is representing the output of the ALU.
+    \item Input: $lsu\_out$, This signal is representing the output of the LSU.
+    \item Input: $pc\_plus4$, This signal is representing the output of the Branch Unit.
+    \item Input: $data\_dest$, This signal is representing the select signal of the mux.
+    \item Output: $wb\_data$, This signal is representing the data that will be written back to the register file.
+\end{enumerate}
+
+

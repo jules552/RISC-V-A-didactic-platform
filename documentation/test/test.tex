@@ -1,0 +1,15 @@
+Running and creating new tests is pretty easy to do, normally if you create new verilog files in the Verilog folder or new tests in
+tb folder, it will automatically add it to the compiling process. But how to run the tests? \\
+
+You have to simply install iverilog first using the command on Ubuntu or any Debian based distribution:
+\begin{verbatim}
+    sudo apt-get install iverilog -y
+\end{verbatim}
+
+Then goes to the tb folder and run the command:
+\begin{verbatim}
+    make
+\end{verbatim}
+
+It should output the result in the terminal and provide you with a .vcd file that you can open with gtkwave to see the waveform. 
+Of course in the case of you added new tests, you have to add the fact of creating the .vcd file in the testbench file. \\

@@ -1,10 +1,13 @@
 \documentclass[12pt]{article}
 \usepackage[margin=1in]{geometry}
+\usepackage[backend=biber, style=numeric-comp, sorting=none]{biblatex}
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{float}
 \usepackage{color}
 \usepackage{enumitem}
+
+\addbibresource{references.bib}
 
 \hypersetup{
     colorlinks,
@@ -38,6 +41,9 @@ Don't hesitate to use the table of contents to navigate through the different pa
 If you see any mistake or are confused by something don't hesitate to contact me at the mail address
 \href{mailto:jules.perrin@epfl.ch}{jules.perrin@epfl.ch}.
 
+\section{Parameters}
+\input{parameters/parameters.tex}
+
 \section{Fetch}
 \input{fetch/if_stage.tex}
 \input{fetch/br_predictor.tex}
@@ -53,11 +59,30 @@ If you see any mistake or are confused by something don't hesitate to contact me
 \section{Execute}
 \input{execute/ex_stage.tex}
 \input{execute/alu.tex}
+\input{execute/br_unit.tex}
+
+\section{Memory}
+\input{memory/mem_stage.tex}
+\input{memory/lsu.tex}
+
+\section{Write Back}
+\input{writeback/wb_stage.tex}
+\input{writeback/mux.tex}
+
+\section{Pipeline Registers}
+\input{pipeline/pipeline.tex}
+
+\section{ROM, RAM and register file}
+\input{rom_ram_reg/rom.tex}
+\input{rom_ram_reg/ram.tex}
+\input{rom_ram_reg/register_file.tex}
 
 \section{Toolchain}
 \input{toolchain/toolchain.tex}
 
+\section{Running Tests}
+\input{test/test.tex}
 
 
-
+\printbibliography
 \end{document}
