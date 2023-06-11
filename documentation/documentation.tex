@@ -1,6 +1,8 @@
 \documentclass[12pt]{article}
 \usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{float}
 \usepackage{color}
 
 \hypersetup{
@@ -25,7 +27,10 @@
 This document describes the RV32IM processor and its architecture. I've tried to make it as clear 
 as possible such that everyone with a basic knowledge of computer architecture can understand it.
 It will describe each significant module of the processor, what it does and what are the different
-inputs and outputs with an image of the module.
+inputs and outputs with an image of the module. To avoid repeating too much the signal, I will only list 
+the signals directly linked to the module, that's why most of the stages don't have any signals listed because 
+it's their inside modules that are using them and will be listed here instead. \\
+
 It is recommended to follow this document with the source code of the processor, which is available
 in the Verilog folder of the project.
 Don't hesitate to use the table of contents to navigate through the different parts of the document.
@@ -34,6 +39,12 @@ If you see any mistake or are confused by something don't hesitate to contact me
 
 \section{Fetch}
 \input{fetch/if_stage.tex}
+\input{fetch/br_predictor.tex}
+\input{fetch/pc.tex}
+
+\section{Decode}
+\input{decode/id_stage.tex}
+\input{decode/controller.tex}
 
 
 \end{document}
