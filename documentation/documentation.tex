@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{color}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\title{RISC-V: A Didactic Platform \\
+\large Documentation}
+
+\author{Jules PERRIN, Professor: Theo Kluter}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+This document describes the RV32IM processor and its architecture. I've tried to make it as clear 
+as possible such that everyone with a basic knowledge of computer architecture can understand it.
+It will describe each significant module of the processor, what it does and what are the different
+inputs and outputs with an image of the module.
+It is recommended to follow this document with the source code of the processor, which is available
+in the Verilog folder of the project.
+Don't hesitate to use the table of contents to navigate through the different parts of the document.
+If you see any mistake or are confused by something don't hesitate to contact me at the mail address
+\href{mailto:jules.perrin@epfl.ch}{jules.perrin@epfl.ch}.
+
+\section{Fetch}
+\input{fetch/if_stage.tex}
+
+
+\end{document}
