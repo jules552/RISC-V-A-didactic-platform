@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  11 JUN 2023 11:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  11 JUN 2023 20:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -293,15 +293,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--34
 
  []
 
-(./fetch/if_stage.tex
-<../diagrams/fetch/if_stage.png, id=60, 457.71pt x 888.31876pt>
+[1
+
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./fetch/if_stage.tex
+<../diagrams/fetch/if_stage.png, id=89, 457.71pt x 888.31876pt>
 File: ../diagrams/fetch/if_stage.png Graphic file (type png)
 <use ../diagrams/fetch/if_stage.png>
 Package pdftex.def Info: ../diagrams/fetch/if_stage.png  used on input line 5.
 (pdftex.def)             Requested size: 234.8775pt x 455.84238pt.
- [1
 
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 10--15
 
  []
@@ -310,9 +310,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.18     \item I
-                nput: $br\_pred$, This signal is representing the state of t... <../diagrams/fetch/if_stage.png>]) (./fetch/br_predictor.tex
-<../diagrams/fetch/br_predictor.png, id=78, 201.75375pt x 251.94125pt>
+l.15 
+      <../diagrams/fetch/if_stage.png>]) (./fetch/br_predictor.tex
+<../diagrams/fetch/br_predictor.png, id=97, 201.75375pt x 251.94125pt>
 File: ../diagrams/fetch/br_predictor.png Graphic file (type png)
 <use ../diagrams/fetch/br_predictor.png>
 Package pdftex.def Info: ../diagrams/fetch/br_predictor.png  used on input line 5.
@@ -328,7 +328,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has
                                                   \__shipout_drop_firstpage_...
 l.19 
       <../diagrams/fetch/br_predictor.png>]) (./fetch/pc.tex
-<../diagrams/fetch/pc.png, id=89, 191.71625pt x 141.52875pt>
+<../diagrams/fetch/pc.png, id=109, 191.71625pt x 141.52875pt>
 File: ../diagrams/fetch/pc.png Graphic file (type png)
 <use ../diagrams/fetch/pc.png>
 Package pdftex.def Info: ../diagrams/fetch/pc.png  used on input line 5.
@@ -342,15 +342,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.19     \item I
-                nput: $br\_pred$, This signal is representing the state of t... <../diagrams/fetch/pc.png>]) (./decode/id_stage.tex
-<../diagrams/decode/id_stage.png, id=102, 1487.5575pt x 1370.11874pt>
+l.14 
+      <../diagrams/fetch/pc.png>]) (./decode/id_stage.tex
+<../diagrams/decode/id_stage.png, id=122, 1487.5575pt x 1370.11874pt>
 File: ../diagrams/decode/id_stage.png Graphic file (type png)
 <use ../diagrams/decode/id_stage.png>
 Package pdftex.def Info: ../diagrams/decode/id_stage.png  used on input line 5.
 (pdftex.def)             Requested size: 469.75502pt x 432.65591pt.
  [5]) (./decode/controller.tex
-<../diagrams/decode/controller.png, id=113, 171.64125pt x 492.84125pt>
+<../diagrams/decode/controller.png, id=133, 171.64125pt x 492.84125pt>
 File: ../diagrams/decode/controller.png Graphic file (type png)
 <use ../diagrams/decode/controller.png>
 Package pdftex.def Info: ../diagrams/decode/controller.png  used on input line 5.
@@ -375,7 +375,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has
                                                   \__shipout_drop_firstpage_...
 l.17     \item O
                 utput: $br\_sig$, This signal is representing the state of t... <../diagrams/decode/controller.png>]) (./decode/stall_unit.tex
-<../diagrams/decode/stall_unit.png, id=127, 342.27875pt x 161.60374pt>
+<../diagrams/decode/stall_unit.png, id=147, 342.27875pt x 161.60374pt>
 File: ../diagrams/decode/stall_unit.png Graphic file (type png)
 <use ../diagrams/decode/stall_unit.png>
 Package pdftex.def Info: ../diagrams/decode/stall_unit.png  used on input line 5.
@@ -386,7 +386,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
  []
 
 ) (./decode/forward_controller.tex
-<../diagrams/decode/forward_controller.png, id=147, 221.82875pt x 603.25375pt>
+<../diagrams/decode/forward_controller.png, id=167, 221.82875pt x 603.25375pt>
 File: ../diagrams/decode/forward_controller.png Graphic file (type png)
 <use ../diagrams/decode/forward_controller.png>
 Package pdftex.def Info: ../diagrams/decode/forward_controller.png  used on input line 5.
@@ -406,36 +406,77 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.19     \item I
-                nput: $reg_addr2$, This signal is representing the second re... <../diagrams/decode/forward_controller.png>] [11]) (./toolchain/toolchain.tex
+                nput: $reg_addr2$, This signal is representing the second re... <../diagrams/decode/forward_controller.png>] [11]) (./decode/mux.tex
+<../diagrams/decode/mux.png, id=208, 101.37875pt x 81.30376pt>
+File: ../diagrams/decode/mux.png Graphic file (type png)
+<use ../diagrams/decode/mux.png>
+Package pdftex.def Info: ../diagrams/decode/mux.png  used on input line 5.
+(pdftex.def)             Requested size: 164.41711pt x 131.86269pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+) (./execute/ex_stage.tex
+<../diagrams/execute/ex_stage.png, id=209, 507.8975pt x 838.13126pt>
+File: ../diagrams/execute/ex_stage.png Graphic file (type png)
+<use ../diagrams/execute/ex_stage.png>
+Package pdftex.def Info: ../diagrams/execute/ex_stage.png  used on input line 5.
+(pdftex.def)             Requested size: 352.31625pt x 581.4061pt.
+ [12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.9 
+     <../diagrams/decode/mux.png>] [13]
+Overfull \vbox (21.24274pt too high) has occurred while \output is active []
+
+ [14
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.9 
+     <../diagrams/execute/ex_stage.png>]) (./execute/alu.tex
+<../diagrams/execute/alu.png, id=236, 312.16624pt x 171.64125pt>
+File: ../diagrams/execute/alu.png Graphic file (type png)
+<use ../diagrams/execute/alu.png>
+Package pdftex.def Info: ../diagrams/execute/alu.png  used on input line 5.
+(pdftex.def)             Requested size: 352.31625pt x 193.72185pt.
+) (./toolchain/toolchain.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--5
 
  []
 
-[12])
-Underfull \hbox (badness 10000) in paragraph at lines 48--54
+[15
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.13     \end{verbatim}
+                        <../diagrams/execute/alu.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 48--59
 
  []
 
-[13] (./documentation.aux)
+[16] (./documentation.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `documentation.out' has not changed.
-(rerunfilecheck)             Checksum: 44C7AEB150EAC446AFCA01A329C36EA6;1108.
+(rerunfilecheck)             Checksum: 298EA02AF80EDE35AE01F3726CF66D04;1434.
  ) 
 Here is how much of TeX's memory you used:
- 9295 strings out of 476024
- 148639 string characters out of 5794016
+ 9355 strings out of 476024
+ 149778 string characters out of 5794016
  1862382 words of memory out of 5000000
- 29524 multiletter control sequences out of 15000+600000
+ 29555 multiletter control sequences out of 15000+600000
  517961 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,76p,323b,723s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,76p,323b,722s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on documentation.pdf (13 pages, 200232 bytes).
+Output written on documentation.pdf (16 pages, 223860 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 218 compressed objects within 3 object streams
- 95 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

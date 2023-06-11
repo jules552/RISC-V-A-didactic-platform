@@ -8,4 +8,8 @@
 \contentsline {subsection}{\numberline {3.2}Controller}{7}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Stall Unit}{9}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Forward Controller}{10}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Toolchain}{12}{section.4}%
+\contentsline {subsection}{\numberline {3.5}Mux}{12}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Execute}{14}{section.4}%
+\contentsline {subsection}{\numberline {4.1}EX Stage}{14}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}ALU}{15}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Toolchain}{15}{section.5}%
