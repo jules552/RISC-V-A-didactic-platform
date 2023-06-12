@@ -1,0 +1,18 @@
+\subsection{RISC-V Toolchain}
+\subsubsection{Developping using Assembly Code}
+It is not that easy to find a way to compile a RISC-V RV32I assembly code into a hexadecimal file 
+that can be read by the ROM module. So for that, I've found two projects that helped me 
+develop simple programs for testing purposes. The first one is a Python script that converts
+pseudo instructions into hexadecimal instructions~\cite{riscv_python_assembler}. The second one is a
+website that converts assembly code into hexadecimal instructions~\cite{riscv_online_assembler}.
+One last tool I've used to reverse the hexadecimal instructions into assembly code is a website~\cite{riscv_online_encoder_decoder} but 
+also used it to modify one instruction at a time to see what it does.
+
+\subsubsection{RISC-V GNU Compiler Toolchain}
+The RISC-V GNU Compiler Toolchain is a set of tools that allows you to compile C/C++ code into
+RISC-V assembly code. It is composed of a compiler, an assembler, a linker and a debugger. To use it 
+you need to compile it from the source code which was not that easy to do because the documentation for
+such a small architecture set is not that great and since we're developing bare metal programs, it is even
+harder to find information about it. So I've used the official documentation~\cite{riscv_gnu_toolchain} and
+also a tutorial I've found on the internet~\cite{riscv_gnu_toolchain_baremetal_tutorials} to compile it and finally use 
+it.

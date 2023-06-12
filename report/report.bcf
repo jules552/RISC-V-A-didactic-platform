@@ -2349,8 +2349,22 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1" intorder="1">riscv_manual</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">riscv_manual</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">refcard</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">forwarding_paths</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">two_level_adaptive</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">verilog_tutorial</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">verilog_doc</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">icarus_tutorial</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">riscv_python_assembler</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">riscv_online_assembler</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">riscv_online_encoder_decoder</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">riscv_gnu_toolchain</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">riscv_gnu_toolchain_baremetal_tutorials</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

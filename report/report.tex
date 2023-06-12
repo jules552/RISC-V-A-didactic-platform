@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{enumitem}
+\addbibresource{references.bib}
 
 \hypersetup{
     colorlinks,
@@ -15,7 +16,7 @@
 
 \title{RISC-V: A Didactic Platform \\
 Report}
-\author{Jules PERRIN, Professor: Theo Kluter}
+\author{Jules PERRIN, Professor: Theo KLUTER}
 \date{\today}
 
 \begin{document}
@@ -28,10 +29,16 @@ Report}
 \input{introduction/objectives.tex}
 
 \section{Background Research and Knowledge}
+\input{background_research/riscv.tex}
+\input{background_research/architecture.tex}
+\input{background_research/verilog.tex}
+\input{background_research/simulation_tools.tex}
+\input{background_research/riscv_toolchain.tex}
+
+\section{Design}
 
 
 
 
-
-\printbibliography
-\end{document}\subsection{Motivation}
+\printbibliography[heading=bibintoc]
+\end{document}

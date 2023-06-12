@@ -1,0 +1,16 @@
+\subsection{Architecture}
+\subsubsection{Unpipeline}
+The unpipelined version of the CPU is mostly inspired by the one we did during the Comparch 1-2
+courses at EPFL since NiosII and RISC-V are very similar. The main difference is that the RISC-V
+is a 32 bits architecture while NiosII is a 16 bits architecture and also that RISC-V has a lot more
+instructions than NiosII with small differences in how they work. 
+
+\subsubsection{Pipeline}
+The pipelined version is inspired also mostly by what we did during the Comparch 2 course at EPFL but
+since we didn't implement the branch predictor and the forwarding paths, I had to imagine and think about 
+most of the implementation myself. I've only done a couple of research to see if I could find some examples of 
+such implementation mostly about forwarding paths since I wasn't sure how to implement it correctly at first 
+glance. I've used mainly this pdf~\cite{forwarding_paths} to reassure myself that I was doing it correctly.
+The branch predictor part has an algorithm I haven't invented called a two-level adaptive branch predictor~\cite{two_level_adaptive}.
+It uses a 2 bits saturating counter but also knows patterns such that the predictions apply locally to the 
+branch. It is a very simple algorithm but it works well enough for this project.

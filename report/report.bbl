@@ -1,0 +1,403 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{riscv_manual}{online}{}
+      \name{author}{2}{}{%
+        {{hash=1cdbf6b1b2783ec44ba9770f07e6528f}{%
+           family={Waterman},
+           familyi={W\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6e7da264d2a1b506dc85ba97a65f086a}{%
+           family={Asanović},
+           familyi={A\bibinitperiod},
+           given={Krste},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{b899609096647af73814d09236da8633}
+      \strng{fullhash}{b899609096647af73814d09236da8633}
+      \strng{bibnamehash}{b899609096647af73814d09236da8633}
+      \strng{authorbibnamehash}{b899609096647af73814d09236da8633}
+      \strng{authornamehash}{b899609096647af73814d09236da8633}
+      \strng{authorfullhash}{b899609096647af73814d09236da8633}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The RISC-V Instruction Set Manual, Volume I: User-Level ISA}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2023}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf
+      \endverb
+      \verb{url}
+      \verb https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf
+      \endverb
+    \endentry
+    \entry{refcard}{online}{}
+      \name{author}{1}{}{%
+        {{hash=34d45198c7355bf5dd7b5ac56b65691d}{%
+           family={Winans},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{34d45198c7355bf5dd7b5ac56b65691d}
+      \strng{fullhash}{34d45198c7355bf5dd7b5ac56b65691d}
+      \strng{bibnamehash}{34d45198c7355bf5dd7b5ac56b65691d}
+      \strng{authorbibnamehash}{34d45198c7355bf5dd7b5ac56b65691d}
+      \strng{authornamehash}{34d45198c7355bf5dd7b5ac56b65691d}
+      \strng{authorfullhash}{34d45198c7355bf5dd7b5ac56b65691d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{RISC-V Assembly Language Programming}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2023}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/johnwinans/rvalp/releases/download/v0.18.1/rvalp.pdf
+      \endverb
+      \verb{url}
+      \verb https://github.com/johnwinans/rvalp/releases/download/v0.18.1/rvalp.pdf
+      \endverb
+    \endentry
+    \entry{forwarding_paths}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d43d9fed92150b8ef8718bad07048018}{%
+           family={Washington},
+           familyi={W\bibinitperiod},
+           given={University},
+           giveni={U\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{d43d9fed92150b8ef8718bad07048018}
+      \strng{fullhash}{d43d9fed92150b8ef8718bad07048018}
+      \strng{bibnamehash}{d43d9fed92150b8ef8718bad07048018}
+      \strng{authorbibnamehash}{d43d9fed92150b8ef8718bad07048018}
+      \strng{authornamehash}{d43d9fed92150b8ef8718bad07048018}
+      \strng{authorfullhash}{d43d9fed92150b8ef8718bad07048018}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Forwarding}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://courses.cs.washington.edu/courses/cse378/07au/lectures/L12-Forwarding.pdf
+      \endverb
+      \verb{url}
+      \verb https://courses.cs.washington.edu/courses/cse378/07au/lectures/L12-Forwarding.pdf
+      \endverb
+    \endentry
+    \entry{two_level_adaptive}{online}{}
+      \name{author}{2}{}{%
+        {{hash=1be09abe85d736596efd101c5ccfd17a}{%
+           family={Yeh},
+           familyi={Y\bibinitperiod},
+           given={Tse-Yu},
+           giveni={T\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=8fcb98f713d8a5893c333afc73f5e16b}{%
+           family={Patt},
+           familyi={P\bibinitperiod},
+           given={Yale\bibnamedelima N.},
+           giveni={Y\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9a38744380e869e08e3f33025b16dc23}
+      \strng{fullhash}{9a38744380e869e08e3f33025b16dc23}
+      \strng{bibnamehash}{9a38744380e869e08e3f33025b16dc23}
+      \strng{authorbibnamehash}{9a38744380e869e08e3f33025b16dc23}
+      \strng{authornamehash}{9a38744380e869e08e3f33025b16dc23}
+      \strng{authorfullhash}{9a38744380e869e08e3f33025b16dc23}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Two-Level Adaptive Training Branch Prediction}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2023}
+      \field{year}{1991}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.inf.pucrs.br/~calazans/graduate/SDAC/saltos.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.inf.pucrs.br/~calazans/graduate/SDAC/saltos.pdf
+      \endverb
+    \endentry
+    \entry{verilog_tutorial}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2606c87d1107c2b5a23c5a5c0d9f8213}{%
+           family={Chipverify},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{2606c87d1107c2b5a23c5a5c0d9f8213}
+      \strng{fullhash}{2606c87d1107c2b5a23c5a5c0d9f8213}
+      \strng{bibnamehash}{2606c87d1107c2b5a23c5a5c0d9f8213}
+      \strng{authorbibnamehash}{2606c87d1107c2b5a23c5a5c0d9f8213}
+      \strng{authornamehash}{2606c87d1107c2b5a23c5a5c0d9f8213}
+      \strng{authorfullhash}{2606c87d1107c2b5a23c5a5c0d9f8213}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Verilog Tutorial}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.chipverify.com/verilog/verilog-tutorial
+      \endverb
+      \verb{url}
+      \verb https://www.chipverify.com/verilog/verilog-tutorial
+      \endverb
+    \endentry
+    \entry{verilog_doc}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d7e516380100beea42ad1ab83a405b1e}{%
+           family={Society},
+           familyi={S\bibinitperiod},
+           given={IEEE\bibnamedelima Computer},
+           giveni={I\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d7e516380100beea42ad1ab83a405b1e}
+      \strng{fullhash}{d7e516380100beea42ad1ab83a405b1e}
+      \strng{bibnamehash}{d7e516380100beea42ad1ab83a405b1e}
+      \strng{authorbibnamehash}{d7e516380100beea42ad1ab83a405b1e}
+      \strng{authornamehash}{d7e516380100beea42ad1ab83a405b1e}
+      \strng{authorfullhash}{d7e516380100beea42ad1ab83a405b1e}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IEEE Standard for Verilog Hardware Description Language}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2023}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://staff.ustc.edu.cn/~songch/download/IEEE.1364-2005.pdf
+      \endverb
+      \verb{url}
+      \verb http://staff.ustc.edu.cn/~songch/download/IEEE.1364-2005.pdf
+      \endverb
+    \endentry
+    \entry{icarus_tutorial}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0372c2ae54e6b510ac174e0a17415d2c}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0372c2ae54e6b510ac174e0a17415d2c}
+      \strng{fullhash}{0372c2ae54e6b510ac174e0a17415d2c}
+      \strng{bibnamehash}{0372c2ae54e6b510ac174e0a17415d2c}
+      \strng{authorbibnamehash}{0372c2ae54e6b510ac174e0a17415d2c}
+      \strng{authornamehash}{0372c2ae54e6b510ac174e0a17415d2c}
+      \strng{authorfullhash}{0372c2ae54e6b510ac174e0a17415d2c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Getting Started With Icarus Verilog}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://steveicarus.github.io/iverilog/usage/getting_started.html
+      \endverb
+      \verb{url}
+      \verb https://steveicarus.github.io/iverilog/usage/getting_started.html
+      \endverb
+    \endentry
+    \entry{riscv_python_assembler}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7b1cc3aaf8ea2b66185f150f9ce52337}{%
+           family={Dennis},
+           familyi={D\bibinitperiod},
+           given={Don},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b1cc3aaf8ea2b66185f150f9ce52337}
+      \strng{fullhash}{7b1cc3aaf8ea2b66185f150f9ce52337}
+      \strng{bibnamehash}{7b1cc3aaf8ea2b66185f150f9ce52337}
+      \strng{authorbibnamehash}{7b1cc3aaf8ea2b66185f150f9ce52337}
+      \strng{authornamehash}{7b1cc3aaf8ea2b66185f150f9ce52337}
+      \strng{authorfullhash}{7b1cc3aaf8ea2b66185f150f9ce52337}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{month}{4}
+      \field{title}{RISCV-RV32I-Assembler}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2023}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/metastableB/RISCV-RV32I-Assembler
+      \endverb
+      \verb{url}
+      \verb https://github.com/metastableB/RISCV-RV32I-Assembler
+      \endverb
+    \endentry
+    \entry{riscv_online_assembler}{online}{}
+      \name{author}{1}{}{%
+        {{hash=35d449ad488faa810063eb5bac2b496f}{%
+           family={Teske},
+           familyi={T\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{35d449ad488faa810063eb5bac2b496f}
+      \strng{fullhash}{35d449ad488faa810063eb5bac2b496f}
+      \strng{bibnamehash}{35d449ad488faa810063eb5bac2b496f}
+      \strng{authorbibnamehash}{35d449ad488faa810063eb5bac2b496f}
+      \strng{authornamehash}{35d449ad488faa810063eb5bac2b496f}
+      \strng{authorfullhash}{35d449ad488faa810063eb5bac2b496f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{RISC-V Online Assembler}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://riscvasm.lucasteske.dev/#
+      \endverb
+      \verb{url}
+      \verb https://riscvasm.lucasteske.dev/#
+      \endverb
+    \endentry
+    \entry{riscv_online_encoder_decoder}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b38bc61733ee55191cb53800cf3a4510}{%
+           family={LupLab\bibnamedelimb @\bibnamedelimb University\bibnamedelimb of\bibnamedelima California},
+           familyi={L\bibinitperiod\bibinitdelim @\bibinitperiod\bibinitdelim U\bibinitperiod\bibinitdelim o\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Davis},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{b38bc61733ee55191cb53800cf3a4510}
+      \strng{fullhash}{b38bc61733ee55191cb53800cf3a4510}
+      \strng{bibnamehash}{b38bc61733ee55191cb53800cf3a4510}
+      \strng{authorbibnamehash}{b38bc61733ee55191cb53800cf3a4510}
+      \strng{authornamehash}{b38bc61733ee55191cb53800cf3a4510}
+      \strng{authorfullhash}{b38bc61733ee55191cb53800cf3a4510}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{RISC-V Instruction Encoder/Decoder}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://luplab.gitlab.io/rvcodecjs/
+      \endverb
+      \verb{url}
+      \verb https://luplab.gitlab.io/rvcodecjs/
+      \endverb
+    \endentry
+    \entry{riscv_gnu_toolchain}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1b8c54c81f2116dc4d09f1f4f3ef32e5}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={RISC-V},
+           giveni={R\bibinithyphendelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{1b8c54c81f2116dc4d09f1f4f3ef32e5}
+      \strng{fullhash}{1b8c54c81f2116dc4d09f1f4f3ef32e5}
+      \strng{bibnamehash}{1b8c54c81f2116dc4d09f1f4f3ef32e5}
+      \strng{authorbibnamehash}{1b8c54c81f2116dc4d09f1f4f3ef32e5}
+      \strng{authornamehash}{1b8c54c81f2116dc4d09f1f4f3ef32e5}
+      \strng{authorfullhash}{1b8c54c81f2116dc4d09f1f4f3ef32e5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{RISC-V GNU Compiler Toolchain}
+      \verb{urlraw}
+      \verb https://github.com/riscv-collab/riscv-gnu-toolchain
+      \endverb
+      \verb{url}
+      \verb https://github.com/riscv-collab/riscv-gnu-toolchain
+      \endverb
+    \endentry
+    \entry{riscv_gnu_toolchain_baremetal_tutorials}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0b3b59ea5b08b8faf1b0306dfadc1014}{%
+           family={Vivonomicon},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{0b3b59ea5b08b8faf1b0306dfadc1014}
+      \strng{fullhash}{0b3b59ea5b08b8faf1b0306dfadc1014}
+      \strng{bibnamehash}{0b3b59ea5b08b8faf1b0306dfadc1014}
+      \strng{authorbibnamehash}{0b3b59ea5b08b8faf1b0306dfadc1014}
+      \strng{authornamehash}{0b3b59ea5b08b8faf1b0306dfadc1014}
+      \strng{authorfullhash}{0b3b59ea5b08b8faf1b0306dfadc1014}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{month}{2}
+      \field{title}{Bare-metal RISC-V Development with the GD32VF103CB}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://vivonomicon.com/2020/02/11/bare-metal-risc-v-development-with-the-gd32vf103cb/
+      \endverb
+      \verb{url}
+      \verb https://vivonomicon.com/2020/02/11/bare-metal-risc-v-development-with-the-gd32vf103cb/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

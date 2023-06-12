@@ -1,0 +1,15 @@
+\subsection{Simulation Tools}
+During the project, I mainly used a close source simulator that we were using at EPFL and 
+developed by Intel called Questa Modelsim. It is a great tool combining compiling and seeing 
+the waveforms of the signals in the same window. It is also very easy to use and has a lot of
+features that I haven't used during the project. The only downside is that it is not free and
+it is quite buggy sometimes and you need to activate an option called \texttt{full visibilty}
+to have access to all the signals in the waveform window. At the end of the project, since I had 
+to implement the CI, I needed a free simulator with a command line interface and I've used
+Icarus Verilog. It is a free simulator that is not too hard to use and has a command-line interface.
+The only downsides I've found while using it are that there is not a lot of documentation~\cite{icarus_tutorial} 
+and it is a bit less user-friendly than Questa Modelsim. You have to use a different tool to see the waveforms
+like GTKWave and you don't have access to the array of signals easily like in Questa Modelsim.
+Also, one weird issue I've encountered is that the simulation gives different results than Questa Modelsim
+because the full visibility option does things differently than Icarus Verilog, but I've luckily
+found the issue even though to this day I don't know why it was doing that.
