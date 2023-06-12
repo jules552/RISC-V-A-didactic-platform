@@ -1,8 +1,8 @@
-\subsection{PC}
+\paragraph{PC}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{../diagrams/fetch/pc.png}
+    \includegraphics[width=0.35\textwidth]{design/pipelined/fetch/images/pc.png}
     \caption{Diagram of the PC}
     \label{fig:PC}
 \end{figure}
@@ -19,5 +19,5 @@ Signals:
     \item Input: $br\_pred$, This signal is representing the state of the prediction made by the branch predictor in the EX stage.
     \item Input: $miss\_pred$, This signal is representing if there is a miss prediction or not.
     \item Input: $stall$, This signal is representing if the pipeline is stalled or not due to a data dependency in the ID stage.
-    \item Output: $pc$, This signal is representing the current PC.
+    \item Output: $pc$, This signal is representing the current PC\@.
 \end{enumerate}

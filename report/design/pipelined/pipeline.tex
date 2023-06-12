@@ -52,7 +52,34 @@ to implement in the CPU\@. But when the prediction is wrong, we will have to flu
     \includegraphics[width=1\textwidth]{design/pipelined/images/pipelined_design_predictor.png}
     \caption{Pipelined CPU design with branch predictor}
     \label{fig:pipelined_cpu_design_predictor}
+\end{figure} 
+
+Now we can see the full simplified representation of the pipelined CPU design. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{design/pipelined/images/pipelined_design_full.png}
+    \caption{Pipelined CPU simplified design with forwarding paths and branch predictor}
+    \label{fig:pipelined_cpu_design_full}
 \end{figure}
+
+A more detailed version with all the different signals and how they are connected is available in the appendix \ref{appendix:pipelined_design} and
+also as a diagram inside the project \texttt{diagrams} folder that can be opened \href{https://app.diagrams.net/}{here}. \\
+
+Now that we have a better understanding of the overall design, I can go into more detail about each different stage and the modules inside of them.
+
+\subsubsection{IF Stage}
+\input{design/pipelined/fetch/pc.tex}
+\input{design/pipelined/fetch/br_predictor.tex}
+
+\subsubsection{ID Stage}
+\input{design/pipelined/decode/controller.tex}
+\input{design/pipelined/decode/forward_controller.tex}
+\input{design/pipelined/decode/stall_unit.tex}
+\input{design/pipelined/decode/mux.tex}
+
+
+
+
 
 
 

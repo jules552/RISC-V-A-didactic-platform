@@ -5,6 +5,7 @@
 \usepackage{float}	
 \usepackage{hyperref}
 \usepackage{enumitem}
+\usepackage{rotating}
 \addbibresource{references.bib}
 
 \hypersetup{
@@ -14,6 +15,16 @@
     linkcolor=black,
     urlcolor=black
 }
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+            {-3.25ex \@plus1ex \@minus.2ex}%
+            {1.5ex \@plus.2ex}%
+            {\normalfont\normalsize\bfseries}}
+\makeatother
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
 
 \title{RISC-V: A Didactic Platform \\
 Report}
@@ -43,4 +54,13 @@ Report}
 
 
 \printbibliography[heading=bibintoc]
+
+\appendix
+\section{Detailed Pipelined CPU Design}
+\label{appendix:pipelined_design}
+\begin{sidewaysfigure}
+    \centering
+    \includegraphics[width=\textheight]{appendix/images/pipelined_design_detail.png} % Note the change in width to \textheight
+    \caption{Detailed Pipelined CPU Design}
+\end{sidewaysfigure}
 \end{document}

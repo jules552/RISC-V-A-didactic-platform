@@ -1,0 +1,20 @@
+\paragraph{Mux}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.20\textwidth]{design/pipelined/decode/images/mux2.png}
+    \caption{Diagram of the 2 entries Mux}
+    \label{fig:mux2}
+\end{figure}
+
+The mux is a small module that is used to select between the two inputs that it has. It is used 2 times in this module, for selecting between
+$rs1$ and $PC$ and for selecting between $rs2$ and $imm$. Sorry, I haven't used the standard shape of a MUX but I haven't found one on the 
+website I'm using to draw the different diagrams. \\
+
+Signals:
+\begin{enumerate}[label={\textbullet}]
+    \item Input: $a$, This signal is representing the first input of the mux.
+    \item Input: $b$, This signal is representing the second input of the mux.
+    \item Input: $sel$, This signal is representing the select signal of the mux.
+    \item Output: $out$, This signal is representing the output of the mux.
+\end{enumerate}
