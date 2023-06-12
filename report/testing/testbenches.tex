@@ -22,8 +22,8 @@ When writing the test I discovered some issues in the design, mostly in the ALU 
 not correctly in one of my instructions, and in the Branch Unit the output of the alu wasn't treated as a signed number.
 It's also with the CPU testbench that I've discovered the issue with the different values between Questa Modelsim with full visibility and 
 Icarus Verilog. 
-I still think that more tests could be added to the different testbenches to have even better coverage like for example for the CPU with a 
-program that could use every single instruction of the CPU. But I think that the current state is pretty okay. \\
+I maintain that we could enhance the range of our testing by incorporating additional checks across various testbenches, such as designing 
+a program for the CPU that utilizes each of its unique instructions. Nevertheless, I believe that our current testing approach is reasonably satisfactory. \\
 
 The process of actually launching the test and seeing the output has been simplified by me by creating a Makefile that will compile all the 
 different modules correctly and link them together and it will launch the simulation and output the results into the terminal. Also, each 

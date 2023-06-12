@@ -11,13 +11,24 @@ than some other projects, I've done during my studies. I think the time I spent 
 that the project didn't take the time I should have dedicated to other courses.\\
 
 What should be improved in the future?
-I think the project is a really good start for a RISC-V processor but I think adding some of the standard extensions could 
-be a great start for any student that would like to continue the project. Like said in the testing section, I think some testbenches 
-can be improved and some more can be added to test the processor more thoroughly since I can't be 100\% sure that the processor 
-is bug-free but most of the tests I've done manually have passed so I think it is a good start.\\
+I think the project is a really good start for a RISC-V processor but here is what I think can be added or improved in the project: 
+\begin{enumerate}[label=\textbullet]
+    \item Adding more extensions from the RISC-V ISA like the floating-point extension for example and could be a great starting
+    point for any student that would like to continue the project.
+    \item As said in the testing section, I think some testbenches could be improved and some more can be added to test the processor
+    to make sure it is bug-free since I can't be 100\% sure that the processor is bug-free but most of the tests I've done manually
+    and with the testbenches have passed so I think it is a least in a pretty good state.
+    \item Maybe implement a memory hierarchy with a cache and a memory controller to make the processor more realistic.
+    \item Trying to make a multi-core processor such that the FENCE instructions can be implemented and that could be a great
+    way to link the BA5 course Mularch.
+    \item Implementing a reordering of instructions to make the processor more efficient for example if the memory hierarchy is
+    implemented, it will optimize the time spent waiting for the memory by executing other instructions.
+    \item Create a simple interactive program that could be executed on the FPGA board using the processor like the snake game 
+    we did in the Comparch course.
+\end{enumerate}
 
 Thank you again to Professor Kluter for allowing me to work on this project and for some of the resources he gave me 
 to help me during the project. I hope this project will be useful for future students and that it will be improved in the future.
 I hope you enjoyed reading this report and that it will help you understand the project better.
 
-Of course the project is accessible on my GitHub page at \href{https://github.com/jules552/RISC-V-A-didactic-platform}{https://github.com/jules552/RISC-V-A-didactic-platform}
+Of course, the project is accessible on my GitHub page at \href{https://github.com/jules552/RISC-V-A-didactic-platform}{https://github.com/jules552/RISC-V-A-didactic-platform}
