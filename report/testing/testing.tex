@@ -1,0 +1,24 @@
+There is some testbench that has been written for the biggest module of the project. The only notable exception is the 
+controller for time but also since it is mostly tested by the general CPU testbench. So here is the testbench that has been written:
+
+\begin{enumerate}[label={\textbullet}]
+    \item ALU
+    \item Branch Unit
+    \item CPU
+    \item Forward controller
+    \item LSU
+    \item PC
+    \item Register File
+    \item Stall Unit
+\end{enumerate}
+
+Most of this testbench is testing the module with a lot of different (mostly random) inputs and checking that the output is correct.
+Some are also testing more specific cases like corner cases that could lead to some issues in the design. The testbench for the CPU is 
+a bit special since it is testing the whole CPU with a simple program computing a recursive sum of the first 10 integers testing most 
+of the module of the CPU.
+When writing the test I discovered some issues in the design, mostly in the ALU and the Branch Unit. For in the ALU I was shifting 
+not correctly in one of my instructions, and in the Branch Unit the output of the alu wasn't treated as a signed number. So I've fixed.
+It's also with the CPU testbench that I've discovered the issue with the different values between Questa Modelsim with full visibility and 
+Icarus Verilog. 
+I still think that more tests could be added to the different testbenches to have even better coverage but I think that the current
+state is pretty okay. 

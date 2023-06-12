@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  12 JUN 2023 10:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  12 JUN 2023 11:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -544,29 +544,30 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 2.
-)
+ [1
+
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write5
 \openout5 = `report.toc'.
 
- [1
-
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./introduction/motivation.tex) (./introduction/scope.tex) (./introduction/objectives.tex [2]) (./background_research/riscv.tex) (./background_research/architecture.tex [3]) (./background_research/verilog.tex) (./background_research/simulation_tools.tex) (./background_research/riscv_toolchain.tex [4]) (./design/parameters.tex) (./design/unpipelined/unpipelined.tex
+ (./introduction/motivation.tex) (./introduction/scope.tex [2]) (./introduction/objectives.tex) (./background_research/riscv.tex [3]) (./background_research/architecture.tex) (./background_research/verilog.tex) (./background_research/simulation_tools.tex) (./background_research/riscv_toolchain.tex [4]) (./design/parameters.tex) (./design/unpipelined/unpipelined.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--1
 
  []
 
-<design/unpipelined/images/unpipelined_cpu.png, id=199, 1293.03075pt x 679.338pt>
+[5]
+<design/unpipelined/images/unpipelined_cpu.png, id=273, 1293.03075pt x 679.338pt>
 File: design/unpipelined/images/unpipelined_cpu.png Graphic file (type png)
 <use design/unpipelined/images/unpipelined_cpu.png>
 Package pdftex.def Info: design/unpipelined/images/unpipelined_cpu.png  used on input line 10.
 (pdftex.def)             Requested size: 399.29463pt x 209.78406pt.
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 15--28
 
  []
 
-) (./design/pipelined/pipeline.tex [6 <./design/unpipelined/images/unpipelined_cpu.png>]
-<design/pipelined/images/pipelined_design.png, id=216, 1513.45425pt x 696.80325pt>
+[6 <./design/unpipelined/images/unpipelined_cpu.png>]) (./design/pipelined/pipelined.tex
+<design/pipelined/images/pipelined_design.png, id=281, 1513.45425pt x 696.80325pt>
 File: design/pipelined/images/pipelined_design.png Graphic file (type png)
 <use design/pipelined/images/pipelined_design.png>
 Package pdftex.def Info: design/pipelined/images/pipelined_design.png  used on input line 8.
@@ -577,23 +578,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--18
  []
 
 [7 <./design/pipelined/images/pipelined_design.png>]
-<design/pipelined/images/pipelined_design_forwarding.png, id=225, 1500.807pt x 690.1785pt>
+<design/pipelined/images/pipelined_design_forwarding.png, id=289, 1500.807pt x 690.1785pt>
 File: design/pipelined/images/pipelined_design_forwarding.png Graphic file (type png)
 <use design/pipelined/images/pipelined_design_forwarding.png>
 Package pdftex.def Info: design/pipelined/images/pipelined_design_forwarding.png  used on input line 39.
 (pdftex.def)             Requested size: 469.75502pt x 216.02779pt.
-
+ [8]
 Underfull \hbox (badness 10000) in paragraph at lines 44--49
 
  []
 
-[8 <./design/pipelined/images/pipelined_design_forwarding.png>]
-<design/pipelined/images/pipelined_design_predictor.png, id=233, 1509.84074pt x 691.383pt>
+<design/pipelined/images/pipelined_design_predictor.png, id=296, 1509.84074pt x 691.383pt>
 File: design/pipelined/images/pipelined_design_predictor.png Graphic file (type png)
 <use design/pipelined/images/pipelined_design_predictor.png>
 Package pdftex.def Info: design/pipelined/images/pipelined_design_predictor.png  used on input line 52.
 (pdftex.def)             Requested size: 469.75502pt x 215.1072pt.
-<design/pipelined/images/pipelined_design_full.png, id=234, 1489.36424pt x 621.522pt>
+[9 <./design/pipelined/images/pipelined_design_forwarding.png>]
+<design/pipelined/images/pipelined_design_full.png, id=304, 1489.36424pt x 621.522pt>
 File: design/pipelined/images/pipelined_design_full.png Graphic file (type png)
 <use design/pipelined/images/pipelined_design_full.png>
 Package pdftex.def Info: design/pipelined/images/pipelined_design_full.png  used on input line 60.
@@ -603,30 +604,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
 
-[9 <./design/pipelined/images/pipelined_design_predictor.png> <./design/pipelined/images/pipelined_design_full.png>] (./design/pipelined/fetch/pc.tex
-<design/pipelined/fetch/images/pc.png, id=245, 191.71625pt x 141.52875pt>
+(./design/pipelined/fetch/pc.tex
+<design/pipelined/fetch/images/pc.png, id=307, 191.71625pt x 141.52875pt>
 File: design/pipelined/fetch/images/pc.png Graphic file (type png)
 <use design/pipelined/fetch/images/pc.png>
 Package pdftex.def Info: design/pipelined/fetch/images/pc.png  used on input line 5.
 (pdftex.def)             Requested size: 164.41711pt x 121.38193pt.
-
+ [10 <./design/pipelined/images/pipelined_design_predictor.png> <./design/pipelined/images/pipelined_design_full.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
 ) (./design/pipelined/fetch/br_predictor.tex
-<design/pipelined/fetch/images/br_predictor.png, id=246, 201.75375pt x 251.94125pt>
+<design/pipelined/fetch/images/br_predictor.png, id=316, 201.75375pt x 251.94125pt>
 File: design/pipelined/fetch/images/br_predictor.png Graphic file (type png)
 <use design/pipelined/fetch/images/br_predictor.png>
 Package pdftex.def Info: design/pipelined/fetch/images/br_predictor.png  used on input line 5.
 (pdftex.def)             Requested size: 164.41711pt x 205.31685pt.
- [10 <./design/pipelined/fetch/images/pc.png>]
+ [11 <./design/pipelined/fetch/images/pc.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 10--19
 
  []
 
-[11 <./design/pipelined/fetch/images/br_predictor.png>]) (./design/pipelined/decode/controller.tex
-<design/pipelined/decode/images/controller.png, id=271, 171.64125pt x 492.84125pt>
+[12 <./design/pipelined/fetch/images/br_predictor.png>]) (./design/pipelined/decode/controller.tex
+<design/pipelined/decode/images/controller.png, id=341, 171.64125pt x 492.84125pt>
 File: design/pipelined/decode/images/controller.png Graphic file (type png)
 <use design/pipelined/decode/images/controller.png>
 Package pdftex.def Info: design/pipelined/decode/images/controller.png  used on input line 5.
@@ -636,19 +637,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--15
 
  []
 
-[12 <./design/pipelined/decode/images/controller.png>]) (./design/pipelined/decode/forward_controller.tex
-<design/pipelined/decode/images/forward_controller.png, id=281, 221.82875pt x 603.25375pt>
+[13 <./design/pipelined/decode/images/controller.png>]) (./design/pipelined/decode/forward_controller.tex
+<design/pipelined/decode/images/forward_controller.png, id=352, 221.82875pt x 603.25375pt>
 File: design/pipelined/decode/images/forward_controller.png Graphic file (type png)
 <use design/pipelined/decode/images/forward_controller.png>
 Package pdftex.def Info: design/pipelined/decode/images/forward_controller.png  used on input line 5.
 (pdftex.def)             Requested size: 164.41711pt x 447.11876pt.
- [13]
+ [14]
 Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-[14 <./design/pipelined/decode/images/forward_controller.png>] [15]) (./design/pipelined/decode/stall_unit.tex
-<design/pipelined/decode/images/stall_unit.png, id=330, 342.27875pt x 161.60374pt>
+[15 <./design/pipelined/decode/images/forward_controller.png>] [16]) (./design/pipelined/decode/stall_unit.tex
+<design/pipelined/decode/images/stall_unit.png, id=399, 342.27875pt x 161.60374pt>
 File: design/pipelined/decode/images/stall_unit.png Graphic file (type png)
 <use design/pipelined/decode/images/stall_unit.png>
 Package pdftex.def Info: design/pipelined/decode/images/stall_unit.png  used on input line 5.
@@ -658,8 +659,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-[16 <./design/pipelined/decode/images/stall_unit.png>]) (./design/pipelined/decode/mux.tex
-<design/pipelined/decode/images/mux2.png, id=346, 101.37875pt x 81.30376pt>
+[17 <./design/pipelined/decode/images/stall_unit.png>]) (./design/pipelined/decode/mux.tex
+<design/pipelined/decode/images/mux2.png, id=415, 101.37875pt x 81.30376pt>
 File: design/pipelined/decode/images/mux2.png Graphic file (type png)
 <use design/pipelined/decode/images/mux2.png>
 Package pdftex.def Info: design/pipelined/decode/images/mux2.png  used on input line 5.
@@ -669,41 +670,94 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--13
 
  []
 
-))
-Overfull \hbox (0.70404pt too wide) in paragraph at lines 56--56
+) (./design/pipelined/execute/alu.tex
+<design/pipelined/execute/images/alu.png, id=416, 312.16624pt x 171.64125pt>
+File: design/pipelined/execute/images/alu.png Graphic file (type png)
+<use design/pipelined/execute/images/alu.png>
+Package pdftex.def Info: design/pipelined/execute/images/alu.png  used on input line 5.
+(pdftex.def)             Requested size: 234.8775pt x 129.14702pt.
+ [18 <./design/pipelined/decode/images/mux2.png> <./design/pipelined/execute/images/alu.png>]) (./design/pipelined/execute/br_unit.tex
+<design/pipelined/execute/images/br_unit.png, id=432, 292.09125pt x 191.71625pt>
+File: design/pipelined/execute/images/br_unit.png Graphic file (type png)
+<use design/pipelined/execute/images/br_unit.png>
+Package pdftex.def Info: design/pipelined/execute/images/br_unit.png  used on input line 5.
+(pdftex.def)             Requested size: 234.8775pt x 154.1689pt.
+ [19 <./design/pipelined/execute/images/br_unit.png>]) (./design/pipelined/memory/lsu.tex
+<design/pipelined/memory/images/lsu.png, id=450, 437.635pt x 191.71625pt>
+File: design/pipelined/memory/images/lsu.png Graphic file (type png)
+<use design/pipelined/memory/images/lsu.png>
+Package pdftex.def Info: design/pipelined/memory/images/lsu.png  used on input line 5.
+(pdftex.def)             Requested size: 234.8775pt x 102.89334pt.
+) (./design/pipelined/writeback/mux.tex
+<../diagrams/writeback/mux.png, id=451, 101.37875pt x 81.30376pt>
+File: ../diagrams/writeback/mux.png Graphic file (type png)
+<use ../diagrams/writeback/mux.png>
+Package pdftex.def Info: ../diagrams/writeback/mux.png  used on input line 5.
+(pdftex.def)             Requested size: 93.94957pt x 75.34744pt.
+ [20 <./design/pipelined/memory/images/lsu.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+) (./design/pipelined/pipeline/pipeline_registers.tex
+<design/pipelined/pipeline/images/pipeline.png, id=467, 261.97874pt x 874.26625pt>
+File: design/pipelined/pipeline/images/pipeline.png Graphic file (type png)
+<use design/pipelined/pipeline/images/pipeline.png>
+Package pdftex.def Info: design/pipelined/pipeline/images/pipeline.png  used on input line 3.
+(pdftex.def)             Requested size: 164.41711pt x 548.69624pt.
+ [21 <../diagrams/writeback/mux.png>]) [22 <./design/pipelined/pipeline/images/pipeline.png>] (./design/pipelined/rom_ram_reg/rom.tex
+<design/pipelined/rom_ram_reg/images/rom.png, id=485, 131.49126pt x 402.50375pt>
+File: design/pipelined/rom_ram_reg/images/rom.png Graphic file (type png)
+<use design/pipelined/rom_ram_reg/images/rom.png>
+Package pdftex.def Info: design/pipelined/rom_ram_reg/images/rom.png  used on input line 5.
+(pdftex.def)             Requested size: 93.94957pt x 287.5976pt.
+) (./design/pipelined/rom_ram_reg/ram.tex
+<design/pipelined/rom_ram_reg/images/ram.png, id=486, 452.69125pt x 131.49126pt>
+File: design/pipelined/rom_ram_reg/images/ram.png Graphic file (type png)
+<use design/pipelined/rom_ram_reg/images/ram.png>
+Package pdftex.def Info: design/pipelined/rom_ram_reg/images/ram.png  used on input line 5.
+(pdftex.def)             Requested size: 234.8775pt x 68.22334pt.
+ [23 <./design/pipelined/rom_ram_reg/images/rom.png>]) (./design/pipelined/rom_ram_reg/register_file.tex
+<design/pipelined/rom_ram_reg/images/register_file.png, id=495, 292.09125pt x 151.56625pt>
+File: design/pipelined/rom_ram_reg/images/register_file.png Graphic file (type png)
+<use design/pipelined/rom_ram_reg/images/register_file.png>
+Package pdftex.def Info: design/pipelined/rom_ram_reg/images/register_file.png  used on input line 5.
+(pdftex.def)             Requested size: 234.8775pt x 121.88222pt.
+ [24 <./design/pipelined/rom_ram_reg/images/ram.png> <./design/pipelined/rom_ram_reg/images/register_file.png>])) (./testing/testing.tex) [25]
+Overfull \hbox (0.70404pt too wide) in paragraph at lines 58--58
 []\OT1/cmr/m/n/12 John Winans. \OT1/cmr/m/it/12 RISC-V As-sem-bly Lan-guage Pro-gram-ming\OT1/cmr/m/n/12 . 2022. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : [][]$\OT1/cmtt/m/n/12 https : / / github .
  []
 
-[17 <./design/pipelined/decode/images/mux2.png>]
-Overfull \hbox (18.91182pt too wide) in paragraph at lines 56--56
+
+Overfull \hbox (18.91182pt too wide) in paragraph at lines 58--58
 []\OT1/cmr/m/n/12 Stephen Williams. \OT1/cmr/m/it/12 Get-ting Started With Icarus Ver-ilog\OT1/cmr/m/n/12 . 2023. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : [][]$\OT1/cmtt/m/n/12 https : / / steveicarus .
  []
 
-<appendix/images/pipelined_design_detail.png, id=376, 5953.24126pt x 1842.885pt>
+<appendix/images/pipelined_design_detail.png, id=540, 5953.24126pt x 1842.885pt>
 File: appendix/images/pipelined_design_detail.png Graphic file (type png)
 <use appendix/images/pipelined_design_detail.png>
-Package pdftex.def Info: appendix/images/pipelined_design_detail.png  used on input line 63.
+Package pdftex.def Info: appendix/images/pipelined_design_detail.png  used on input line 65.
 (pdftex.def)             Requested size: 650.43001pt x 201.34009pt.
-[18] [19 <./appendix/images/pipelined_design_detail.png>] (./report.aux)
+[26] [27 <./appendix/images/pipelined_design_detail.png>] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 9773E410D5EC9F716272B600B1FC6921;3679.
+(rerunfilecheck)             Checksum: 4EFEFE191C306928310CCF9F20031238;5449.
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17079 strings out of 476024
- 306719 string characters out of 5794016
- 1867382 words of memory out of 5000000
- 37150 multiletter control sequences out of 15000+600000
+ 17278 strings out of 476024
+ 311782 string characters out of 5794016
+ 1869382 words of memory out of 5000000
+ 37237 multiletter control sequences out of 15000+600000
  518609 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,8n,68p,738b,1468s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,8n,68p,738b,1466s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (19 pages, 756114 bytes).
+Output written on report.pdf (27 pages, 807809 bytes).
 PDF statistics:
- 465 PDF objects out of 1000 (max. 8388607)
- 398 compressed objects within 4 object streams
- 144 named destinations out of 1000 (max. 500000)
- 285 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 652 PDF objects out of 1000 (max. 8388607)
+ 559 compressed objects within 6 object streams
+ 218 named destinations out of 1000 (max. 500000)
+ 429 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,18 +1,17 @@
 # Fdb version 4
-["biber documentation"] 1686551259 "documentation.bcf" "documentation.bbl" "documentation" 1686557378 0
+["biber documentation"] 0 "documentation.bcf" "documentation.bbl" "documentation" 0 -1
   "./references.bib" 1686516769 304 008a209b1775b4e1820d81678b18f47b ""
-  "documentation.bcf" 1686557378 107162 8476f2060a8dd7e5724d73d48e88ccc8 "pdflatex"
+  "documentation.bcf" 1686560456 107162 8476f2060a8dd7e5724d73d48e88ccc8 "pdflatex"
   (generated)
   "documentation.bbl"
   "documentation.blg"
   (rewritten before read)
-["pdflatex"] 1686557376 "c:/Users/jules/Documents/RISC-V-A-didactic-platform/documentation/documentation.tex" "documentation.pdf" "documentation" 1686557378 0
+["pdflatex"] 1686560454 "c:/Users/jules/Documents/RISC-V-A-didactic-platform/documentation/documentation.tex" "documentation.pdf" "documentation" 1686560456 2
   "../diagrams/decode/controller.png" 1686472092 20032 52419ed565e6a5ec1da63aba2d3d745b ""
   "../diagrams/decode/forward_controller.png" 1686474157 33828 9165ec8f1b31b184f0dbf7b66982fa99 ""
   "../diagrams/decode/id_stage.png" 1686471671 152742 40904d560f0923c0f9b13127c2102509 ""
   "../diagrams/decode/mux.png" 1686507001 4356 f7c790863ccdf04af34e8fed9bd5c6ea ""
   "../diagrams/decode/stall_unit.png" 1686473231 11812 17357335f756aff62c68224798374ea7 ""
-  "../diagrams/execute/alu.png" 1686508074 9193 64dacd84190af0422e02999577b5aa5e ""
   "../diagrams/execute/br_unit.png" 1686508390 13889 7711f84f3768b6707b2cc7efa0fe09f7 ""
   "../diagrams/execute/ex_stage.png" 1686507852 38449 2695741dff898e287e8f9ea94251dc51 ""
   "../diagrams/fetch/br_predictor.png" 1686470752 11942 e1fa571194fe3294913947e56f61f02e ""
@@ -122,18 +121,19 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1679228488 4662804 131178ccc9b2f4741a821427ce79dce1 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1679228609 7883446 99ffc516780f74607983ab0aff967e35 ""
   "c:/texlive/2022/texmf.cnf" 1679228474 713 e69b156964470283e0530f5060668171 ""
+  "d" 0 -1 0 ""
   "decode/controller.tex" 1686473816 2371 5a950f2b80b6af06720b8b865828cced ""
   "decode/forward_controller.tex" 1686474834 3771 b01ded5ea07ebec84ee15883d3117b37 ""
   "decode/id_stage.tex" 1686472001 608 a094f5eec3c5c98303cd15260502b74c ""
   "decode/mux.tex" 1686513474 784 c73ab9d36ef1bab423b75b8279b52b67 ""
   "decode/stall_unit.tex" 1686474256 1786 845f3e8405477dcead4234849981e29d ""
-  "documentation.aux" 1686557378 8041 ae6984196a094d9e3a010f1ce817256f "pdflatex"
+  "documentation.aux" 1686560456 8012 9fd9287973ce4db78e7a2280a6effecb "pdflatex"
   "documentation.bbl" 1686551260 2058 93b58e9769bfb78fc07786ae5fbc8cad "biber documentation"
-  "documentation.out" 1686557378 3192 15f1848d7f9ea82a3780fbe949681499 "pdflatex"
-  "documentation.run.xml" 1686557378 2409 436a3c9faf191167878b71dff2fcbb6d "pdflatex"
+  "documentation.out" 1686560456 3023 3b7c56caf406e328cfd8c52ee3531684 "pdflatex"
+  "documentation.run.xml" 1686560456 2409 3a9f28e05068826583802c46d7e2686e "pdflatex"
   "documentation.tex" 1686551293 2575 0127b09c02b223bc040521e898f638e3 ""
-  "documentation.toc" 1686557378 2183 293367f974e178265544aa50c690bf63 "pdflatex"
-  "execute/alu.tex" 1686512103 784 ddee9f6678de4adb1462ce713509203a ""
+  "documentation.toc" 1686560456 2159 7ee02e0f058b06fc937a15268216742c "pdflatex"
+  "execute/alu.tex" 1686560456 799 3495748ee64fec4ab92a01644acb8a9a ""
   "execute/br_unit.tex" 1686511434 1472 3c7f56d0ec9d1109a26a858464277859 ""
   "execute/ex_stage.tex" 1686512705 546 727002d7774c6dd239ae5b0fbafae6ef ""
   "fetch/br_predictor.tex" 1686473819 2208 4cdf885a486057a010e840d84a26696d ""
