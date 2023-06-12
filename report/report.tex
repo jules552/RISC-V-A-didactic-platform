@@ -2,6 +2,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage[backend=biber, style=numeric-comp, sorting=none]{biblatex}
 \usepackage{graphicx}
+\usepackage{float}	
 \usepackage{hyperref}
 \usepackage{enumitem}
 \addbibresource{references.bib}
@@ -36,8 +37,9 @@ Report}
 \input{background_research/riscv_toolchain.tex}
 
 \section{Design}
-
-
+\input{design/parameters.tex}
+\input{design/unpipelined/unpipelined.tex}
+\input{design/pipelined/pipeline.tex}
 
 
 \printbibliography[heading=bibintoc]

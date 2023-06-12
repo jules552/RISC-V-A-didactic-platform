@@ -21,9 +21,10 @@
 \contentsline {subsection}{\numberline {7.1}Write Back Stage}{18}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Mux}{19}{subsection.7.2}%
 \contentsline {section}{\numberline {8}Pipeline Registers}{20}{section.8}%
-\contentsline {section}{\numberline {9}ROM, RAM and register file}{22}{section.9}%
+\contentsline {section}{\numberline {9}ROM, RAM and Register File}{22}{section.9}%
 \contentsline {subsection}{\numberline {9.1}ROM}{22}{subsection.9.1}%
 \contentsline {subsection}{\numberline {9.2}RAM}{23}{subsection.9.2}%
 \contentsline {subsection}{\numberline {9.3}Register File}{23}{subsection.9.3}%
 \contentsline {section}{\numberline {10}Toolchain}{24}{section.10}%
 \contentsline {section}{\numberline {11}Running Tests}{25}{section.11}%
+\contentsline {section}{References}{25}{section*.2}%

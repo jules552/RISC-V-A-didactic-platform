@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.5.31)  11 JUN 2023 23:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.3.19)  12 JUN 2023 08:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/jules/Documents/RISC-V-A-didactic-platform/documentation/documentation.tex
-(/home/jules/Documents/RISC-V-A-didactic-platform/documentation/documentation.tex
-LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-12-17> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+**c:/Users/jules/Documents/RISC-V-A-didactic-platform/documentation/documentation.tex
+(c:/Users/jules/Documents/RISC-V-A-didactic-platform/documentation/documentation.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22> (c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(c:/texlive/2022/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -19,17 +19,17 @@ File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count190
 \c@figure=\count191
 \c@table=\count192
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
-) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+) (c:/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+ (c:/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count193
@@ -44,33 +44,33 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen147
 \Gm@layoutvoffset=\dimen148
 \Gm@dimlist=\toks17
-) (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2022/07/12 v3.18b programmable bibliographies (PK/MW)
- (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+ (c:/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (c:/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+) (c:/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count196
-) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+ (c:/texlive/2022/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)) (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+)) (c:/texlive/2022/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count197
- (/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+ (c:/texlive/2022/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+)) (c:/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -117,24 +117,24 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@sectionciteorderinternal@0=\count304
 \blx@entrysetcounter=\count305
 \blx@biblioinstance=\count306
-\labelnumberwidth=\skip49
-\labelalphawidth=\skip50
-\biblabelsep=\skip51
-\bibitemsep=\skip52
-\bibnamesep=\skip53
-\bibinitsep=\skip54
-\bibparsep=\skip55
-\bibhang=\skip56
+\labelnumberwidth=\skip50
+\labelalphawidth=\skip51
+\biblabelsep=\skip52
+\bibitemsep=\skip53
+\bibnamesep=\skip54
+\bibinitsep=\skip55
+\bibparsep=\skip56
+\bibhang=\skip57
 \blx@bcfin=\read2
 \blx@bcfout=\write3
-\blx@langwohyphens=\language85
+\blx@langwohyphens=\language87
 \c@mincomprange=\count307
 \c@maxcomprange=\count308
 \c@mincompwidth=\count309
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2022/07/12 v3.18b biblatex localization (PK/MW)
+ (c:/texlive/2022/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric-comp.dbx' not found.
@@ -208,29 +208,29 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedoriglanguage=\count375
 \c@pageref=\count376
 \c@savedpageref=\count377
-\shorthandwidth=\skip57
-\shortjournalwidth=\skip58
-\shortserieswidth=\skip59
-\shorttitlewidth=\skip60
-\shortauthorwidth=\skip61
-\shorteditorwidth=\skip62
-\locallabelnumberwidth=\skip63
-\locallabelalphawidth=\skip64
-\localshorthandwidth=\skip65
-\localshortjournalwidth=\skip66
-\localshortserieswidth=\skip67
-\localshorttitlewidth=\skip68
-\localshortauthorwidth=\skip69
-\localshorteditorwidth=\skip70
+\shorthandwidth=\skip58
+\shortjournalwidth=\skip59
+\shortserieswidth=\skip60
+\shorttitlewidth=\skip61
+\shortauthorwidth=\skip62
+\shorteditorwidth=\skip63
+\locallabelnumberwidth=\skip64
+\locallabelalphawidth=\skip65
+\localshorthandwidth=\skip66
+\localshortjournalwidth=\skip67
+\localshortserieswidth=\skip68
+\localshorttitlewidth=\skip69
+\localshortauthorwidth=\skip70
+\localshorteditorwidth=\skip71
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
+ (c:/texlive/2022/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
+ (c:/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 \c@textcitecount=\count378
 \c@textcitetotal=\count379
 \c@textcitemaxnames=\count380
@@ -247,23 +247,23 @@ File: biblatex.def 2022/07/12 v3.18b biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
-File: numeric-comp.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
+ (c:/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
+ (c:/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2022/07/12 v3.18b biblatex bibliography style (PK/MW)
+ (c:/texlive/2022/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count387
 \c@bbx:relatedtotal=\count388
 )))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
-File: numeric-comp.cbx 2022/07/12 v3.18b biblatex citation style (PK/MW)
+ (c:/texlive/2022/texmf-dist/tex/latex/biblatex/cbx/numeric-comp.cbx
+File: numeric-comp.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
 \c@cbx@tempcnta=\count389
 \c@cbx@tempcntb=\count390
 \c@cbx@tempcntc=\count391
@@ -282,58 +282,58 @@ Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+ (c:/texlive/2022/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
- (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-12-17 L3 programming layer (loader) 
- (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
+ (c:/texlive/2022/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
+ (c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count393
 \l__pdf_internal_box=\box51
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2022-12-17 L3 programming layer (loader) 
+(biblatex)             2023-02-22 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
- (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2022-12-17 L3 Experimental document command parser
+ (c:/texlive/2022/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty (c:/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
 )
-Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
-)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+)) (c:/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2022-11-13 v7.00u Hypertext links for LaTeX
- (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
+ (c:/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (c:/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
- (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+ (c:/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (c:/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count394
@@ -341,47 +341,47 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 \@linkdim=\dimen151
 \Hy@linkcounter=\count395
 \Hy@pagecounter=\count396
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2022-11-13 v7.00u Hyperref: PDFDocEncoding definition (HO)
+ (c:/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (c:/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+) (c:/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count397
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2022-11-13 v7.00u Hyperref: PDF Unicode definition (HO)
+ (c:/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4162.
-Package hyperref Info: Link nesting OFF on input line 4167.
-Package hyperref Info: Hyper index ON on input line 4170.
-Package hyperref Info: Plain pages OFF on input line 4177.
-Package hyperref Info: Backreferencing OFF on input line 4182.
+Package hyperref Info: Hyper figures OFF on input line 4177.
+Package hyperref Info: Link nesting OFF on input line 4182.
+Package hyperref Info: Hyper index ON on input line 4185.
+Package hyperref Info: Plain pages OFF on input line 4192.
+Package hyperref Info: Backreferencing OFF on input line 4197.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4410.
+Package hyperref Info: Bookmarks ON on input line 4425.
 \c@Hy@tempcnt=\count398
-LaTeX Info: Redefining \url on input line 4748.
+LaTeX Info: Redefining \url on input line 4763.
 \XeTeXLinkMargin=\dimen152
- (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+ (c:/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+ (c:/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count399
 \Field@Width=\dimen153
 \Fld@charsize=\dimen154
-Package hyperref Info: Hyper figures OFF on input line 6027.
-Package hyperref Info: Link nesting OFF on input line 6032.
-Package hyperref Info: Hyper index ON on input line 6035.
-Package hyperref Info: backreferencing OFF on input line 6042.
-Package hyperref Info: Link coloring OFF on input line 6047.
-Package hyperref Info: Link coloring with OCG OFF on input line 6052.
-Package hyperref Info: PDF/A mode OFF on input line 6057.
- (/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+ (c:/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -390,38 +390,38 @@ package with kernel methods
 \c@Hfootnote=\count402
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2022-11-13 v7.00u Hyperref driver for pdfTeX
- (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+ (c:/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
+ (c:/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
 \Fld@listcount=\count403
 \c@bookmark@seq@number=\count404
- (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+ (c:/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (c:/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip71
-) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+\Hy@SectionHShift=\skip72
+) (c:/texlive/2022/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count405
 \float@exts=\toks18
 \float@box=\box52
 \@float@everytoks=\toks19
 \@floatcapt=\box53
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (c:/texlive/2022/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip72
+\labelindent=\skip73
 \enit@outerparindent=\dimen155
 \enit@toks=\toks20
 \enit@inbox=\box54
@@ -489,8 +489,8 @@ LaTeX Font Info:    ... okay on input line 26.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
+(c:/texlive/2022/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -502,7 +502,7 @@ Package biblatex Info: ... file 'documentation.bbl' found.
  (./documentation.bbl)
 Package biblatex Info: Reference section=0 on input line 26.
 Package biblatex Info: Reference segment=0 on input line 26.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count410
 \scratchdimen=\dimen156
@@ -515,10 +515,10 @@ Package biblatex Info: Reference segment=0 on input line 26.
 \MPnumerator=\count414
 \makeMPintoPDFobject=\count415
 \everyMPtoPDFconversion=\toks22
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+ (c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring ON on input line 26.
@@ -539,7 +539,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 4.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write5
 \openout5 = `documentation.toc'.
 
@@ -549,7 +549,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--37
  []
 
 (./parameters/parameters.tex) (./fetch/if_stage.tex
-<../diagrams/fetch/if_stage.png, id=159, 457.71pt x 888.31876pt>
+<../diagrams/fetch/if_stage.png, id=164, 457.71pt x 888.31876pt>
 File: ../diagrams/fetch/if_stage.png Graphic file (type png)
 <use ../diagrams/fetch/if_stage.png>
 Package pdftex.def Info: ../diagrams/fetch/if_stage.png  used on input line 5.
@@ -565,7 +565,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has
                                                   \__shipout_drop_firstpage_...
 l.18     \item I
                 nput: $br\_pred$, This signal is representing the state of t... <../diagrams/fetch/if_stage.png>]) (./fetch/br_predictor.tex
-<../diagrams/fetch/br_predictor.png, id=173, 201.75375pt x 251.94125pt>
+<../diagrams/fetch/br_predictor.png, id=178, 201.75375pt x 251.94125pt>
 File: ../diagrams/fetch/br_predictor.png Graphic file (type png)
 <use ../diagrams/fetch/br_predictor.png>
 Package pdftex.def Info: ../diagrams/fetch/br_predictor.png  used on input line 5.
@@ -581,7 +581,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has
                                                   \__shipout_drop_firstpage_...
 l.19 
       <../diagrams/fetch/br_predictor.png>]) (./fetch/pc.tex
-<../diagrams/fetch/pc.png, id=184, 191.71625pt x 141.52875pt>
+<../diagrams/fetch/pc.png, id=189, 191.71625pt x 141.52875pt>
 File: ../diagrams/fetch/pc.png Graphic file (type png)
 <use ../diagrams/fetch/pc.png>
 Package pdftex.def Info: ../diagrams/fetch/pc.png  used on input line 5.
@@ -597,13 +597,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has
                                                   \__shipout_drop_firstpage_...
 l.19     \item I
                 nput: $br\_pred$, This signal is representing the state of t... <../diagrams/fetch/pc.png>]) (./decode/id_stage.tex
-<../diagrams/decode/id_stage.png, id=197, 1487.5575pt x 1370.11874pt>
+<../diagrams/decode/id_stage.png, id=202, 1487.5575pt x 1370.11874pt>
 File: ../diagrams/decode/id_stage.png Graphic file (type png)
 <use ../diagrams/decode/id_stage.png>
 Package pdftex.def Info: ../diagrams/decode/id_stage.png  used on input line 5.
 (pdftex.def)             Requested size: 469.75502pt x 432.65591pt.
  [6]) (./decode/controller.tex
-<../diagrams/decode/controller.png, id=208, 171.64125pt x 492.84125pt>
+<../diagrams/decode/controller.png, id=213, 171.64125pt x 492.84125pt>
 File: ../diagrams/decode/controller.png Graphic file (type png)
 <use ../diagrams/decode/controller.png>
 Package pdftex.def Info: ../diagrams/decode/controller.png  used on input line 5.
@@ -624,7 +624,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has
                                                   \__shipout_drop_firstpage_...
 l.17     \item O
                 utput: $br\_sig$, This signal is representing the state of t... <../diagrams/decode/controller.png>]) (./decode/stall_unit.tex
-<../diagrams/decode/stall_unit.png, id=224, 342.27875pt x 161.60374pt>
+<../diagrams/decode/stall_unit.png, id=229, 342.27875pt x 161.60374pt>
 File: ../diagrams/decode/stall_unit.png Graphic file (type png)
 <use ../diagrams/decode/stall_unit.png>
 Package pdftex.def Info: ../diagrams/decode/stall_unit.png  used on input line 5.
@@ -635,7 +635,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
  []
 
 ) (./decode/forward_controller.tex
-<../diagrams/decode/forward_controller.png, id=243, 221.82875pt x 603.25375pt>
+<../diagrams/decode/forward_controller.png, id=248, 221.82875pt x 603.25375pt>
 File: ../diagrams/decode/forward_controller.png Graphic file (type png)
 <use ../diagrams/decode/forward_controller.png>
 Package pdftex.def Info: ../diagrams/decode/forward_controller.png  used on input line 5.
@@ -656,7 +656,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has
                                                   \__shipout_drop_firstpage_...
 l.19     \item I
                 nput: $reg_addr2$, This signal is representing the second re... <../diagrams/decode/forward_controller.png>] [12]) (./decode/mux.tex
-<../diagrams/decode/mux.png, id=284, 101.37875pt x 81.30376pt>
+<../diagrams/decode/mux.png, id=290, 101.37875pt x 81.30376pt>
 File: ../diagrams/decode/mux.png Graphic file (type png)
 <use ../diagrams/decode/mux.png>
 Package pdftex.def Info: ../diagrams/decode/mux.png  used on input line 5.
@@ -667,7 +667,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
  []
 
 ) (./execute/ex_stage.tex
-<../diagrams/execute/ex_stage.png, id=285, 507.8975pt x 838.13126pt>
+<../diagrams/execute/ex_stage.png, id=291, 507.8975pt x 838.13126pt>
 File: ../diagrams/execute/ex_stage.png Graphic file (type png)
 <use ../diagrams/execute/ex_stage.png>
 Package pdftex.def Info: ../diagrams/execute/ex_stage.png  used on input line 5.
@@ -683,13 +683,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has
                                                   \__shipout_drop_firstpage_...
 l.1 \subsection
                {Arithmetic Logic Unit} <../diagrams/execute/ex_stage.png>]
-<../diagrams/execute/alu.png, id=309, 312.16624pt x 171.64125pt>
+<../diagrams/execute/alu.png, id=314, 312.16624pt x 171.64125pt>
 File: ../diagrams/execute/alu.png Graphic file (type png)
 <use ../diagrams/execute/alu.png>
 Package pdftex.def Info: ../diagrams/execute/alu.png  used on input line 5.
 (pdftex.def)             Requested size: 352.31625pt x 193.72185pt.
 ) (./execute/br_unit.tex
-<../diagrams/execute/br_unit.png, id=310, 292.09125pt x 191.71625pt>
+<../diagrams/execute/br_unit.png, id=315, 292.09125pt x 191.71625pt>
 File: ../diagrams/execute/br_unit.png Graphic file (type png)
 <use ../diagrams/execute/br_unit.png>
 Package pdftex.def Info: ../diagrams/execute/br_unit.png  used on input line 5.
@@ -700,7 +700,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) ha
                                                   \__shipout_drop_firstpage_...
 l.9 
      <../diagrams/execute/alu.png>]) (./memory/mem_stage.tex
-<../diagrams/memory/mem_stage.png, id=321, 638.385pt x 396.48125pt>
+<../diagrams/memory/mem_stage.png, id=326, 638.385pt x 396.48125pt>
 File: ../diagrams/memory/mem_stage.png Graphic file (type png)
 <use ../diagrams/memory/mem_stage.png>
 Package pdftex.def Info: ../diagrams/memory/mem_stage.png  used on input line 5.
@@ -711,7 +711,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) ha
                                                   \__shipout_drop_firstpage_...
 l.9 
      <../diagrams/execute/br_unit.png>]) (./memory/lsu.tex
-<../diagrams/memory/lsu.png, id=336, 437.635pt x 191.71625pt>
+<../diagrams/memory/lsu.png, id=341, 437.635pt x 191.71625pt>
 File: ../diagrams/memory/lsu.png Graphic file (type png)
 <use ../diagrams/memory/lsu.png>
 Package pdftex.def Info: ../diagrams/memory/lsu.png  used on input line 5.
@@ -727,13 +727,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) ha
                                                   \__shipout_drop_firstpage_...
 l.17     \item I
                 nput: $wr\_data$, This signal is representing the data you w... <../diagrams/memory/mem_stage.png> <../diagrams/memory/lsu.png>]) (./writeback/wb_stage.tex
-<../diagrams/writeback/wb_stage.png, id=345, 573.14125pt x 306.14375pt>
+<../diagrams/writeback/wb_stage.png, id=350, 573.14125pt x 306.14375pt>
 File: ../diagrams/writeback/wb_stage.png Graphic file (type png)
 <use ../diagrams/writeback/wb_stage.png>
 Package pdftex.def Info: ../diagrams/writeback/wb_stage.png  used on input line 5.
 (pdftex.def)             Requested size: 352.31625pt x 188.19086pt.
 ) (./writeback/mux.tex
-<../diagrams/writeback/mux.png, id=346, 101.37875pt x 81.30376pt>
+<../diagrams/writeback/mux.png, id=351, 101.37875pt x 81.30376pt>
 File: ../diagrams/writeback/mux.png Graphic file (type png)
 <use ../diagrams/writeback/mux.png>
 Package pdftex.def Info: ../diagrams/writeback/mux.png  used on input line 5.
@@ -749,7 +749,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
  []
 
 ) (./pipeline/pipeline.tex
-<../diagrams/pipeline/pipeline.png, id=360, 261.97874pt x 874.26625pt>
+<../diagrams/pipeline/pipeline.png, id=365, 261.97874pt x 874.26625pt>
 File: ../diagrams/pipeline/pipeline.png Graphic file (type png)
 <use ../diagrams/pipeline/pipeline.png>
 Package pdftex.def Info: ../diagrams/pipeline/pipeline.png  used on input line 3.
@@ -765,7 +765,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) ha
                                                   \__shipout_drop_firstpage_...
 l.74 
       <../diagrams/pipeline/pipeline.png>] (./rom_ram_reg/rom.tex
-<../diagrams/rom_ram_reg/rom.png, id=379, 131.49126pt x 402.50375pt>
+<../diagrams/rom_ram_reg/rom.png, id=384, 131.49126pt x 402.50375pt>
 File: ../diagrams/rom_ram_reg/rom.png Graphic file (type png)
 <use ../diagrams/rom_ram_reg/rom.png>
 Package pdftex.def Info: ../diagrams/rom_ram_reg/rom.png  used on input line 5.
@@ -776,13 +776,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) ha
                                                   \__shipout_drop_firstpage_...
 l.15     \item I
                 nput: $pc$, This signal gives the address that needs to be r... <../diagrams/rom_ram_reg/rom.png>]) (./rom_ram_reg/ram.tex
-<../diagrams/rom_ram_reg/ram.png, id=390, 452.69125pt x 131.49126pt>
+<../diagrams/rom_ram_reg/ram.png, id=395, 452.69125pt x 131.49126pt>
 File: ../diagrams/rom_ram_reg/ram.png Graphic file (type png)
 <use ../diagrams/rom_ram_reg/ram.png>
 Package pdftex.def Info: ../diagrams/rom_ram_reg/ram.png  used on input line 5.
 (pdftex.def)             Requested size: 352.31625pt x 102.33603pt.
 ) (./rom_ram_reg/register_file.tex
-<../diagrams/rom_ram_reg/register_file.png, id=391, 292.09125pt x 151.56625pt>
+<../diagrams/rom_ram_reg/register_file.png, id=396, 292.09125pt x 151.56625pt>
 File: ../diagrams/rom_ram_reg/register_file.png Graphic file (type png)
 <use ../diagrams/rom_ram_reg/register_file.png>
 Package pdftex.def Info: ../diagrams/rom_ram_reg/register_file.png  used on input line 5.
@@ -819,24 +819,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--85
 
 [25] (./documentation.aux)
 Package rerunfilecheck Info: File `documentation.out' has not changed.
-(rerunfilecheck)             Checksum: 0CCFCF1B98DBDE625864D440C3F6508A;3097.
+(rerunfilecheck)             Checksum: 15F1848D7F9EA82A3780FBE949681499;3192.
 Package logreq Info: Writing requests to 'documentation.run.xml'.
 \openout1 = `documentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17061 strings out of 476182
- 303762 string characters out of 5796581
- 1864793 words of memory out of 6000000
- 36945 multiletter control sequences out of 15000+600000
+ 17076 strings out of 476024
+ 303698 string characters out of 5794016
+ 1865382 words of memory out of 5000000
+ 37101 multiletter control sequences out of 15000+600000
  518609 words of font info for 53 fonts, out of 8000000 for 9000
- 1137 hyphenation exceptions out of 8191
- 60i,6n,68p,749b,1294s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on documentation.pdf (25 pages, 312087 bytes).
+ 1141 hyphenation exceptions out of 8191
+ 63i,6n,68p,752b,1301s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on documentation.pdf (25 pages, 311850 bytes).
 PDF statistics:
- 514 PDF objects out of 1000 (max. 8388607)
- 426 compressed objects within 5 object streams
+ 518 PDF objects out of 1000 (max. 8388607)
+ 430 compressed objects within 5 object streams
  180 named destinations out of 1000 (max. 500000)
- 328 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 336 words of extra memory for PDF output out of 10000 (max. 10000000)
 

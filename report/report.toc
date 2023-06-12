@@ -6,11 +6,14 @@
 \contentsline {subsection}{\numberline {2.1}RISC-V}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Architecture}{3}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Unpipeline}{3}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Pipeline}{3}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2}Pipeline}{4}{subsubsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.3}Verilog}{4}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Simulation Tools}{4}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}RISC-V Toolchain}{4}{subsection.2.5}%
 \contentsline {subsubsection}{\numberline {2.5.1}Developping using Assembly Code}{4}{subsubsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2}RISC-V GNU Compiler Toolchain}{4}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.2}RISC-V GNU Compiler Toolchain}{5}{subsubsection.2.5.2}%
 \contentsline {section}{\numberline {3}Design}{5}{section.3}%
-\contentsline {section}{References}{5}{section*.2}%
+\contentsline {subsection}{\numberline {3.1}Parameters}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Unpipelined Design}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Pipelined Design}{7}{subsection.3.3}%
+\contentsline {section}{References}{9}{section*.2}%
