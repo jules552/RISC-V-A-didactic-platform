@@ -1,0 +1,57 @@
+There are two main ways of developing programs for my CPU that I've set up.\\
+
+The first one is using assembly code or pseudo assembly code and using this website\cite{riscv_online_assembler} and it will output 
+the result in hexadecimal that is readable by the ROM, and the same for the python script\cite{riscv_python_assembler} but it uses a 
+different syntax that is very close to actual RISC-V assembly.\\
+
+The second one is using C code inside the \texttt{c\_code} folder of the project. But this solution requires a bit more work before 
+using it since you have to compile the RISC-V toolchain with the correct architecture, so here RV32IM, then correctly give the variables 
+to your bash environment and then you can compile the C code using the Makefile inside the \texttt{c\_code} folder. Here a detailed guide 
+that combines the document from the RISC-V toolchain\cite{riscv_gnu_toolchain} and the tutorial I've found about bare metal RISC-V development
+\cite{riscv_gnu_toolchain_baremetal_tutorials}.
+
+\begin{enumerate}[label={\textbullet}]
+    \item Clone the toolchain from \href{https://github.com/riscv-collab/riscv-gnu-toolchain}{here}.
+    
+    \begin{verbatim}
+    git clone https://github.com/riscv/riscv-gnu-toolchain.git
+    \end{verbatim}
+    
+    \item Navigate into the cloned directory.
+    
+    \begin{verbatim}
+    cd riscv-gnu-toolchain
+    \end{verbatim}
+    
+    \item Run the configuration script.
+
+    \begin{verbatim}
+    ./configure --prefix=/opt/riscv --with-arch=rv32im
+    \end{verbatim}
+    
+    \item Compile the toolchain. This step may take a while.
+    
+    \begin{verbatim}
+    make
+    \end{verbatim}
+    
+    \item Once the compilation is done, add the toolchain to your PATH in your bash configuration file.
+
+    \begin{verbatim}
+    echo 'export PATH=$PATH:/opt/riscv/bin' >> ~/.bashrc
+    source ~/.bashrc
+    \end{verbatim}
+\end{enumerate}
+
+After that, you should be able to use the toolchain. To test it, you can try making a simple program like the ones in the 
+$c\_code$ folder of the project. You can simply compile them with the following command:
+
+\begin{verbatim}
+    make
+\end{verbatim}
+
+
+The only thing that was needed after that to execute the C code is creating a linker file that indicates to the compiler where 
+to put the different sections of the code and it has been done by me to facilitate the process and was quite simple to do actually.
+The only "issue" you'll have is that since the architecture RV32IM is so small, the C standard library is not included in the toolchain
+and you'll have to implement it yourself if you want to use it but I still think it is less painful than using assembly code.\\

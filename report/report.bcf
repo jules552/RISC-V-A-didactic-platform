@@ -2379,6 +2379,10 @@
     <bcf:citekey order="13" intorder="1">riscv_gnu_toolchain_baremetal_tutorials</bcf:citekey>
     <bcf:citekey order="14" intorder="1">two_level_adaptive</bcf:citekey>
     <bcf:citekey order="15" intorder="1">riscv_manual</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">riscv_online_assembler</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">riscv_python_assembler</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">riscv_gnu_toolchain</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">riscv_gnu_toolchain_baremetal_tutorials</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

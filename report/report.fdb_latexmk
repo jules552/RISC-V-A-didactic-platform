@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber report"] 1686562312 "report.bcf" "report.bbl" "report" 1686562987 0
+["biber report"] 0 "report.bcf" "report.bbl" "report" 1686566407 -1
   "./references.bib" 1686552429 3037 5fd6a46293589a5f7b3ed29c0926ef2a ""
-  "report.bcf" 1686562986 108193 e38aa19f4c3bea1d391494d03cb89efc "pdflatex"
+  "report.bcf" 1686566406 108519 bc9dbf4e8f62d846c0dd79db98ddf6a2 "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1686562984 "c:/Users/jules/Documents/RISC-V-A-didactic-platform/report/report.tex" "report.pdf" "report" 1686562987 0
+["pdflatex"] 1686566403 "c:/Users/jules/Documents/RISC-V-A-didactic-platform/report/report.tex" "report.pdf" "report" 1686566407 0
   "../diagrams/writeback/mux.png" 1686507001 4356 f7c790863ccdf04af34e8fed9bd5c6ea ""
   "appendix/images/pipelined_design_detail.png" 1686556445 781008 99b8784d3abe08ccae483a139649ffd6 ""
   "background_research/architecture.tex" 1686551189 1316 98842eb75eda084ca88cf1266975f591 ""
@@ -14,7 +14,7 @@
   "background_research/riscv_toolchain.tex" 1686551189 1468 542ef6589101d0d871af1f6f9d88071d ""
   "background_research/simulation_tools.tex" 1686551189 1400 f00a0cdc2d353c91a6bea080ee2369b0 ""
   "background_research/verilog.tex" 1686551189 549 158d8a0339477c46150b246cb557a7da ""
-  "c:/Users/jules/Documents/RISC-V-A-didactic-platform/report/report.tex" 1686562295 1812 0169fd92e73e162e7e321183951ff7c5 ""
+  "c:/Users/jules/Documents/RISC-V-A-didactic-platform/report/report.tex" 1686566252 1975 00f929725fa875684b8060b3473edec2 ""
   "c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1679226460 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1679226838 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1679226682 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -111,6 +111,7 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1679228488 4662804 131178ccc9b2f4741a821427ce79dce1 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1679228609 7883446 99ffc516780f74607983ab0aff967e35 ""
   "c:/texlive/2022/texmf.cnf" 1679228474 713 e69b156964470283e0530f5060668171 ""
+  "conclusion/conclusion.tex" 1686566403 2305 478feb08ac23fd61cb946dc40c7ea4ce ""
   "design/parameters.tex" 1686551576 402 5468178246a1051ec2b41f14f99033de ""
   "design/pipelined/decode/controller.tex" 1686558621 2594 207f1ec507ef9831dc6a29ff3b8ccf0d ""
   "design/pipelined/decode/forward_controller.tex" 1686558643 3798 949df777ec1382ae3df240652a6a7ee1 ""
@@ -149,13 +150,17 @@
   "introduction/motivation.tex" 1686526729 1697 d4b2afc2b65bbc4abef5792bc48f40d9 ""
   "introduction/objectives.tex" 1686551189 1496 12de61d98e4cb42fe38636adaef65acb ""
   "introduction/scope.tex" 1686526729 908 55ea0808e11566825e2e516d11d618df ""
-  "report.aux" 1686562986 12212 dc0d734facd7db1eab3a08d52919f17f "pdflatex"
-  "report.bbl" 1686562313 15981 dfbf8dbbfcba0c43b789c34a25ec59af "biber report"
-  "report.out" 1686562986 5449 4efefe191c306928310ccf9f20031238 "pdflatex"
-  "report.run.xml" 1686562986 2360 15e519fbd8c5620b53dc38bef756a42e "pdflatex"
-  "report.tex" 1686562295 1812 0169fd92e73e162e7e321183951ff7c5 ""
-  "report.toc" 1686562986 3396 7af87cce7a9c52001420fa028424d2a6 "pdflatex"
-  "testing/testing.tex" 1686562986 1493 c662facc89cba2f769d20126118dda22 ""
+  "programs/programs.tex" 1686565263 2726 be60e737f4e4e053a59cfcc2194bdd58 ""
+  "report.aux" 1686566406 13517 a6dd712d39157aa2b700fcc0c651c0b4 "pdflatex"
+  "report.bbl" 1686566257 15981 dfbf8dbbfcba0c43b789c34a25ec59af "biber report"
+  "report.out" 1686566406 6038 0ed33c48f6bfea9ec560cc1cb5d07c2a "pdflatex"
+  "report.run.xml" 1686566406 2360 15e519fbd8c5620b53dc38bef756a42e "pdflatex"
+  "report.tex" 1686566252 1975 00f929725fa875684b8060b3473edec2 ""
+  "report.toc" 1686566406 3718 6ca92f720cf9c6512ad596b02783a6ff "pdflatex"
+  "testing/ci.tex" 1686564481 1470 6e2a1c4c25db8f9d141a088ad174b5e8 ""
+  "testing/images/ci.png" 1686564310 59476 9033490720b0f545de5282689e894a9e ""
+  "testing/images/gtkwave.png" 1686564103 596501 c5475d423276e5ddad16ce45f7d99d49 ""
+  "testing/testbenches.tex" 1686564175 2407 3a881f28675be0eaefff99d1ffbafbdf ""
   (generated)
   "report.aux"
   "report.bcf"

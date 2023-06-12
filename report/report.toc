@@ -37,5 +37,9 @@
 \contentsline {paragraph}{\numberline {3.3.7.2}RAM}{24}{paragraph.3.3.7.2}%
 \contentsline {paragraph}{\numberline {3.3.7.3}Register File}{24}{paragraph.3.3.7.3}%
 \contentsline {section}{\numberline {4}Testing}{25}{section.4}%
-\contentsline {section}{References}{26}{section*.2}%
-\contentsline {section}{\numberline {A}Detailed Pipelined CPU Design}{26}{appendix.A}%
+\contentsline {subsection}{\numberline {4.1}Testbenches}{25}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Continuous Integration}{26}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Developing programs for the CPU}{27}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion}{29}{section.6}%
+\contentsline {section}{References}{29}{section*.2}%
+\contentsline {section}{\numberline {A}Detailed Pipelined CPU Design}{30}{appendix.A}%
