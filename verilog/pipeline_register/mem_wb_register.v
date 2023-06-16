@@ -26,10 +26,6 @@ module mem_wb_register (
 
     always @(posedge clk or negedge reset_n) begin
         if (!reset_n) begin
-            alu_result <= 0;
-            pc_plus4 <= 0;
-            mem_rd_data <= 0;
-            data_dest <= 0;
             reg_wr_addr <= 0;
             reg_wr_sig <= 0;
         end else begin

@@ -54,31 +54,12 @@ module id_ex_register (
 
     always @(posedge clk or negedge reset_n) begin
         if (!reset_n) begin
-            pc <= 32'b0;
-            pc_rs1 <= 32'b0;
-            imm_rs2 <= 32'b0;
-            rs2 <= 32'b0;
             br_sig <= 1'b0;
-            br_op <= 3'b0;
-            lsu_op <= 3'b0;
-            alu_op <= 5'b0;
-            data_dest <= 2'b0;
-            imm <= 32'b0;
-            reg_wr_addr <= 5'b0;
             reg_wr_sig <= 1'b0;
             mem_wr_sig <= 1'b0;
             br_pred <= 1'b0;
         end else if (flush_i || stall_i) begin
-            pc <= 32'b0;
-            pc_rs1 <= 32'b0;
-            imm_rs2 <= 32'b0;
-            rs2 <= 32'b0;
             br_sig <= 1'b0;
-            br_op <= 3'b0;
-            lsu_op <= 3'b0;
-            alu_op <= ALU_ADD;
-            data_dest <= ALU;
-            imm <= 32'b0;
             reg_wr_addr <= 5'b0;
             reg_wr_sig <= 1'b0;
             mem_wr_sig <= 1'b0;
