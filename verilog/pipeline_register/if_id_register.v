@@ -19,14 +19,11 @@ module if_id_register (
 
     always @(posedge clk or negedge reset_n) begin
         if (!reset_n) begin
-            instruction <= 0;
+            instruction <= 32'h0013; // Set to NOP (addi x0, x0, 0)
             pc <= 0;
-            br_pred <= 0;
         end else begin
             if (flush_i) begin
-                instruction <= 32'h0013; // Set to NOP (addi x0, x0, 0)
-                pc <= pc_i;
-                br_pred <= 0;
+                instruction <= 32'h0013;
             end else if (!stall_i) begin
                 instruction <= instruction_i;
                 pc <= pc_i;
