@@ -10,7 +10,6 @@ module ex_mem_register (
     input wire [4:0] reg_wr_addr_i,
     input wire reg_wr_sig_i,
     input wire mem_wr_sig_i,
-    input wire flush_i,
 
     output wire [31:0] pc_plus4_o,
     output wire [31:0] alu_result_o,
@@ -34,15 +33,6 @@ module ex_mem_register (
 
     always @(posedge clk or negedge reset_n) begin
         if (!reset_n) begin
-            alu_result <= 0;
-            rs2 <= 0;
-            pc_plus4 <= 0;
-            data_dest <= 0;
-            lsu_op <= 0;
-            reg_wr_addr <= 0;
-            reg_wr_sig <= 0;
-            mem_wr_sig <= 0;
-        end else if (flush_i) begin
             alu_result <= 0;
             rs2 <= 0;
             pc_plus4 <= 0;

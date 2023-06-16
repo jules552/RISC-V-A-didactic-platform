@@ -228,7 +228,6 @@ module cpu (
         .reg_wr_addr_i(id_ex_reg_wr_addr),
         .reg_wr_sig_i(id_ex_reg_wr_sig),
         .mem_wr_sig_i(id_ex_mem_wr_sig),
-        .flush_i(miss_pred),
 
         .pc_plus4_o(ex_mem_pc_plus4),
         .alu_result_o(ex_mem_alu_result),
